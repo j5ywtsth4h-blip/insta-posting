@@ -1,0 +1,51 @@
+name: Instagram posten
+
+on:
+  schedule:
+    - cron: "7 * * * *"   # jede Stunde (Minute 7)
+  workflow_dispatch:
+    inputs:
+      aktion:
+        description: "Was soll passieren?"
+        type: choice
+        default: verbindung-testen
+        options:
+          - verbindung-testen
+          - faellige-jetzt-posten
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-posting
+  cancel-in-progress: false
+
+jobs:
+  posten:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bildwerkzeuge installieren
+        run: pip install pillow pillow-heif
+
+      - name: Git einrichten
+        run: |
+          git config user.name "insta-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Verbindung testen
+        if: github.event_name == 'workflow_dispatch' && inputs.aktion == 'verbindung-testen'
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python scripts/post.py test
+
+      - name: Fällige Beiträge posten
+        if: github.event_name == 'schedule' || inputs.aktion == 'faellige-jetzt-posten'
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python scripts/post.py post
