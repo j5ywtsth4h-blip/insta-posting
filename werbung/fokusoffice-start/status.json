@@ -1,5 +1,10 @@
 {
-  "anzeigen": [],
+  "anzeigen": [
+    {
+      "name": "Bild: Dein Büro an einem Ort",
+      "id": "120251979479200383"
+    }
+  ],
   "werbekonto": "act_1867875254095909",
   "seite": "1414807858381357",
   "kampagne_id": "120251979218280383",
