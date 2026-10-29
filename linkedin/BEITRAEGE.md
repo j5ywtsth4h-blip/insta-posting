@@ -93,7 +93,7 @@ Diese Frage höre ich gerade oft. Hier die wichtigsten Daten in Kürze (für Rec
 
 Eine PDF per E-Mail ist übrigens keine E-Rechnung. Gemeint sind strukturierte Formate wie XRechnung oder ZUGFeRD.
 
-In FokusOffice kannst du XRechnungen erstellen und empfangene E-Rechnungen anzeigen. Die erzeugten Dateien prüfe ich mit dem offiziellen Prüfwerkzeug (KoSIT).
+In FokusOffice kannst du XRechnungen erstellen und empfangene E-Rechnungen anzeigen. Die erzeugten XRechnungen wurden mit dem offiziellen Prüfwerkzeug (KoSIT) geprüft.
 
 Hinweis: Das ist eine allgemeine Übersicht und keine Steuerberatung. Für deinen Einzelfall frag am besten dein Steuerbüro.
 
