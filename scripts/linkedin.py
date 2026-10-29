@@ -11,6 +11,11 @@ Aufbau der .md-Datei:
     ---KOMMENTAR---
     Erster Kommentar, z. B. mit Link   (optional)
 
+Wohin gepostet wird:
+    - Unternehmensseite, wenn das Secret LINKEDIN_ORG_ID gesetzt ist (braucht die Berechtigung
+      w_organization_social, LinkedIn-Produkt „Community Management API“)
+    - persönliches Profil, wenn LINKEDIN_PROFIL nicht auf „nein“ steht
+
 Aufruf:
     python scripts/linkedin.py test   -> prüft nur die Verbindung, postet nichts
     python scripts/linkedin.py post   -> veröffentlicht alle fälligen Beiträge
@@ -133,6 +138,16 @@ def hochladen(person: str, datei: Path) -> str:
     return wert["image"] if art == "images" else wert["document"]
 
 
+def autoren(person: str) -> list[str]:
+    liste = []
+    org = os.environ.get("LINKEDIN_ORG_ID", "").strip()
+    if org:
+        liste.append(org if org.startswith("urn:li:") else f"urn:li:organization:{org}")
+    if os.environ.get("LINKEDIN_PROFIL", "ja").strip().lower() != "nein":
+        liste.append(person)
+    return liste
+
+
 def veroeffentlichen(person: str, md: Path) -> str:
     titel, text, kommentar = lesen(md)
     beitrag = {
@@ -193,6 +208,8 @@ def main():
 
     if modus == "test":
         print(f"✅ LinkedIn klappt! Verbunden mit {profil.get('name')}")
+        ziele = ["Unternehmensseite" if a.startswith("urn:li:organization") else "persönliches Profil" for a in autoren(person)]
+        print(f"   Gepostet wird auf: {', '.join(ziele) or 'nichts (bitte LINKEDIN_PROFIL/LINKEDIN_ORG_ID prüfen)'}")
         return
 
     posts = list(faellige()) if GEPLANT.exists() else []
@@ -201,14 +218,21 @@ def main():
         return
     fehlgeschlagen = []
     for md in posts:
-        try:
-            veroeffentlichen(person, md)
-            verschieben(md, GEPOSTET)
+        fehler, erfolg = [], 0
+        for autor in autoren(person):
+            try:
+                veroeffentlichen(autor, md)
+                erfolg += 1
+            except Exception as e:
+                print(f"❌ {md.name} ({autor}): {e}")
+                fehler.append(f"{autor}: {e}")
+        if erfolg:
+            verschieben(md, GEPOSTET, log="\n".join(fehler))
             post.push(f"LinkedIn gepostet: {md.stem}")
-        except Exception as e:
-            print(f"❌ {md.name}: {e}")
-            verschieben(md, FEHLER, log=str(e))
+        else:
+            verschieben(md, FEHLER, log="\n".join(fehler) or "Kein Ziel konfiguriert.")
             post.push(f"LinkedIn-Fehler bei {md.stem}")
+        if fehler:
             fehlgeschlagen.append(md.name)
     if fehlgeschlagen:
         sys.exit(f"LinkedIn fehlgeschlagen: {', '.join(fehlgeschlagen)} – Details in linkedin/fehler.")

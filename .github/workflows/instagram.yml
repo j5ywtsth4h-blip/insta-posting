@@ -52,6 +52,8 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && inputs.aktion == 'verbindung-testen'
         env:
           LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
+          LINKEDIN_ORG_ID: ${{ secrets.LINKEDIN_ORG_ID }}
+          LINKEDIN_PROFIL: ${{ vars.LINKEDIN_PROFIL }}
         run: python scripts/linkedin.py test
 
       - name: Profil anzeigen (postet nichts)
@@ -80,4 +82,6 @@ jobs:
         if: ${{ !cancelled() && (github.event_name == 'schedule' || inputs.aktion == 'faellige-jetzt-posten') }}
         env:
           LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
+          LINKEDIN_ORG_ID: ${{ secrets.LINKEDIN_ORG_ID }}
+          LINKEDIN_PROFIL: ${{ vars.LINKEDIN_PROFIL }}
         run: python scripts/linkedin.py post
