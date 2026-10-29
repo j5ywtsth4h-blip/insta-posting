@@ -1,0 +1,17 @@
+# Selbst posten: Storys und Reels
+
+Diese Inhalte gehen **nicht automatisch** raus. Du postest sie selbst in der Instagram-App,
+damit du Musik, Umfragen und anklickbare Links hinzufügen kannst.
+
+So kommst du an die Datei: Datei hier auf GitHub antippen → **„…“ → Download** (oder Bild lange gedrückt halten → „Bild sichern“).
+
+| Wann | Datei | Was du in der App hinzufügst |
+|------|-------|------------------------------|
+| Do 29.10., 18:00 | `2026-10-29_18-00_story.jpg` | Ruhige Musik (Sticker „Musik“). Optional: Sticker „Countdown“ auf morgen 12:00, Titel „Hallo, ich bin Lara“. |
+| Fr 30.10., 18:00 | `2026-10-30_18-00_story.jpg` | **Besser:** Statt dieses Bildes deinen neuen Beitrag direkt teilen (unter dem Beitrag auf den Papierflieger → „Zu Story hinzufügen“). Dann ist er antippbar. Das Bild ist die Alternative dazu. |
+| Mo 2.11., 12:00 | `2026-11-02_12-00_story.jpg` | Sticker **„Umfrage“** in die freie Mitte, Antworten z. B. „Unter 20“ / „Über 20“ oder Sticker „Schieberegler“ mit 📩. Optional zusätzlich den E-Mail-Tipp-Beitrag teilen. |
+| Di 3.11., 19:00 | **Reel** `2026-11-03_19-00.mp4` | Musik: ruhig, instrumental, leise. Caption aus `2026-11-03_19-00.txt` kopieren. Titelbild: das erste Bild „Findest du deine Dateien sofort?“. |
+| Do 5.11., 08:00 | `2026-11-05_08-00_story.jpg` | Sticker **„Link“** unten in die freie Fläche: `https://fokuszeit-business.de/fokusoffice-demo.html`, Text „Demo ansehen“. |
+| Fr 6.11., 12:00 | **Reel** `2026-11-06_12-00.mp4` | Musik: ruhig, instrumental. Caption aus `2026-11-06_12-00.txt` kopieren. Am Ende des Reels zeigt das Bild die Website-Adresse. |
+
+Tipp: Reels kannst du in der Instagram-App beim Teilen meist unter „Mehr Optionen“ auch für später planen.

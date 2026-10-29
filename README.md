@@ -22,7 +22,8 @@ Plant Instagram-Beiträge und veröffentlicht sie automatisch zur richtigen Zeit
 - **Reel:** einfach ein Video (mp4 oder mov) statt eines Bildes hochladen, z. B. `2026-11-03_19-00.mp4`. Die Caption kommt wie gewohnt in `2026-11-03_19-00.txt`. Das Reel erscheint auch im Feed.
 - **Story:** `_story` an den Namen hängen, z. B. `2026-11-05_08-00_story.jpg` (Bild oder Video, am besten im Hochformat 9:16). Storys haben keine Caption.
 - **Mehrere Storys zur selben Zeit:** `..._story.jpg`, `..._story-2.jpg`, `..._story-3.jpg`
-- Musik, Umfragen und Link-Sticker kann Instagram über diesen Weg leider nicht hinzufügen. Den Link schreibt man deshalb direkt ins Bild.
+- Musik, Umfragen und Link-Sticker kann Instagram über diesen Weg leider nicht hinzufügen.
+- **Selbst posten:** Alles, was Musik oder Sticker bekommen soll, liegt im Ordner **`manuell`**. Dieser Ordner wird nicht automatisch gepostet. Was wann dazukommt, steht in `manuell/ANLEITUNG.md`.
 
 ## Was dann passiert
 
