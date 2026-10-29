@@ -11,6 +11,9 @@ Aufruf:
     python scripts/post.py test     -> prüft nur die Verbindung, postet nichts
     python scripts/post.py pruefen  -> lässt Instagram alle geplanten Dateien prüfen, postet nichts
     python scripts/post.py post     -> veröffentlicht alle fälligen Beiträge
+
+Facebook (optional): Sind die Secrets FB_PAGE_ID und FB_PAGE_TOKEN hinterlegt, erscheinen
+Feed-Beiträge (Bilder) zusätzlich auf der Facebook-Seite. Storys und Reels nur auf Instagram.
 """
 
 import json
@@ -28,6 +31,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 API = "https://graph.instagram.com/v26.0"
+FB_API = "https://graph.facebook.com/v26.0"
 TZ = ZoneInfo("Europe/Berlin")
 ROOT = Path(__file__).resolve().parent.parent
 POSTS = ROOT / "posts"
@@ -49,10 +53,10 @@ def token() -> str:
     return t
 
 
-def api(method: str, path: str, **params):
-    params["access_token"] = token()
+def api(method: str, path: str, basis: str = API, zugang: str = "", **params):
+    params["access_token"] = zugang or token()
     data = urllib.parse.urlencode(params).encode()
-    url = f"{API}/{path}"
+    url = f"{basis}/{path}"
     if method == "GET":
         req = urllib.request.Request(f"{url}?{data.decode()}")
     else:
@@ -66,11 +70,23 @@ def api(method: str, path: str, **params):
             msg = json.loads(body)["error"]["message"]
         except Exception:
             msg = body
-        raise RuntimeError(f"Instagram-API meldet: {msg}") from None
+        dienst = "Facebook" if basis == FB_API else "Instagram"
+        raise RuntimeError(f"{dienst}-API meldet: {msg}") from None
 
 
 def ich() -> dict:
     return api("GET", "me", fields="user_id,username")
+
+
+def facebook() -> tuple[str, str] | None:
+    seite = os.environ.get("FB_PAGE_ID", "").strip()
+    zugang = os.environ.get("FB_PAGE_TOKEN", "").strip()
+    return (seite, zugang) if seite and zugang else None
+
+
+def fb_api(method: str, path: str, **params):
+    seite, zugang = facebook()
+    return api(method, path.format(seite=seite), basis=FB_API, zugang=zugang, **params)
 
 
 # ---------------------------------------------------------------- Git-Helfer
@@ -215,6 +231,19 @@ def veroeffentlichen(user_id: str, medien: Path):
     print(f"Veröffentlicht: {medien.name} (Instagram-ID {ergebnis.get('id')})")
 
 
+def auf_facebook(medien: Path):
+    """Feed-Bild zusätzlich auf der Facebook-Seite veröffentlichen."""
+    if ist_story(medien) or medien.suffix.lower() in VIDEO:
+        return
+    caption_datei = medien.with_suffix(".txt")
+    caption = caption_datei.read_text(encoding="utf-8").strip() if caption_datei.exists() else ""
+    params = {"url": raw_url(bild_vorbereiten(medien))}
+    if caption:
+        params["caption"] = caption
+    ergebnis = fb_api("POST", "{seite}/photos", **params)
+    print(f"Auf Facebook veröffentlicht: {medien.name} (Facebook-ID {ergebnis.get('post_id') or ergebnis.get('id')})")
+
+
 def verschieben(medien: Path, caption: Path, ziel: Path, log: str = ""):
     ziel.mkdir(exist_ok=True)
     shutil.move(str(medien), ziel / medien.name)
@@ -236,6 +265,11 @@ def main():
         limit = api("GET", f"{user_id}/content_publishing_limit", fields="quota_usage,config")
         print(f"✅ Verbindung klappt! Verbunden mit @{profil.get('username')}")
         print(f"Posting-Kontingent: {json.dumps(limit.get('data', limit), ensure_ascii=False)}")
+        if facebook():
+            seite = fb_api("GET", "{seite}", fields="name")
+            print(f"✅ Facebook klappt auch! Verbunden mit der Seite „{seite.get('name')}“")
+        else:
+            print("Facebook ist nicht eingerichtet (Secrets FB_PAGE_ID und FB_PAGE_TOKEN fehlen).")
         return
 
     if modus == "pruefen":
@@ -258,10 +292,17 @@ def main():
         return
 
     fehlgeschlagen = []
+    fb_fehler = []
     for medien in posts:
         caption = medien.with_suffix(".txt")
         try:
             veroeffentlichen(user_id, medien)
+            if facebook():
+                try:
+                    auf_facebook(medien)
+                except Exception as e:  # Instagram ist schon online, deshalb nur melden
+                    print(f"⚠️ Facebook {medien.name}: {e}")
+                    fb_fehler.append(f"{medien.name}: {e}")
             verschieben(medien, caption, GEPOSTET)
             push(f"Gepostet: {medien.stem}")
         except Exception as e:
@@ -272,6 +313,8 @@ def main():
 
     if fehlgeschlagen:
         sys.exit(f"Fehlgeschlagen: {', '.join(fehlgeschlagen)} – Details im Ordner 'fehler'.")
+    if fb_fehler:
+        sys.exit("Auf Instagram gepostet, aber nicht auf Facebook:\n" + "\n".join(fb_fehler))
 
 
 if __name__ == "__main__":

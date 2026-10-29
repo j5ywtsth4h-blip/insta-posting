@@ -31,6 +31,10 @@ Plant Instagram-Beiträge und veröffentlicht sie automatisch zur richtigen Zeit
 - Fällige Beiträge werden gepostet und landen danach im Ordner **`gepostet`**.
 - Klappt etwas nicht, landet der Beitrag im Ordner **`fehler`**, zusammen mit einer Datei, die den Grund erklärt. Du bekommst außerdem eine E-Mail von GitHub.
 
+## Facebook
+
+Sind unter *Settings → Secrets and variables → Actions* die Secrets **`FB_PAGE_ID`** und **`FB_PAGE_TOKEN`** hinterlegt, erscheinen alle Feed-Beiträge (Bilder) mit derselben Caption zusätzlich auf der Facebook-Seite. Storys und Reels bleiben nur auf Instagram. Ob es klappt, zeigt `verbindung-testen`.
+
 ## Gut zu wissen
 
 - **Bilder:** jpg, png, heic oder webp. Zu hohe Bilder (z. B. Handy-Hochformat 9:16) werden automatisch mittig auf 4:5 zugeschnitten, so wie es auch die Instagram-App macht.

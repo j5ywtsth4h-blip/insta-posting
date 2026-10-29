@@ -43,16 +43,22 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && inputs.aktion == 'verbindung-testen'
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: python scripts/post.py test
 
       - name: Geplante Beiträge prüfen (postet nichts)
         if: github.event_name == 'workflow_dispatch' && inputs.aktion == 'geplante-pruefen'
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: python scripts/post.py pruefen
 
       - name: Fällige Beiträge posten
         if: github.event_name == 'schedule' || inputs.aktion == 'faellige-jetzt-posten'
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: python scripts/post.py post
