@@ -17,6 +17,13 @@ Plant Instagram-Beiträge und veröffentlicht sie automatisch zur richtigen Zeit
 
 4. Auf **„Commit changes“** tippen. Fertig.
 
+## Storys und Reels
+
+- **Reel:** einfach ein Video (mp4 oder mov) statt eines Bildes hochladen, z. B. `2026-11-03_19-00.mp4`. Die Caption kommt wie gewohnt in `2026-11-03_19-00.txt`. Das Reel erscheint auch im Feed.
+- **Story:** `_story` an den Namen hängen, z. B. `2026-11-05_08-00_story.jpg` (Bild oder Video, am besten im Hochformat 9:16). Storys haben keine Caption.
+- **Mehrere Storys zur selben Zeit:** `..._story.jpg`, `..._story-2.jpg`, `..._story-3.jpg`
+- Musik, Umfragen und Link-Sticker kann Instagram über diesen Weg leider nicht hinzufügen. Den Link schreibt man deshalb direkt ins Bild.
+
 ## Was dann passiert
 
 - GitHub schaut **jede Stunde** nach (meist kurz nach der vollen Stunde, manchmal etwas später).
@@ -29,5 +36,6 @@ Plant Instagram-Beiträge und veröffentlicht sie automatisch zur richtigen Zeit
 - **Reels:** mp4 oder mov.
 - **Sofort testen:** Reiter **Actions → „Instagram posten“ → „Run workflow“**.
   - `verbindung-testen` prüft nur, ob alles verbunden ist (postet nichts).
+  - `geplante-pruefen` lässt Instagram alle geplanten Dateien vorab prüfen (postet nichts).
   - `faellige-jetzt-posten` postet alle fälligen Beiträge sofort.
 - **Zugriffsschlüssel:** läuft nach ca. 60 Tagen ab. Dann im Meta-Entwicklerportal neu generieren und unter *Settings → Secrets and variables → Actions* bei `IG_TOKEN` ersetzen.

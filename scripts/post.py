@@ -4,9 +4,12 @@ Dateinamen-Schema (deutsche Zeit, Europe/Berlin):
     posts/2026-11-03_18-00.jpg   -> Bild (jpg, png, heic, webp)
     posts/2026-11-03_18-00.mp4   -> oder Video als Reel (mp4, mov)
     posts/2026-11-03_18-00.txt   -> Caption (optional)
+    posts/2026-11-03_09-00_story.jpg   -> Story (Bild oder Video, ohne Caption)
+    posts/2026-11-03_09-00_story-2.jpg -> weitere Story zur selben Zeit
 
 Aufruf:
     python scripts/post.py test     -> prüft nur die Verbindung, postet nichts
+    python scripts/post.py pruefen  -> lässt Instagram alle geplanten Dateien prüfen, postet nichts
     python scripts/post.py post     -> veröffentlicht alle fälligen Beiträge
 """
 
@@ -34,7 +37,7 @@ FEHLER = ROOT / "fehler"
 
 BILD = {".jpg", ".jpeg", ".png", ".heic", ".heif", ".webp"}
 VIDEO = {".mp4", ".mov"}
-NAME = re.compile(r"^(\d{4}-\d{2}-\d{2})_(\d{2})-(\d{2})$")
+NAME = re.compile(r"^(\d{4}-\d{2}-\d{2})_(\d{2})-(\d{2})(_story(?:-\d+)?)?$")
 
 
 # ---------------------------------------------------------------- API-Helfer
@@ -99,7 +102,12 @@ def raw_url(datei: Path) -> str:
 
 # ---------------------------------------------------------------- Bilder
 
-def bild_vorbereiten(quelle: Path) -> Path:
+def ist_story(datei: Path) -> bool:
+    m = NAME.match(datei.stem)
+    return bool(m and m[4])
+
+
+def bild_vorbereiten(quelle: Path, story: bool = False) -> Path:
     """Liefert ein Instagram-taugliches JPEG (Format, Größe, Seitenverhältnis)."""
     from PIL import Image, ImageOps
     try:
@@ -112,8 +120,11 @@ def bild_vorbereiten(quelle: Path) -> Path:
     img = ImageOps.exif_transpose(img).convert("RGB")
     w, h = img.size
     ratio = w / h
-    # Instagram erlaubt 4:5 (0.8) bis 1.91:1 – sonst mittig zuschneiden wie die App
-    if ratio < 0.8:
+    # Feed: Instagram erlaubt 4:5 (0.8) bis 1.91:1 – sonst mittig zuschneiden wie die App
+    # Story: bleibt im Hochformat (ideal 9:16)
+    if story:
+        pass
+    elif ratio < 0.8:
         neu_h = int(w / 0.8)
         oben = (h - neu_h) // 2
         img = img.crop((0, oben, w, oben + neu_h))
@@ -121,8 +132,9 @@ def bild_vorbereiten(quelle: Path) -> Path:
         neu_w = int(h * 1.91)
         links = (w - neu_w) // 2
         img = img.crop((links, 0, links + neu_w, h))
-    if img.width > 1440:
-        img = img.resize((1440, round(img.height * 1440 / img.width)), Image.LANCZOS)
+    max_breite = 1080 if story else 1440
+    if img.width > max_breite:
+        img = img.resize((max_breite, round(img.height * max_breite / img.width)), Image.LANCZOS)
 
     ist_ok = (
         quelle.suffix.lower() in {".jpg", ".jpeg"}
@@ -152,7 +164,7 @@ def warten_bis_fertig(container: str, max_sekunden: int = 600):
     raise RuntimeError("Instagram hat zu lange für die Verarbeitung gebraucht.")
 
 
-def faellige_posts():
+def faellige_posts(alle: bool = False):
     jetzt = datetime.now(TZ)
     gefunden = []
     for f in sorted(POSTS.glob("*")):
@@ -164,34 +176,43 @@ def faellige_posts():
             print(f"Übersprungen (Dateiname passt nicht zum Schema JJJJ-MM-TT_SS-MM): {f.name}")
             continue
         zeit = datetime.strptime(f"{m[1]} {m[2]}:{m[3]}", "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
-        if zeit <= jetzt:
+        if alle or zeit <= jetzt:
             gefunden.append(f)
     return gefunden
 
 
-def veroeffentlichen(user_id: str, medien: Path):
+def container_erstellen(user_id: str, medien: Path) -> str:
+    story = ist_story(medien)
     caption_datei = medien.with_suffix(".txt")
     caption = caption_datei.read_text(encoding="utf-8").strip() if caption_datei.exists() else ""
 
     if medien.suffix.lower() in VIDEO:
         url = raw_url(medien)
-        params = {"media_type": "REELS", "video_url": url}
+        params = {"media_type": "STORIES" if story else "REELS", "video_url": url}
+        if not story:
+            params["share_to_feed"] = "true"
     else:
-        datei = bild_vorbereiten(medien)
+        datei = bild_vorbereiten(medien, story)
         if datei != medien:
             push(f"Bild für {medien.stem} vorbereitet")
             time.sleep(15)  # GitHub kurz Zeit geben, die Datei auszuliefern
         url = raw_url(datei)
         params = {"image_url": url}
-    if caption:
+        if story:
+            params["media_type"] = "STORIES"
+    if caption and not story:
         params["caption"] = caption
 
     print(f"Lade hoch: {medien.name}")
     container = api("POST", f"{user_id}/media", **params)["id"]
     warten_bis_fertig(container)
+    return container
+
+
+def veroeffentlichen(user_id: str, medien: Path):
+    container = container_erstellen(user_id, medien)
     ergebnis = api("POST", f"{user_id}/media_publish", creation_id=container)
     print(f"Veröffentlicht: {medien.name} (Instagram-ID {ergebnis.get('id')})")
-    return caption_datei
 
 
 def verschieben(medien: Path, caption: Path, ziel: Path, log: str = ""):
@@ -215,6 +236,20 @@ def main():
         limit = api("GET", f"{user_id}/content_publishing_limit", fields="quota_usage,config")
         print(f"✅ Verbindung klappt! Verbunden mit @{profil.get('username')}")
         print(f"Posting-Kontingent: {json.dumps(limit.get('data', limit), ensure_ascii=False)}")
+        return
+
+    if modus == "pruefen":
+        probleme = []
+        for medien in faellige_posts(alle=True):
+            try:
+                container_erstellen(user_id, medien)
+                print(f"✅ {medien.name}: Instagram kann die Datei verarbeiten")
+            except Exception as e:
+                print(f"❌ {medien.name}: {e}")
+                probleme.append(medien.name)
+        if probleme:
+            sys.exit(f"Probleme bei: {', '.join(probleme)}")
+        print("Alles geprüft, nichts wurde gepostet.")
         return
 
     posts = faellige_posts()

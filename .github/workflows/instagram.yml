@@ -11,6 +11,7 @@ on:
         default: verbindung-testen
         options:
           - verbindung-testen
+          - geplante-pruefen
           - faellige-jetzt-posten
 
 permissions:
@@ -43,6 +44,12 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
         run: python scripts/post.py test
+
+      - name: Geplante Beiträge prüfen (postet nichts)
+        if: github.event_name == 'workflow_dispatch' && inputs.aktion == 'geplante-pruefen'
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python scripts/post.py pruefen
 
       - name: Fällige Beiträge posten
         if: github.event_name == 'schedule' || inputs.aktion == 'faellige-jetzt-posten'
