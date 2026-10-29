@@ -145,11 +145,35 @@ def hochladen(person: str, datei: Path) -> str:
     return wert["image"] if art == "images" else wert["document"]
 
 
-def autoren(person: str) -> list[str]:
-    liste = []
+def unternehmensseite() -> str:
+    """ID der Unternehmensseite: aus LINKEDIN_ORG_ID oder automatisch über den Seiten-Schlüssel
+    (Seiten, auf denen Lara Administratorin ist; braucht die Berechtigung r_organization_admin)."""
     org = os.environ.get("LINKEDIN_ORG_ID", "").strip()
     if org:
-        liste.append(org if org.startswith("urn:li:") else f"urn:li:organization:{org}")
+        return org if org.startswith("urn:li:") else f"urn:li:organization:{org}"
+    if not os.environ.get("LINKEDIN_ORG_TOKEN", "").strip():
+        return ""
+    if "org" not in _aktiv.setdefault("cache", {}):
+        _aktiv["org"] = True
+        try:
+            antwort, _ = rest("GET", "/rest/organizationAcls?q=roleAssignee&role=ADMINISTRATOR&state=APPROVED")
+            seiten = [e["organization"] for e in antwort.get("elements", []) if e.get("organization")]
+        except RuntimeError as e:
+            print(f"⚠️ Unternehmensseite nicht gefunden: {e}")
+            seiten = []
+        finally:
+            _aktiv["org"] = False
+        if len(seiten) > 1:
+            print(f"⚠️ Mehrere Unternehmensseiten gefunden ({', '.join(seiten)}). Bitte LINKEDIN_ORG_ID setzen.")
+        _aktiv["cache"]["org"] = seiten[0] if len(seiten) == 1 else ""
+    return _aktiv["cache"]["org"]
+
+
+def autoren(person: str) -> list[str]:
+    liste = []
+    org = unternehmensseite()
+    if org:
+        liste.append(org)
     if os.environ.get("LINKEDIN_PROFIL", "ja").strip().lower() != "nein":
         liste.append(person)
     return liste
@@ -217,6 +241,8 @@ def main():
         print(f"✅ LinkedIn klappt! Verbunden mit {profil.get('name')}")
         ziele = ["Unternehmensseite" if a.startswith("urn:li:organization") else "persönliches Profil" for a in autoren(person)]
         print(f"   Gepostet wird auf: {', '.join(ziele) or 'nichts (bitte LINKEDIN_PROFIL/LINKEDIN_ORG_ID prüfen)'}")
+        if unternehmensseite():
+            print(f"   Unternehmensseite: {unternehmensseite()}")
         return
 
     posts = list(faellige()) if GEPLANT.exists() else []
