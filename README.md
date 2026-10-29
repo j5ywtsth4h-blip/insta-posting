@@ -33,7 +33,7 @@ Plant Instagram-Beiträge und veröffentlicht sie automatisch zur richtigen Zeit
 
 ## Facebook
 
-Sind unter *Settings → Secrets and variables → Actions* die Secrets **`FB_PAGE_ID`** und **`FB_PAGE_TOKEN`** hinterlegt, erscheinen alle Feed-Beiträge (Bilder) mit derselben Caption zusätzlich auf der Facebook-Seite. Storys und Reels bleiben nur auf Instagram. Ob es klappt, zeigt `verbindung-testen`.
+Ist unter *Settings → Secrets and variables → Actions* das Secret **`FB_PAGE_TOKEN`** hinterlegt (Schlüssel des Systemnutzers „Fokuszeit Bot“; `FB_PAGE_ID` ist optional), erscheinen alle Feed-Beiträge (Bilder) mit derselben Caption zusätzlich auf der Facebook-Seite. Storys und Reels bleiben nur auf Instagram. Ob es klappt, zeigt `verbindung-testen`.
 
 ## Gut zu wissen
 

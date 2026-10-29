@@ -78,27 +78,34 @@ def ich() -> dict:
     return api("GET", "me", fields="user_id,username")
 
 
+_fb = {}
+
+
 def facebook() -> tuple[str, str] | None:
+    """Liefert (Seiten-ID, Seiten-Schlüssel) oder None, wenn Facebook nicht eingerichtet ist.
+
+    FB_PAGE_TOKEN darf ein Seiten- oder ein Systemnutzer-Schlüssel sein. Fehlt FB_PAGE_ID,
+    wird die Seite über den Schlüssel gesucht (der Systemnutzer hat genau eine Seite)."""
+    if "seite" in _fb:
+        return _fb["seite"]
     seite = os.environ.get("FB_PAGE_ID", "").strip()
     zugang = os.environ.get("FB_PAGE_TOKEN", "").strip()
-    return (seite, zugang) if seite and zugang else None
-
-
-_seiten_zugang = ""
+    _fb["seite"] = None
+    if not zugang:
+        return None
+    seiten = api("GET", "me/accounts", basis=FB_API, zugang=zugang, fields="id,name,access_token").get("data", [])
+    if seite:
+        seiten = [s for s in seiten if s.get("id") == seite] or [{"id": seite, "access_token": zugang}]
+    if len(seiten) != 1:
+        namen = ", ".join(f"{s.get('name')} ({s.get('id')})" for s in seiten) or "keine"
+        raise RuntimeError(f"Facebook-Seite nicht eindeutig gefunden. Gefunden: {namen}. Bitte FB_PAGE_ID setzen.")
+    _fb["seite"] = (seiten[0]["id"], seiten[0].get("access_token") or zugang)
+    return _fb["seite"]
 
 
 def fb_api(method: str, path: str, **params):
-    """FB_PAGE_TOKEN darf ein Seiten- oder ein Systemnutzer-Schlüssel sein.
-    Bei einem Systemnutzer-Schlüssel wird der Seiten-Schlüssel automatisch abgerufen."""
-    global _seiten_zugang
     seite, zugang = facebook()
-    if not _seiten_zugang:
-        try:
-            antwort = api("GET", seite, basis=FB_API, zugang=zugang, fields="access_token")
-            _seiten_zugang = antwort.get("access_token") or zugang
-        except RuntimeError:
-            _seiten_zugang = zugang
-    return api(method, path.format(seite=seite), basis=FB_API, zugang=_seiten_zugang, **params)
+    return api(method, path.format(seite=seite), basis=FB_API, zugang=zugang, **params)
 
 
 # ---------------------------------------------------------------- Git-Helfer
@@ -279,9 +286,9 @@ def main():
         print(f"Posting-Kontingent: {json.dumps(limit.get('data', limit), ensure_ascii=False)}")
         if facebook():
             seite = fb_api("GET", "{seite}", fields="name")
-            print(f"✅ Facebook klappt auch! Verbunden mit der Seite „{seite.get('name')}“")
+            print(f"✅ Facebook klappt auch! Verbunden mit der Seite „{seite.get('name')}“ (ID {seite.get('id')})")
         else:
-            print("Facebook ist nicht eingerichtet (Secrets FB_PAGE_ID und FB_PAGE_TOKEN fehlen).")
+            print("Facebook ist nicht eingerichtet (Secret FB_PAGE_TOKEN fehlt).")
         return
 
     if modus == "pruefen":
@@ -309,7 +316,7 @@ def main():
         caption = medien.with_suffix(".txt")
         try:
             veroeffentlichen(user_id, medien)
-            if facebook():
+            if os.environ.get("FB_PAGE_TOKEN", "").strip():
                 try:
                     auf_facebook(medien)
                 except Exception as e:  # Instagram ist schon online, deshalb nur melden
