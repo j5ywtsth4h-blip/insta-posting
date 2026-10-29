@@ -297,6 +297,16 @@ def main():
             print("Facebook ist nicht eingerichtet (Secret FB_PAGE_TOKEN fehlt).")
         return
 
+    if modus == "profil":
+        info = api("GET", "me", fields="username,media_count,followers_count,biography")
+        print(f"@{info.get('username')}: {info.get('media_count')} Beiträge, {info.get('followers_count')} Follower")
+        print(f"Bio: {info.get('biography')}")
+        medien = api("GET", f"{user_id}/media", fields="timestamp,media_type,caption,permalink", limit=25).get("data", [])
+        for m in medien:
+            text = (m.get("caption") or "").replace("\n", " ")
+            print(f"- {m.get('timestamp', '')[:10]} {m.get('media_type')}: {text[:160]}")
+        return
+
     if modus == "pruefen":
         probleme = []
         for medien in faellige_posts(alle=True):

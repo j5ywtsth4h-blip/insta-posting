@@ -11,6 +11,7 @@ on:
         default: verbindung-testen
         options:
           - verbindung-testen
+          - profil-anzeigen
           - geplante-pruefen
           - faellige-jetzt-posten
 
@@ -46,6 +47,12 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: python scripts/post.py test
+
+      - name: Profil anzeigen (postet nichts)
+        if: github.event_name == 'workflow_dispatch' && inputs.aktion == 'profil-anzeigen'
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python scripts/post.py profil
 
       - name: Geplante Beiträge prüfen (postet nichts)
         if: github.event_name == 'workflow_dispatch' && inputs.aktion == 'geplante-pruefen'
