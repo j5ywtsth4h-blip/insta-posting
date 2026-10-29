@@ -1,0 +1,52 @@
+name: Werbung
+
+on:
+  workflow_dispatch:
+    inputs:
+      aktion:
+        description: "Was soll passieren?"
+        type: choice
+        default: konten
+        options:
+          - konten
+          - vorbereiten
+          - bericht
+          - starten
+          - pausieren
+      kampagne:
+        description: "Kampagne (Ordner unter werbung/)"
+        type: string
+        default: fokusoffice-start
+      bestaetigung:
+        description: "Nur zum Starten: hier das Wort starten eintragen"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: werbung
+  cancel-in-progress: false
+
+jobs:
+  werbung:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Git einrichten
+        run: |
+          git config user.name "insta-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Werbung
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          AD_ACCOUNT_ID: ${{ secrets.AD_ACCOUNT_ID }}
+          BESTAETIGUNG: ${{ inputs.bestaetigung }}
+        run: python scripts/werbung.py "${{ inputs.aktion }}" "${{ inputs.kampagne }}"

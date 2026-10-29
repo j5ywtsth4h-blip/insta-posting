@@ -1,0 +1,44 @@
+{
+  "name": "FokusOffice Verkaufsstart",
+  "ziel": "OUTCOME_TRAFFIC",
+  "link": "https://fokuszeit-business.de/fokusoffice.html?utm_source=meta&utm_medium=paid&utm_campaign=fokusoffice-start",
+  "dsa_beguenstigter": "Fokuszeit Business Support",
+  "dsa_zahler": "Lara Kohls",
+  "anzeigengruppe": {
+    "name": "Selbstständige Deutschland",
+    "tagesbudget_cent": 500,
+    "laufzeit_tage": 14,
+    "optimierung": "LINK_CLICKS",
+    "zielgruppe": {
+      "geo_locations": {"countries": ["DE"]},
+      "age_min": 25,
+      "targeting_automation": {"advantage_audience": 1}
+    }
+  },
+  "anzeigen": [
+    {
+      "name": "Bild: Dein Büro an einem Ort",
+      "datei": "anzeige_buero.jpg",
+      "ueberschrift": "Dein Büro. Ein Ort für alles.",
+      "beschreibung": "14 Tage kostenlos testen",
+      "text": "Rechnungen in einem Programm, Belege im Ordner, E-Mails im Postfach und Aufgaben auf Zetteln? Mit FokusOffice hast du alles an einem Ort: Rechnungen inklusive E-Rechnung, Belege, offene Posten, E-Mails, Aufgaben und Termine.\n\nGemacht für Selbstständige und kleine Unternehmen. 14 Tage kostenlos testen, ohne Zahlungsdaten. Danach ab 9,99 € im Monat, monatlich kündbar.",
+      "button": "LEARN_MORE"
+    },
+    {
+      "name": "Bild: Aufgaben abgeben",
+      "datei": "anzeige_mensch.jpg",
+      "ueberschrift": "Software und persönliche Büroassistenz",
+      "beschreibung": "14 Tage kostenlos testen",
+      "text": "Zu viel Büro, zu wenig Zeit? In FokusOffice sammelst du kleine Aufgaben im Aufgabenkorb und gibst sie mit einem Klick an mich ab, mit eigenem Stundenbudget oder Aufwandsschätzung.\n\nIch bin Lara, Kauffrau für Büromanagement, und kümmere mich um das, was liegen bleibt. Du bleibst selbstständig und entscheidest, was du abgibst.",
+      "button": "LEARN_MORE"
+    },
+    {
+      "name": "Video: Rundgang durch FokusOffice",
+      "datei": "anzeige_rundgang.mp4",
+      "vorschaubild": "anzeige_rundgang_vorschau.jpg",
+      "ueberschrift": "So sieht dein digitales Büro aus",
+      "text": "Ein kurzer Rundgang durch FokusOffice: Startseite mit allem Wichtigen, E-Mails an einem Ort, der Aufgabenkorb für deine Büroassistenz und Bankumsätze per CSV.\n\nJetzt 14 Tage kostenlos testen, ohne Zahlungsdaten.",
+      "button": "LEARN_MORE"
+    }
+  ]
+}
