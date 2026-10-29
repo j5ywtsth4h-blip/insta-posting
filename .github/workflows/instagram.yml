@@ -53,6 +53,7 @@ jobs:
         env:
           LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
           LINKEDIN_ORG_ID: ${{ secrets.LINKEDIN_ORG_ID }}
+          LINKEDIN_ORG_TOKEN: ${{ secrets.LINKEDIN_ORG_TOKEN }}
           LINKEDIN_PROFIL: ${{ vars.LINKEDIN_PROFIL }}
         run: python scripts/linkedin.py test
 
@@ -83,5 +84,6 @@ jobs:
         env:
           LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
           LINKEDIN_ORG_ID: ${{ secrets.LINKEDIN_ORG_ID }}
+          LINKEDIN_ORG_TOKEN: ${{ secrets.LINKEDIN_ORG_TOKEN }}
           LINKEDIN_PROFIL: ${{ vars.LINKEDIN_PROFIL }}
         run: python scripts/linkedin.py post

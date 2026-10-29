@@ -46,7 +46,14 @@ MEDIEN = {".jpg": "images", ".jpeg": "images", ".png": "images", ".pdf": "docume
 _version = {}
 
 
+_aktiv = {}
+
+
 def token() -> str:
+    """Schlüssel für das gerade aktive Ziel. Die Unternehmensseite darf einen eigenen
+    Schlüssel haben (LINKEDIN_ORG_TOKEN), weil LinkedIn dafür eine eigene App verlangt."""
+    if _aktiv.get("org") and os.environ.get("LINKEDIN_ORG_TOKEN", "").strip():
+        return os.environ["LINKEDIN_ORG_TOKEN"].strip()
     t = os.environ.get("LINKEDIN_TOKEN", "").strip()
     if not t:
         sys.exit("FEHLER: Secret LINKEDIN_TOKEN fehlt.")
@@ -220,6 +227,7 @@ def main():
     for md in posts:
         fehler, erfolg = [], 0
         for autor in autoren(person):
+            _aktiv["org"] = autor.startswith("urn:li:organization")
             try:
                 veroeffentlichen(autor, md)
                 erfolg += 1
