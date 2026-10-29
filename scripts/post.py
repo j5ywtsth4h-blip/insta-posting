@@ -67,7 +67,13 @@ def api(method: str, path: str, basis: str = API, zugang: str = "", **params):
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace")
         try:
-            msg = json.loads(body)["error"]["message"]
+            fehler = json.loads(body)["error"]
+            msg = fehler["message"]
+            details = " ".join(t for t in (fehler.get("error_user_title"), fehler.get("error_user_msg")) if t)
+            if details:
+                msg = f"{msg} – {details}"
+            if fehler.get("error_subcode"):
+                msg += f" (Code {fehler.get('code')}/{fehler['error_subcode']})"
         except Exception:
             msg = body
         dienst = "Facebook" if basis == FB_API else "Instagram"
