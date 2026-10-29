@@ -1,12 +1,12 @@
-So sieht dein digitales Büro aus: ein kurzer Einblick in FokusOffice.
+🌿 So sieht dein digitales Büro aus: ein kurzer Einblick in FokusOffice.
 
-- Alles im Blick: offene Forderungen, E-Mails, Aufgaben und Kontobewegungen auf einer Startseite
-- E-Mails an einem Ort: einzelne Nachrichten oder dein ganzes Postfach an Fokuszeit freigeben
-- Der Aufgabenkorb: kleine Büroaufgaben sammeln und gebündelt abgeben, mit eigenem Budget oder Aufwandsschätzung
-- Bankumsätze per CSV: importieren und zuordnen
+📊 Alles im Blick: offene Forderungen, E-Mails, Aufgaben und Kontobewegungen auf einer Startseite
+📩 E-Mails an einem Ort: einzelne Nachrichten oder dein ganzes Postfach an Fokuszeit freigeben
+🧺 Der Aufgabenkorb: kleine Büroaufgaben sammeln und gebündelt abgeben, mit eigenem Budget oder Aufwandsschätzung
+🏦 Bankumsätze per CSV: importieren und zuordnen
 
-Du kannst dich selbst umschauen: Die öffentliche Demo auf meiner Website funktioniert ohne Registrierung und zeigt nur erfundene Beispieldaten. Link in der Bio.
+👀 Du kannst dich selbst umschauen: Die öffentliche Demo auf meiner Website funktioniert ohne Registrierung und zeigt nur erfundene Beispieldaten. Link in der Bio.
 
-FokusOffice befindet sich noch in Entwicklung. Folge @fokuszeit.business, damit du den Start nicht verpasst.
+FokusOffice befindet sich noch in Entwicklung. 🔔 Folge @fokuszeit.business, damit du den Start nicht verpasst!
 
 #fokusoffice #bürosoftware #digitalesbüro #büroorganisation #rechnungen #selbstständig #selbstständigkeit #kleinunternehmen #virtuelleassistenz #fokuszeit

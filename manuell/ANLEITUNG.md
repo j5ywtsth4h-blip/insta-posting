@@ -8,7 +8,7 @@ So kommst du an die Datei: Datei hier auf GitHub antippen → **„…“ → Do
 | Wann | Datei | Was du in der App hinzufügst |
 |------|-------|------------------------------|
 | Do 29.10., 18:00 | `2026-10-29_18-00_story.jpg` | Frage „Was kostet dich im Büro gerade die meiste Zeit?“: in die freie Mitte den Sticker **„Umfrage“** (z. B. „E-Mails“ / „Rechnungen & Belege“) oder **„Fragen“** setzen. Leise Musik optional. |
-| Fr 30.10., 18:00 | `2026-10-30_18-00_story.jpg` | **Besser:** Statt dieses Bildes deinen neuen Beitrag direkt teilen (unter dem Beitrag auf den Papierflieger → „Zu Story hinzufügen“). Dann ist er antippbar. Das Bild ist die Alternative dazu. |
+| Fr 30.10., 18:00 | `2026-10-30_18-00_story.jpg` | **Besser:** Den neuen Fokus-Tipp-Beitrag von 12 Uhr direkt teilen (unter dem Beitrag auf den Papierflieger → „Zu Story hinzufügen“), dann ist er antippbar. Das Bild ist die Alternative. Optional Musik. |
 | Mo 2.11., 12:00 | `2026-11-02_12-00_story.jpg` | Sticker **„Umfrage“** in die freie Mitte, Antworten z. B. „Unter 20“ / „Über 20“ oder Sticker „Schieberegler“ mit 📩. Optional zusätzlich den E-Mail-Tipp-Beitrag teilen. |
 | Di 3.11., 19:00 | **Reel** `2026-11-03_19-00.mp4` | Musik: ruhig, instrumental, leise. Caption aus `2026-11-03_19-00.txt` kopieren. Titelbild: das erste Bild „Findest du deine Dateien sofort?“. |
 | Do 5.11., 08:00 | `2026-11-05_08-00_story.jpg` | Sticker **„Link“** unten in die freie Fläche: `https://fokuszeit-business.de/fokusoffice-demo.html`, Text „Demo ansehen“. |
