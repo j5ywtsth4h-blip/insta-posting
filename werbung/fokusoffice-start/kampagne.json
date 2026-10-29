@@ -1,7 +1,7 @@
 {
   "name": "FokusOffice Verkaufsstart",
   "ziel": "OUTCOME_TRAFFIC",
-  "link": "https://fokuszeit-business.de/?utm_source=meta&utm_medium=paid&utm_campaign=fokusoffice-start#fokusoffice.html",
+  "link": "https://office.fokuszeit-business.de/?utm_source=meta&utm_medium=paid&utm_campaign=fokusoffice-start",
   "dsa_beguenstigter": "Fokuszeit Business Support",
   "dsa_zahler": "Lara Kohls",
   "anzeigengruppe": {
@@ -10,35 +10,41 @@
     "laufzeit_tage": 14,
     "optimierung": "LINK_CLICKS",
     "zielgruppe": {
-      "geo_locations": {"countries": ["DE"]},
+      "geo_locations": {
+        "countries": [
+          "DE"
+        ]
+      },
       "age_min": 25,
-      "targeting_automation": {"advantage_audience": 1}
+      "targeting_automation": {
+        "advantage_audience": 1
+      }
     }
   },
   "anzeigen": [
     {
-      "name": "Bild: Dein Büro an einem Ort",
+      "name": "Bild: Software und Büroassistenz",
       "datei": "anzeige_buero.jpg",
-      "ueberschrift": "Dein Büro. Ein Ort für alles.",
+      "ueberschrift": "Software und echte Büroassistenz in einem",
       "beschreibung": "14 Tage kostenlos testen",
-      "text": "Rechnungen in einem Programm, Belege im Ordner, E-Mails im Postfach und Aufgaben auf Zetteln? Mit FokusOffice hast du alles an einem Ort: Rechnungen inklusive E-Rechnung, Belege, offene Posten, E-Mails, Aufgaben und Termine.\n\nGemacht für Selbstständige und kleine Unternehmen. 14 Tage kostenlos testen, ohne Zahlungsdaten. Danach ab 9,99 € im Monat, monatlich kündbar.",
-      "button": "LEARN_MORE"
+      "text": "Rechnungen, Belege, Bank, E-Mails und Termine in einer App, gemacht für Selbstständige und Kleinunternehmer. Und wenn es dir zu viel wird, gibst du Aufgaben mit einem Klick an eine echte Büroassistenz ab.\n\n14 Tage kostenlos testen, ohne Zahlungsdaten. Danach ab 9,99 € im Monat, monatlich kündbar (keine USt. gem. § 19 UStG).",
+      "button": "SIGN_UP"
     },
     {
-      "name": "Bild: Aufgaben abgeben",
-      "datei": "anzeige_mensch.jpg",
-      "ueberschrift": "Software und persönliche Büroassistenz",
+      "name": "Bild: E-Mails abgeben",
+      "datei": "anzeige_email.jpg",
+      "ueberschrift": "E-Mails abgeben statt abarbeiten",
       "beschreibung": "14 Tage kostenlos testen",
-      "text": "Zu viel Büro, zu wenig Zeit? In FokusOffice sammelst du kleine Aufgaben im Aufgabenkorb und gibst sie mit einem Klick an mich ab, mit eigenem Stundenbudget oder Aufwandsschätzung.\n\nIch bin Lara, Kauffrau für Büromanagement, und kümmere mich um das, was liegen bleibt. Du bleibst selbstständig und entscheidest, was du abgibst.",
-      "button": "LEARN_MORE"
+      "text": "Dein Postfach frisst deinen Tag? In FokusOffice gibst du einzelne E-Mails mit einem Klick an Fokuszeit ab oder gibst dein Postfach zeitweise frei. Rechnungen aus E-Mails werden mit einem Klick zum Beleg.\n\nDie Büroassistenz arbeitet nur in den Bereichen, die du ausdrücklich freigibst, und jeder Zugriff wird protokolliert.",
+      "button": "SIGN_UP"
     },
     {
-      "name": "Video: Rundgang durch FokusOffice",
-      "datei": "anzeige_rundgang.mp4",
-      "vorschaubild": "anzeige_rundgang_vorschau.jpg",
-      "ueberschrift": "So sieht dein digitales Büro aus",
-      "text": "Ein kurzer Rundgang durch FokusOffice: Startseite mit allem Wichtigen, E-Mails an einem Ort, der Aufgabenkorb für deine Büroassistenz und Bankumsätze per CSV.\n\nJetzt 14 Tage kostenlos testen, ohne Zahlungsdaten.",
-      "button": "LEARN_MORE"
+      "name": "Video: Abgeben per Klick",
+      "datei": "anzeige_abgeben.mp4",
+      "vorschaubild": "anzeige_abgeben_vorschau.jpg",
+      "ueberschrift": "Nicht allein im Büro",
+      "text": "Rechnungen, Belege, E-Mails und niemand, der hilft? Das ändert sich jetzt. In FokusOffice sammelst du Aufgaben im Aufgabenkorb, legst ein Budget fest und gibst sie mit einem Tipp an deine Büroassistenz ab. E-Mails übergibst du genauso einfach.\n\nIch bin Lara, Kauffrau für Büromanagement. Du gibst ab, ich erledige es. 14 Tage kostenlos testen.",
+      "button": "SIGN_UP"
     }
   ]
 }

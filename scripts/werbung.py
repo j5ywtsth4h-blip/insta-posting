@@ -6,6 +6,7 @@ Anzeigen-Dateien. Angelegt wird immer pausiert. Gestartet wird nur mit ausdrück
 Aufruf:
     python scripts/werbung.py konten               -> zeigt Werbekonten und Seite
     python scripts/werbung.py vorbereiten <name>   -> legt die Kampagne pausiert an
+    python scripts/werbung.py erneuern <name>      -> löscht die Anzeigen und legt sie laut kampagne.json neu an
     python scripts/werbung.py bericht <name>       -> Kennzahlen der Kampagne
     python scripts/werbung.py starten <name>       -> startet die Kampagne (Laufzeit ab jetzt)
     python scripts/werbung.py pausieren <name>     -> pausiert die Kampagne
@@ -178,6 +179,19 @@ def vorbereiten(name: str):
     print(f"\n✅ Fertig. Die Kampagne „{plan['name']}“ ist komplett angelegt und PAUSIERT. Es entstehen keine Kosten.")
 
 
+def erneuern(name: str):
+    ordner, plan, status = laden(name)
+    for a in status.get("anzeigen", []):
+        try:
+            meta("POST", a["id"], status="DELETED")
+            print(f"Alte Anzeige gelöscht: {a['name']}")
+        except RuntimeError as e:
+            print(f"⚠️ {a['name']} ließ sich nicht löschen: {e}")
+    status["anzeigen"] = []
+    speichern(ordner, status, f"Werbung {name}: alte Anzeigen entfernt")
+    vorbereiten(name)
+
+
 def starten(name: str):
     ordner, plan, status = laden(name)
     if os.environ.get("BESTAETIGUNG", "").strip().lower() != "starten":
@@ -228,7 +242,7 @@ def main():
         return konten()
     if not name:
         sys.exit("Bitte den Namen der Kampagne angeben (Ordner unter werbung/).")
-    {"vorbereiten": vorbereiten, "starten": starten, "pausieren": pausieren, "bericht": bericht}[aktion](name)
+    {"vorbereiten": vorbereiten, "erneuern": erneuern, "starten": starten, "pausieren": pausieren, "bericht": bericht}[aktion](name)
 
 
 if __name__ == "__main__":
