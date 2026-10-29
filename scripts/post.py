@@ -84,9 +84,21 @@ def facebook() -> tuple[str, str] | None:
     return (seite, zugang) if seite and zugang else None
 
 
+_seiten_zugang = ""
+
+
 def fb_api(method: str, path: str, **params):
+    """FB_PAGE_TOKEN darf ein Seiten- oder ein Systemnutzer-Schlüssel sein.
+    Bei einem Systemnutzer-Schlüssel wird der Seiten-Schlüssel automatisch abgerufen."""
+    global _seiten_zugang
     seite, zugang = facebook()
-    return api(method, path.format(seite=seite), basis=FB_API, zugang=zugang, **params)
+    if not _seiten_zugang:
+        try:
+            antwort = api("GET", seite, basis=FB_API, zugang=zugang, fields="access_token")
+            _seiten_zugang = antwort.get("access_token") or zugang
+        except RuntimeError:
+            _seiten_zugang = zugang
+    return api(method, path.format(seite=seite), basis=FB_API, zugang=_seiten_zugang, **params)
 
 
 # ---------------------------------------------------------------- Git-Helfer
