@@ -35,6 +35,15 @@ Plant Instagram-Beiträge und veröffentlicht sie automatisch zur richtigen Zeit
 
 Ist unter *Settings → Secrets and variables → Actions* das Secret **`FB_PAGE_TOKEN`** hinterlegt (Schlüssel des Systemnutzers „Fokuszeit Bot“; `FB_PAGE_ID` ist optional), erscheinen alle Feed-Beiträge (Bilder) mit derselben Caption zusätzlich auf der Facebook-Seite. Storys und Reels bleiben nur auf Instagram. Ob es klappt, zeigt `verbindung-testen`.
 
+## LinkedIn
+
+Beiträge für Laras persönliches LinkedIn-Profil liegen in **`linkedin/geplant`**, gleiches Namensschema wie bei Instagram:
+
+- `2026-11-03_08-00.md`: der Beitragstext. Optional ganz oben `TITEL: …` (Titel eines PDF-Dokuments) und unten nach einer Zeile `---KOMMENTAR---` der erste Kommentar, z. B. mit Link.
+- `2026-11-03_08-00.jpg` (oder `.png`): Bild, **oder** `2026-11-03_08-00.pdf`: Dokument/Karussell.
+
+Nach dem Posten landen die Dateien in `linkedin/gepostet`, bei Problemen in `linkedin/fehler`. Dafür muss das Secret **`LINKEDIN_TOKEN`** hinterlegt sein. Der LinkedIn-Schlüssel läuft nach 60 Tagen ab und muss dann neu erzeugt werden.
+
 ## Gut zu wissen
 
 - **Bilder:** jpg, png, heic oder webp. Zu hohe Bilder (z. B. Handy-Hochformat 9:16) werden automatisch mittig auf 4:5 zugeschnitten, so wie es auch die Instagram-App macht.

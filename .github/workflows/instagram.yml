@@ -48,6 +48,12 @@ jobs:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: python scripts/post.py test
 
+      - name: LinkedIn-Verbindung testen
+        if: github.event_name == 'workflow_dispatch' && inputs.aktion == 'verbindung-testen'
+        env:
+          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
+        run: python scripts/linkedin.py test
+
       - name: Profil anzeigen (postet nichts)
         if: github.event_name == 'workflow_dispatch' && inputs.aktion == 'profil-anzeigen'
         env:
@@ -69,3 +75,9 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: python scripts/post.py post
+
+      - name: Fällige LinkedIn-Beiträge posten
+        if: ${{ !cancelled() && (github.event_name == 'schedule' || inputs.aktion == 'faellige-jetzt-posten') }}
+        env:
+          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
+        run: python scripts/linkedin.py post
