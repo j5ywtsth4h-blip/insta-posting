@@ -59,10 +59,31 @@ def werbekonto() -> dict:
 
 
 def seite() -> dict:
-    seiten = meta("GET", "me/accounts", fields="id,name,instagram_business_account").get("data", [])
+    seiten = meta("GET", "me/accounts", fields="id,name,instagram_business_account,connected_instagram_account").get("data", [])
     if len(seiten) != 1:
         sys.exit("FEHLER: Dem Systemnutzer muss genau eine Facebook-Seite zugewiesen sein.")
     return seiten[0]
+
+
+def instagram(konto: str, s: dict, laut: bool = False) -> str:
+    """ID des Instagram-Kontos für Anzeigen. Meta liefert sie je nach Verknüpfung an
+    unterschiedlichen Stellen, deshalb werden alle Wege nacheinander probiert."""
+    for feld in ("instagram_business_account", "connected_instagram_account"):
+        if (s.get(feld) or {}).get("id"):
+            return s[feld]["id"]
+    for pfad in (f"{konto}/instagram_accounts", f"{konto}/connected_instagram_accounts",
+                 f"{s['id']}/instagram_accounts", "me/instagram_accounts"):
+        try:
+            daten = meta("GET", pfad, fields="id,username").get("data", [])
+        except RuntimeError as e:
+            if laut:
+                print(f"   ({pfad}: {str(e)[:160]})")
+            continue
+        if laut:
+            print(f"   ({pfad}: {', '.join(d.get('username') or d['id'] for d in daten) or 'leer'})")
+        if daten:
+            return daten[0]["id"]
+    return ""
 
 
 def laden(name: str) -> tuple[Path, dict, dict]:
@@ -94,7 +115,7 @@ def konten():
     zahlung = (k.get("funding_source_details") or {}).get("display_string")
     print(f"   Zahlungsmethode: {zahlung or 'keine hinterlegt'}")
     print(f"✅ Seite: {s.get('name')} ({s['id']})")
-    ig = (s.get("instagram_business_account") or {}).get("id")
+    ig = instagram(k["id"], s, laut=True)
     print(f"   Instagram-Konto für Anzeigen: {ig or 'nicht verknüpft (Anzeigen erscheinen dann unter dem Seitennamen)'}")
 
 
@@ -122,7 +143,8 @@ def vorbereiten(name: str):
     k = werbekonto()
     konto = k["id"]
     s = seite()
-    ig = (s.get("instagram_business_account") or {}).get("id")
+    ig = instagram(konto, s)
+    print(f"Instagram-Konto für Anzeigen: {ig or 'nicht verknüpft, Anzeigen laufen unter dem Seitennamen'}")
     status.setdefault("anzeigen", [])
     status.update({"werbekonto": konto, "seite": s["id"]})
 
