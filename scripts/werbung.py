@@ -214,7 +214,10 @@ def vorbereiten(name: str):
         print(f"Anzeige angelegt: {a['name']} ({anzeige['id']})")
         speichern(ordner, status, f"Werbung {name}: Anzeige {a['name']} angelegt")
 
-    print(f"\n✅ Fertig. Die Kampagne „{plan['name']}“ ist komplett angelegt und PAUSIERT. Es entstehen keine Kosten.")
+    if meta("GET", status["kampagne_id"], fields="status").get("status") == "ACTIVE":
+        print(f"\n✅ Fertig. Die Kampagne „{plan['name']}“ läuft, die neuen Anzeigen gehen nach der Prüfung durch Meta online.")
+    else:
+        print(f"\n✅ Fertig. Die Kampagne „{plan['name']}“ ist komplett angelegt und PAUSIERT. Es entstehen keine Kosten.")
 
 
 def erneuern(name: str):
