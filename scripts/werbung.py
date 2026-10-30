@@ -71,10 +71,17 @@ def instagram(konto: str, s: dict, laut: bool = False) -> str:
     for feld in ("instagram_business_account", "connected_instagram_account"):
         if (s.get(feld) or {}).get("id"):
             return s[feld]["id"]
-    for pfad in (f"{konto}/instagram_accounts", f"{konto}/connected_instagram_accounts",
-                 f"{s['id']}/instagram_accounts", "me/instagram_accounts"):
+    wege = [(f"{konto}/instagram_accounts", meta), (f"{konto}/connected_instagram_accounts", meta),
+            (f"{s['id']}/instagram_accounts", post.fb_api)]
+    try:
+        firma = (meta("GET", konto, fields="business").get("business") or {}).get("id")
+        if firma:
+            wege += [(f"{firma}/instagram_accounts", meta), (f"{firma}/owned_instagram_accounts", meta)]
+    except RuntimeError:
+        pass
+    for pfad, aufruf in wege:
         try:
-            daten = meta("GET", pfad, fields="id,username").get("data", [])
+            daten = aufruf("GET", pfad, fields="id,username").get("data", [])
         except RuntimeError as e:
             if laut:
                 print(f"   ({pfad}: {str(e)[:160]})")
