@@ -79,6 +79,18 @@ Pensum: 10 bis 15 neue Kontakte am Tag, ca. 15 Minuten. Nie mehr als 20 Erstnach
 ### H: Bei „kein Interesse“
 > Alles gut, danke für die ehrliche Antwort! 😊 Falls es irgendwann doch mal stressig wird mit dem Büro, weißt du ja, wo du mich findest. Viel Erfolg weiterhin!
 
+### I: Laras Vorlage (eigener Stil)
+> Hey [Name] 😊
+>
+> Ich verfolge gerade, wie [aus deiner Idee … wird / dein Business wächst], und mir gefällt deine Seite total!
+>
+> Ich bin Lara und habe FokusOffice entwickelt, ein **digitales Büro** für Selbstständige und kleine Unternehmen. Rechnungen, Belege, E-Mails und Termine sind dort an einem Ort, damit im Alltag mehr Zeit für das bleibt, was du eigentlich liebst. Und wenn es mal zu viel wird, kannst du Aufgaben mit einem Klick an mich als Büroassistenz abgeben.
+>
+> Schau gern mal in die Demo rein, da kannst du ganz unverbindlich reinschnuppern 😊 Den Link findest du in meiner Bio. Und bei Fragen meld dich jederzeit!
+>
+> Ganz liebe Grüße
+> Deine Lara
+
 ---
 
 ## 5. Wichtig
