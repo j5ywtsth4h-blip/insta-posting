@@ -1,7 +1,7 @@
 {
   "name": "FokusOffice Verkaufsstart",
   "ziel": "OUTCOME_TRAFFIC",
-  "link": "https://office.fokuszeit-business.de/?registrieren=1&utm_source=meta&utm_medium=paid&utm_campaign=fokusoffice-start",
+  "link": "https://www.fokuszeit-business.de/fokusoffice.html?utm_source=meta&utm_medium=paid&utm_campaign=fokusoffice-start",
   "dsa_beguenstigter": "Fokuszeit Business Support",
   "dsa_zahler": "Lara Kohls",
   "anzeigengruppe": {
@@ -28,7 +28,7 @@
       "ueberschrift": "Software und echte Büroassistenz in einem",
       "beschreibung": "14 Tage kostenlos testen",
       "text": "Rechnungen, Belege, Bank, E-Mails und Termine in einer App, gemacht für Selbstständige und Kleinunternehmer. Und wenn es dir zu viel wird, gibst du Aufgaben mit einem Klick an eine echte Büroassistenz ab.\n\n14 Tage kostenlos testen, ohne Zahlungsdaten. Danach ab 9,99 € im Monat, monatlich kündbar (keine USt. gem. § 19 UStG).",
-      "button": "SIGN_UP"
+      "button": "LEARN_MORE"
     },
     {
       "name": "Bild: E-Mails abgeben",
@@ -36,7 +36,7 @@
       "ueberschrift": "E-Mails abgeben statt abarbeiten",
       "beschreibung": "14 Tage kostenlos testen",
       "text": "Dein Postfach frisst deinen Tag? In FokusOffice gibst du einzelne E-Mails mit einem Klick an Fokuszeit ab oder gibst dein Postfach zeitweise frei. Rechnungen aus E-Mails werden mit einem Klick zum Beleg.\n\nDie Büroassistenz arbeitet nur in den Bereichen, die du ausdrücklich freigibst, und jeder Zugriff wird protokolliert.",
-      "button": "SIGN_UP"
+      "button": "LEARN_MORE"
     },
     {
       "name": "Video: Abgeben per Klick",
@@ -44,7 +44,7 @@
       "vorschaubild": "anzeige_abgeben_vorschau.jpg",
       "ueberschrift": "Nicht allein im Büro",
       "text": "Rechnungen, Belege, E-Mails und niemand, der hilft? Das ändert sich jetzt. In FokusOffice sammelst du Aufgaben im Aufgabenkorb, legst ein Budget fest und gibst sie mit einem Tipp an deine Büroassistenz ab. E-Mails übergibst du genauso einfach.\n\nIch bin Lara, Kauffrau für Büromanagement. Du gibst ab, ich erledige es. 14 Tage kostenlos testen.",
-      "button": "SIGN_UP"
+      "button": "LEARN_MORE"
     }
   ]
 }
