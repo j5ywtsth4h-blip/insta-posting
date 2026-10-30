@@ -48,6 +48,7 @@ jobs:
       - name: Werbung
         env:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
           AD_ACCOUNT_ID: ${{ secrets.AD_ACCOUNT_ID }}
           BESTAETIGUNG: ${{ inputs.bestaetigung }}
         run: python scripts/werbung.py "${{ inputs.aktion }}" "${{ inputs.kampagne }}"

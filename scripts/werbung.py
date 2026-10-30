@@ -90,6 +90,14 @@ def instagram(konto: str, s: dict, laut: bool = False) -> str:
             print(f"   ({pfad}: {', '.join(d.get('username') or d['id'] for d in daten) or 'leer'})")
         if daten:
             return daten[0]["id"]
+    if os.environ.get("IG_TOKEN", "").strip():  # letzter Versuch: ID aus dem Instagram-Login
+        try:
+            ig = post.ich()["user_id"]
+            if laut:
+                print(f"   (Instagram-Login: {ig}, wird beim Anlegen der Anzeigen ausprobiert)")
+            return ig
+        except Exception:
+            pass
     return ""
 
 
@@ -194,9 +202,10 @@ def vorbereiten(name: str):
             spec["instagram_user_id"] = ig
         try:
             creative = meta("POST", f"{konto}/adcreatives", name=a["name"], object_story_spec=spec)
-        except RuntimeError:
+        except RuntimeError as e:
             if not ig:
                 raise
+            print(f"⚠️ Instagram-Konto wird für Anzeigen nicht akzeptiert, „{a['name']}“ läuft unter dem Seitennamen. ({e})")
             spec.pop("instagram_user_id")  # Instagram-Konto nicht freigegeben: unter Seitennamen schalten
             creative = meta("POST", f"{konto}/adcreatives", name=a["name"], object_story_spec=spec)
         anzeige = meta("POST", f"{konto}/ads", name=a["name"], adset_id=status["anzeigengruppe_id"],
