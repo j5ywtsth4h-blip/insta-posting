@@ -270,6 +270,16 @@ def bericht(name: str):
               f"CTR {z.get('ctr')} %, {z.get('spend')} € ausgegeben")
     info = meta("GET", status["kampagne_id"], fields="effective_status")
     print(f"Status: {info.get('effective_status')}")
+    namen = {"ACTIVE": "online", "PENDING_REVIEW": "wird von Meta geprüft", "IN_PROCESS": "wird verarbeitet",
+             "DISAPPROVED": "ABGELEHNT", "WITH_ISSUES": "mit Problemen", "PAUSED": "pausiert",
+             "CAMPAIGN_PAUSED": "Kampagne pausiert", "ADSET_PAUSED": "Anzeigengruppe pausiert"}
+    print("== Prüfstatus je Anzeige")
+    for a in status.get("anzeigen", []):
+        d = meta("GET", a["id"], fields="effective_status,ad_review_feedback")
+        zustand = d.get("effective_status", "")
+        print(f"- {a['name']}: {namen.get(zustand, zustand)}")
+        if d.get("ad_review_feedback"):
+            print(f"  Hinweis von Meta: {json.dumps(d['ad_review_feedback'], ensure_ascii=False)}")
 
 
 def main():
