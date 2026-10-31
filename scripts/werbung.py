@@ -271,6 +271,12 @@ def bericht(name: str):
     for z in zeilen:
         print(f"- {z.get('ad_name')}: {z.get('impressions')} Einblendungen, {z.get('inline_link_clicks', 0)} Link-Klicks, "
               f"CTR {z.get('ctr')} %, {z.get('spend')} € ausgegeben")
+    print("== Nach Plattform und Platzierung")
+    for z in meta("GET", f"{status['kampagne_id']}/insights", fields="impressions,inline_link_clicks,spend,actions",
+                  breakdowns="publisher_platform,platform_position", date_preset="maximum").get("data", []):
+        lpv = next((a["value"] for a in z.get("actions", []) if a["action_type"] == "landing_page_view"), "0")
+        print(f"- {z.get('publisher_platform')} / {z.get('platform_position')}: {z.get('impressions')} Einblendungen, "
+              f"{z.get('inline_link_clicks', 0)} Link-Klicks, {lpv} Seitenaufrufe, {z.get('spend')} €")
     info = meta("GET", status["kampagne_id"], fields="effective_status")
     print(f"Status: {info.get('effective_status')}")
     namen = {"ACTIVE": "online", "PENDING_REVIEW": "wird von Meta geprüft", "IN_PROCESS": "wird verarbeitet",
