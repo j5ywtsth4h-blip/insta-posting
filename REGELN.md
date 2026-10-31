@@ -22,3 +22,4 @@
 - Instagram/Facebook-Beiträge mit Tipps oder Infos standardmäßig als **Karussell** (Ordner `posts/<Zeit>/01.jpg …` plus `posts/<Zeit>.txt`); Einzelbild nur für kurze Botschaften (Zitat, Frage, kurze Ankündigung).
 - Jede Instagram/Facebook-Caption hat den Link-Hinweis in einer **eigenen, gut sichtbaren Zeile** vor den Hashtags, z. B. „🔗 Link in meiner Bio → FokusOffice 14 Tage kostenlos testen“ (nie nur versteckt im Fließtext).
 - Laras Bio-Links: „Website“ (fokuszeit-business.de), „Registrieren – FokusOffice“ (office.fokuszeit-business.de), „Informieren – FokusOffice“ (/fokusoffice.html), „Büroassistenz Anfragen“ (/kontakt.html). Captions verweisen mit genau diesen Namen darauf.
+- LinkedIn: Links stehen direkt im Beitragstext (vor den Hashtags), nicht im ersten Kommentar – die App darf keine Kommentare setzen (403 partnerApiSocialActions).
