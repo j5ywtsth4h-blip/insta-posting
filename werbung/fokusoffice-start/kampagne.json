@@ -22,21 +22,6 @@
       "publisher_platforms": [
         "facebook",
         "instagram"
-      ],
-      "facebook_positions": [
-        "feed",
-        "story",
-        "facebook_reels",
-        "video_feeds",
-        "marketplace",
-        "search"
-      ],
-      "instagram_positions": [
-        "stream",
-        "story",
-        "reels",
-        "explore",
-        "explore_home"
       ]
     }
   },
