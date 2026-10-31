@@ -68,6 +68,8 @@ def anfrage(method: str, url: str, daten=None, roh: bytes | None = None, rest: b
     if daten is not None:
         roh = json.dumps(daten, ensure_ascii=False).encode()
         kopf["Content-Type"] = "application/json"
+    elif roh is not None:
+        kopf["Content-Type"] = "application/octet-stream"  # Datei-Upload, sonst setzt urllib ein Formular-Format
     req = urllib.request.Request(url, data=roh, method=method, headers=kopf)
     try:
         with urllib.request.urlopen(req, timeout=120) as r:
@@ -75,7 +77,10 @@ def anfrage(method: str, url: str, daten=None, roh: bytes | None = None, rest: b
             return (json.loads(inhalt) if inhalt else {}), dict(r.headers)
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace")
-        raise RuntimeError(f"LinkedIn meldet ({e.code}): {body[:500]}") from None
+        if body.lstrip().startswith("<"):
+            body = "(HTML-Fehlerseite)"
+        ziel = urllib.parse.urlsplit(url)
+        raise RuntimeError(f"LinkedIn meldet ({e.code}) bei {method} {ziel.netloc}{ziel.path}: {body[:500]}") from None
 
 
 def rest(method: str, pfad: str, daten=None):
