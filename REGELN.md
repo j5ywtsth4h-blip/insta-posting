@@ -20,3 +20,4 @@
 - Vor neuen Inhalten prüfen, was schon gepostet wurde (Aktion `profil-anzeigen`), damit sich nichts doppelt.
 
 - Instagram/Facebook-Beiträge mit Tipps oder Infos standardmäßig als **Karussell** (Ordner `posts/<Zeit>/01.jpg …` plus `posts/<Zeit>.txt`); Einzelbild nur für kurze Botschaften (Zitat, Frage, kurze Ankündigung).
+- Jede Instagram/Facebook-Caption hat den Link-Hinweis in einer **eigenen, gut sichtbaren Zeile** vor den Hashtags, z. B. „🔗 Link in meiner Bio → FokusOffice 14 Tage kostenlos testen“ (nie nur versteckt im Fließtext).
