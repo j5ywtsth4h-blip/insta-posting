@@ -86,7 +86,7 @@ Pensum: 10 bis 15 neue Kontakte am Tag, ca. 15 Minuten. Nie mehr als 20 Erstnach
 >
 > Ich bin Lara und habe FokusOffice entwickelt, ein **digitales Büro** für Selbstständige und kleine Unternehmen. Rechnungen, Belege, E-Mails und Termine sind dort an einem Ort, damit im Alltag mehr Zeit für das bleibt, was du eigentlich liebst. Und wenn es mal zu viel wird, kannst du Aufgaben mit einem Klick an mich als Büroassistenz abgeben.
 >
-> Schau gern mal in die Demo rein, da kannst du ganz unverbindlich reinschnuppern 😊 Den Link findest du in meiner Bio. Und bei Fragen meld dich jederzeit!
+> Schau gern mal rein, du kannst FokusOffice 14 Tage kostenlos und ganz unverbindlich testen 😊 Den Link findest du in meiner Bio unter „Informieren – FokusOffice“. Und bei Fragen meld dich jederzeit!
 >
 > Ganz liebe Grüße
 > Deine Lara

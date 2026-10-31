@@ -31,3 +31,39 @@ Grundlage für Beiträge, Storys, LinkedIn und Werbung. Werbeaussagen immer mit 
 - „Baustellenfotos direkt zum Auftrag“
 - „Preisliste als PDF hochladen – Leistungskatalog fertig“
 - „14 Tage kostenlos testen, endet automatisch – kein Abo-Fallstrick“
+
+---
+
+# Neue Funktionen (Stand 31.10.2026, zweites Update)
+
+Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen oder verlinken.
+
+## Team und Mitarbeiter
+- Eigene Startseite für Mitarbeiter ohne Freigabe „Verkauf“ mit Schnellaktionen (Kommen/Gehen, Stundenzettel, Fahrt, Verpflegung, Planer, Aufträge, Kundenvertrag, Beleg, Nachrichten) – nur die freigegebenen Knöpfe.
+- „Läuft gerade“: laufende Arbeitszeit und Timer mit Pause/Stopp, laufen auf dem Server weiter, auch bei geschlossener App.
+- Arbeitszeit von Hand nachtragen nur mit Freigabe des Inhabers.
+- Urlaub und Krankheit tragen Mitarbeiter selbst ein; bezahlte Freistellung nur der Inhaber.
+- Aufträge Mitarbeitern zuordnen → erscheinen im Planer und auf deren Startseite (Adresse, Route, Beschreibung, Fotos, Nachrichten). Mitarbeiter können Auftragsfotos hinzufügen.
+- Team-Chat: Kanäle Team, je Auftrag, Einzelnachrichten. Keine Lesebestätigung, kein Online-Status, Löschung nach 12 Monaten.
+- E-Mail-Postfächer je Mitarbeiter zuweisen; Mitarbeiter können eigene Firmen-Adresse verbinden. Rechnungen gehen nie über Mitarbeiter-Adressen.
+
+## Zeiterfassung
+- Stundenkonto mit Wochenstunden, Arbeitstagen, Übertrag, Feiertagen nach Bundesland; Plus-/Minusstunden automatisch.
+- Verpflegungspauschale 14 €/28 € mit Kürzung für gestellte Mahlzeiten, mehrere Kunden pro Tag, als Reisekosten buchbar.
+- Abrechnungszeitraum monatlich/wöchentlich/täglich (Fahrten, Verpflegung).
+- Druckansicht mit echter PDF, Drucken, Teilen (Stundenzettel, Fahrtenliste, Verpflegung).
+- Digitale Unterschrift mit dem Finger (Mitarbeiter und Arbeitgeber). **Keine qualifizierte elektronische Signatur** → in Werbung nie „rechtssicher signieren“ o. Ä. versprechen.
+
+## Kundenverträge
+- Vorlagen mit eigenen Feldern und PDF-Anlage (z. B. AGB, Widerrufsbelehrung). Mitarbeiter füllt beim Kunden aus, Kunde unterschreibt auf dem Handy, PDF per Mail, abgeschlossene Verträge unveränderlich.
+
+## Allgemein
+- Passwort vergessen (Link 60 Min., einmalig), auch für Mitarbeiter.
+- iPhone-Home-Bildschirm-App: PDFs öffnen mit „Schließen“ und „Teilen / Sichern“.
+- Gleichzeitiges Arbeiten mehrerer Geräte/Mitarbeiter wird zusammengeführt.
+
+## Ideen für Inhalte
+- Handwerk/Außendienst: „Kunde unterschreibt den Vertrag direkt auf dem Handy“
+- „Stundenzettel unterschreiben ohne Papier“
+- „Verpflegungspauschale automatisch berechnen“ (ohne Steuerberatungsversprechen)
+- „Mitarbeiter sehen ihre Aufträge mit Route und Fotos“

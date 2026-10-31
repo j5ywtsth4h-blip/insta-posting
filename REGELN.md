@@ -16,10 +16,11 @@
 - **Instagram/Facebook:** Feed-Beiträge automatisch (Ordner `posts`), Storys und Reels postet Lara selbst
   (Ordner `manuell`, mit Erinnerung 10 Minuten vorher inkl. Datei und Anleitung). Captions mit Emojis wie in Laras bisherigen Beiträgen.
 - **LinkedIn:** automatisch auf Laras persönlichem Profil (Ordner `linkedin/geplant`), Di und Do morgens,
-  jeder Beitrag bewirbt FokusOffice, Link im ersten Kommentar.
+  jeder Beitrag bewirbt FokusOffice, Links im Beitragstext.
 - Vor neuen Inhalten prüfen, was schon gepostet wurde (Aktion `profil-anzeigen`), damit sich nichts doppelt.
 
 - Instagram/Facebook-Beiträge mit Tipps oder Infos standardmäßig als **Karussell** (Ordner `posts/<Zeit>/01.jpg …` plus `posts/<Zeit>.txt`); Einzelbild nur für kurze Botschaften (Zitat, Frage, kurze Ankündigung).
 - Jede Instagram/Facebook-Caption hat den Link-Hinweis in einer **eigenen, gut sichtbaren Zeile** vor den Hashtags, z. B. „🔗 Link in meiner Bio → FokusOffice 14 Tage kostenlos testen“ (nie nur versteckt im Fließtext).
 - Laras Bio-Links: „Website“ (fokuszeit-business.de), „Registrieren – FokusOffice“ (office.fokuszeit-business.de), „Informieren – FokusOffice“ (/fokusoffice.html), „Büroassistenz Anfragen“ (/kontakt.html). Captions verweisen mit genau diesen Namen darauf.
 - LinkedIn: Links stehen direkt im Beitragstext (vor den Hashtags), nicht im ersten Kommentar – die App darf keine Kommentare setzen (403 partnerApiSocialActions).
+- Die öffentliche Demo gibt es seit 31.10.2026 nicht mehr: keine Demo erwähnen oder verlinken. Stattdessen „14 Tage kostenlos testen“ bzw. Info-Seite /fokusoffice.html.
