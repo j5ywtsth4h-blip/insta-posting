@@ -341,7 +341,12 @@ def main():
         beitrag = os.environ.get("FB_BEITRAG", "").strip()
         if not beitrag:
             sys.exit("Bitte die Facebook-ID des Beitrags angeben.")
-        fb_api("POST", beitrag, **{"method": "delete"})
+        _, zugang = facebook()
+        anfrage = urllib.request.Request(f"{FB_API}/{beitrag}?access_token={urllib.parse.quote(zugang)}", method="DELETE")
+        try:
+            urllib.request.urlopen(anfrage, timeout=60).read()
+        except urllib.error.HTTPError as e:
+            sys.exit(f"Facebook-API meldet: {e.read().decode(errors='replace')[:300]}")
         print(f"✅ Facebook-Beitrag {beitrag} gelöscht.")
         return
 
