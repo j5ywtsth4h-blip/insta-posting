@@ -18,3 +18,5 @@
 - **LinkedIn:** automatisch auf Laras persönlichem Profil (Ordner `linkedin/geplant`), Di und Do morgens,
   jeder Beitrag bewirbt FokusOffice, Link im ersten Kommentar.
 - Vor neuen Inhalten prüfen, was schon gepostet wurde (Aktion `profil-anzeigen`), damit sich nichts doppelt.
+
+- Instagram/Facebook-Beiträge mit Tipps oder Infos standardmäßig als **Karussell** (Ordner `posts/<Zeit>/01.jpg …` plus `posts/<Zeit>.txt`); Einzelbild nur für kurze Botschaften (Zitat, Frage, kurze Ankündigung).
