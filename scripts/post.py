@@ -6,6 +6,8 @@ Dateinamen-Schema (deutsche Zeit, Europe/Berlin):
     posts/2026-11-03_18-00.txt   -> Caption (optional)
     posts/2026-11-03_09-00_story.jpg   -> Story (Bild oder Video, ohne Caption)
     posts/2026-11-03_09-00_story-2.jpg -> weitere Story zur selben Zeit
+    posts/2026-11-03_18-00/01.jpg …    -> Karussell: Ordner mit 2 bis 10 Bildern (Reihenfolge nach Dateiname),
+                                          Caption daneben als posts/2026-11-03_18-00.txt
 
 Aufruf:
     python scripts/post.py test     -> prüft nur die Verbindung, postet nichts
@@ -143,6 +145,10 @@ def raw_url(datei: Path) -> str:
 
 # ---------------------------------------------------------------- Bilder
 
+def karussell_bilder(ordner: Path) -> list[Path]:
+    return sorted(f for f in ordner.iterdir() if f.is_file() and f.suffix.lower() in BILD)
+
+
 def ist_story(datei: Path) -> bool:
     m = NAME.match(datei.stem)
     return bool(m and m[4])
@@ -186,7 +192,8 @@ def bild_vorbereiten(quelle: Path, story: bool = False) -> Path:
         return quelle
 
     BEREIT.mkdir(parents=True, exist_ok=True)
-    ziel = BEREIT / f"{quelle.stem}.jpg"
+    name = quelle.stem if quelle.parent == POSTS else f"{quelle.parent.name}_{quelle.stem}"
+    ziel = BEREIT / f"{name}.jpg"
     img.save(ziel, "JPEG", quality=90)
     return ziel
 
@@ -210,7 +217,10 @@ def faellige_posts(alle: bool = False):
     gefunden = []
     for f in sorted(POSTS.glob("*")):
         endung = f.suffix.lower()
-        if not f.is_file() or endung not in BILD | VIDEO:
+        if f.is_dir():
+            if f.name.startswith("_") or not karussell_bilder(f):
+                continue
+        elif endung not in BILD | VIDEO:
             continue
         m = NAME.match(f.stem)
         if not m:
@@ -222,10 +232,35 @@ def faellige_posts(alle: bool = False):
     return gefunden
 
 
+def bild_url(medien: Path, story: bool = False) -> str:
+    datei = bild_vorbereiten(medien, story)
+    if datei != medien:
+        push(f"Bild für {medien.stem} vorbereitet")
+        time.sleep(15)  # GitHub kurz Zeit geben, die Datei auszuliefern
+    return raw_url(datei)
+
+
 def container_erstellen(user_id: str, medien: Path) -> str:
     story = ist_story(medien)
     caption_datei = medien.with_suffix(".txt")
     caption = caption_datei.read_text(encoding="utf-8").strip() if caption_datei.exists() else ""
+
+    if medien.is_dir():
+        bilder = karussell_bilder(medien)
+        if not 2 <= len(bilder) <= 10:
+            raise RuntimeError(f"Ein Karussell braucht 2 bis 10 Bilder, gefunden: {len(bilder)}.")
+        print(f"Lade hoch: Karussell {medien.name} ({len(bilder)} Bilder)")
+        kinder = []
+        for b in bilder:
+            kind = api("POST", f"{user_id}/media", image_url=bild_url(b), is_carousel_item="true")["id"]
+            warten_bis_fertig(kind)
+            kinder.append(kind)
+        params = {"media_type": "CAROUSEL", "children": ",".join(kinder)}
+        if caption:
+            params["caption"] = caption
+        container = api("POST", f"{user_id}/media", **params)["id"]
+        warten_bis_fertig(container)
+        return container
 
     if medien.suffix.lower() in VIDEO:
         url = raw_url(medien)
@@ -233,12 +268,7 @@ def container_erstellen(user_id: str, medien: Path) -> str:
         if not story:
             params["share_to_feed"] = "true"
     else:
-        datei = bild_vorbereiten(medien, story)
-        if datei != medien:
-            push(f"Bild für {medien.stem} vorbereitet")
-            time.sleep(15)  # GitHub kurz Zeit geben, die Datei auszuliefern
-        url = raw_url(datei)
-        params = {"image_url": url}
+        params = {"image_url": bild_url(medien, story)}
         if story:
             params["media_type"] = "STORIES"
     if caption and not story:
@@ -262,6 +292,15 @@ def auf_facebook(medien: Path):
         return
     caption_datei = medien.with_suffix(".txt")
     caption = caption_datei.read_text(encoding="utf-8").strip() if caption_datei.exists() else ""
+    if medien.is_dir():  # Karussell: Bilder unveröffentlicht hochladen, dann als ein Beitrag
+        fotos = [fb_api("POST", "{seite}/photos", url=raw_url(bild_vorbereiten(b)), published="false")["id"]
+                 for b in karussell_bilder(medien)]
+        params = {"attached_media": json.dumps([{"media_fbid": f} for f in fotos])}
+        if caption:
+            params["message"] = caption
+        ergebnis = fb_api("POST", "{seite}/feed", **params)
+        print(f"Auf Facebook veröffentlicht: Karussell {medien.name} (Facebook-ID {ergebnis.get('id')})")
+        return
     params = {"url": raw_url(bild_vorbereiten(medien))}
     if caption:
         params["caption"] = caption
@@ -274,17 +313,18 @@ def verschieben(medien: Path, caption: Path, ziel: Path, log: str = ""):
     shutil.move(str(medien), ziel / medien.name)
     if caption.exists():
         shutil.move(str(caption), ziel / caption.name)
-    vorbereitet = BEREIT / f"{medien.stem}.jpg"
-    if vorbereitet.exists():
-        vorbereitet.unlink()
+    for vorbereitet in [BEREIT / f"{medien.stem}.jpg", *BEREIT.glob(f"{medien.name}_*.jpg")]:
+        if vorbereitet.exists():
+            vorbereitet.unlink()
     if log:
         (ziel / f"{medien.stem}_FEHLER.txt").write_text(log, encoding="utf-8")
 
 
 def main():
     modus = sys.argv[1] if len(sys.argv) > 1 else "post"
-    profil = ich()
-    user_id = profil["user_id"]
+    if modus != "fb-loeschen":
+        profil = ich()
+        user_id = profil["user_id"]
 
     if modus == "test":
         limit = api("GET", f"{user_id}/content_publishing_limit", fields="quota_usage,config")
@@ -295,6 +335,14 @@ def main():
             print(f"✅ Facebook klappt auch! Verbunden mit der Seite „{seite.get('name')}“ (ID {seite.get('id')})")
         else:
             print("Facebook ist nicht eingerichtet (Secret FB_PAGE_TOKEN fehlt).")
+        return
+
+    if modus == "fb-loeschen":  # Instagram erlaubt kein Löschen über die Schnittstelle, Facebook schon
+        beitrag = os.environ.get("FB_BEITRAG", "").strip()
+        if not beitrag:
+            sys.exit("Bitte die Facebook-ID des Beitrags angeben.")
+        fb_api("POST", beitrag, method="delete")
+        print(f"✅ Facebook-Beitrag {beitrag} gelöscht.")
         return
 
     if modus == "profil":
