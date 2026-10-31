@@ -341,7 +341,7 @@ def main():
         beitrag = os.environ.get("FB_BEITRAG", "").strip()
         if not beitrag:
             sys.exit("Bitte die Facebook-ID des Beitrags angeben.")
-        fb_api("POST", beitrag, method="delete")
+        fb_api("POST", beitrag, **{"method": "delete"})
         print(f"✅ Facebook-Beitrag {beitrag} gelöscht.")
         return
 
