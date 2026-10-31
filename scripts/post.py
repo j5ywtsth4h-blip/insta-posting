@@ -286,7 +286,7 @@ def veroeffentlichen(user_id: str, medien: Path):
     print(f"Veröffentlicht: {medien.name} (Instagram-ID {ergebnis.get('id')})")
 
 
-WEBSITE = "https://www.fokuszeit-business.de"
+KONTAKT = "https://www.fokuszeit-business.de/kontakt.html"
 FOKUSOFFICE = "https://www.fokuszeit-business.de/fokusoffice.html"
 BIO = re.compile(r"Link in (?:meiner|der) Bio", re.IGNORECASE)
 
@@ -300,7 +300,7 @@ def facebook_text(caption: str) -> str:
             if "fokusoffice" in zeile.lower() or ("büroassistenz" not in zeile.lower() and "fokusoffice" in caption.lower()):
                 links.append(f"FokusOffice 14 Tage kostenlos testen: {FOKUSOFFICE}")
             if "büroassistenz" in zeile.lower() or not links:
-                links.insert(0, f"Büroassistenz anfragen: {WEBSITE}")
+                links.insert(0, f"Büroassistenz anfragen: {KONTAKT}")
             if zeile.lstrip().startswith("🔗"):
                 zeile = "\n".join(f"🔗 {l}" for l in links)
             else:
