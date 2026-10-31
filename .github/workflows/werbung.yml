@@ -11,6 +11,7 @@ on:
           - konten
           - vorbereiten
           - erneuern
+          - zielgruppe
           - bericht
           - starten
           - pausieren
