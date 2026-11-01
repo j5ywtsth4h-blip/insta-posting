@@ -242,8 +242,7 @@ def bild_url(medien: Path, story: bool = False) -> str:
 
 def container_erstellen(user_id: str, medien: Path) -> str:
     story = ist_story(medien)
-    caption_datei = medien.with_suffix(".txt")
-    caption = caption_datei.read_text(encoding="utf-8").strip() if caption_datei.exists() else ""
+    caption, fb_link = caption_lesen(medien)
 
     if medien.is_dir():
         bilder = karussell_bilder(medien)
@@ -291,13 +290,30 @@ FOKUSOFFICE = "https://www.fokuszeit-business.de/fokusoffice.html"
 BIO = re.compile(r"Link in (?:meiner|der) Bio", re.IGNORECASE)
 
 
-def facebook_text(caption: str) -> str:
+def caption_lesen(medien: Path):
+    """Caption ohne Steuerzeilen. „FB-LINK: Text | URL“ erscheint nur auf Facebook als anklickbarer Link."""
+    datei = medien.with_suffix(".txt")
+    if not datei.exists():
+        return "", []
+    zeilen, fb_link = [], []
+    for z in datei.read_text(encoding="utf-8").splitlines():
+        if z.startswith("FB-LINK:"):
+            text, _, url = z[8:].partition("|")
+            fb_link.append(f"{text.strip()}: {url.strip()}")
+        else:
+            zeilen.append(z)
+    return "\n".join(zeilen).strip(), fb_link
+
+
+def facebook_text(caption: str, fb_link=()) -> str:
     """Auf Facebook sind Links anklickbar: „Link in der Bio“ wird durch die echten Links ersetzt."""
     zeilen = []
     for zeile in caption.splitlines():
         if BIO.search(zeile):
-            links = []
-            if "fokusoffice" in zeile.lower() or ("büroassistenz" not in zeile.lower() and "fokusoffice" in caption.lower()):
+            links = list(fb_link)
+            if fb_link:
+                pass
+            elif "fokusoffice" in zeile.lower() or ("büroassistenz" not in zeile.lower() and "fokusoffice" in caption.lower()):
                 links.append(f"FokusOffice 14 Tage kostenlos testen: {FOKUSOFFICE}")
             if "büroassistenz" in zeile.lower() or not links:
                 links.insert(0, f"Büroassistenz anfragen: {KONTAKT}")
@@ -313,9 +329,8 @@ def auf_facebook(medien: Path):
     """Feed-Bild zusätzlich auf der Facebook-Seite veröffentlichen."""
     if ist_story(medien) or medien.suffix.lower() in VIDEO:
         return
-    caption_datei = medien.with_suffix(".txt")
-    caption = caption_datei.read_text(encoding="utf-8").strip() if caption_datei.exists() else ""
-    caption = facebook_text(caption)
+    caption, fb_link = caption_lesen(medien)
+    caption = facebook_text(caption, fb_link)
     if medien.is_dir():  # Karussell: Bilder unveröffentlicht hochladen, dann als ein Beitrag
         fotos = [fb_api("POST", "{seite}/photos", url=raw_url(bild_vorbereiten(b)), published="false")["id"]
                  for b in karussell_bilder(medien)]
