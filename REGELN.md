@@ -24,3 +24,4 @@
 - Laras Bio-Links: „Website“ (fokuszeit-business.de), „Registrieren – FokusOffice“ (office.fokuszeit-business.de), „Informieren – FokusOffice“ (/fokusoffice.html), „Büroassistenz Anfragen“ (/kontakt.html). Captions verweisen mit genau diesen Namen darauf.
 - LinkedIn: Links stehen direkt im Beitragstext (vor den Hashtags), nicht im ersten Kommentar – die App darf keine Kommentare setzen (403 partnerApiSocialActions).
 - Die öffentliche Demo gibt es seit 31.10.2026 nicht mehr: keine Demo erwähnen oder verlinken. Stattdessen „14 Tage kostenlos testen“ bzw. Info-Seite /fokusoffice.html.
+- Deckblätter von Karussells farblich abwechseln (Dunkelgrün, Salbei, Pfirsich, Creme), nicht zweimal hintereinander dieselbe Farbe im Feed.
