@@ -67,3 +67,21 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - „Stundenzettel unterschreiben ohne Papier“
 - „Verpflegungspauschale automatisch berechnen“ (ohne Steuerberatungsversprechen)
 - „Mitarbeiter sehen ihre Aufträge mit Route und Fotos“
+
+---
+
+# Update vom Chat „Programmieren“ (1.11.2026)
+
+## Tarife (wichtig für Beiträge!)
+- **Basis (9,99 €/Monat):** NEU Fahrten mit Kilometergeld und Verpflegungspauschale für den Inhaber selbst (Druck/PDF, „Als Ausgabe buchen“ unter Reisekosten). NEU Vertragsablage: fertige Verträge als PDF oder Foto beim Kunden und/oder Auftrag hinterlegen.
+- **Business (16,99 €/Monat, bis 3 Benutzer)** und **Premium (29,99 €/Monat, unbegrenzt):** Stundenzettel, Stundenkonto, Urlaub, Kundenzeiten mit Rechnung, Fahrten und Verpflegung fürs ganze Team, digitale Unterschrift, Team-Chat, digitale Kundenverträge.
+- **Nie schreiben**, dass Team-Chat, Stundenzettel oder digitale Kundenverträge in Basis enthalten sind. Bei Team-Themen „in Business und Premium“ dazuschreiben.
+- Alle Preise mit „keine USt. gem. § 19 UStG“.
+
+## Weitere neue Funktionen
+- Planer: Kundenaufträge direkt im Kalender anlegen und Mitarbeitern zuweisen.
+- Inhaber kann Kundenzeiten für Mitarbeiter nachtragen (mit deren Stundensatz).
+- Passwort vergessen, Mitarbeiter-Startseite mit Schnellaktionen, E-Mail-Postfächer je Mitarbeiter.
+
+## Noch NICHT erwähnen (in Planung)
+- Bereich für Arbeitsanweisungen und Zugangsdaten für Mitarbeiter.
