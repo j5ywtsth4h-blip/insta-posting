@@ -25,5 +25,6 @@
 - LinkedIn: Links stehen direkt im Beitragstext (vor den Hashtags), nicht im ersten Kommentar – die App darf keine Kommentare setzen (403 partnerApiSocialActions).
 - Die öffentliche Demo gibt es seit 31.10.2026 nicht mehr: keine Demo erwähnen oder verlinken. Stattdessen „14 Tage kostenlos testen“ bzw. Info-Seite /fokusoffice.html.
 - Deckblätter von Karussells farblich variieren (Dunkelgrün, Salbei, Pfirsich, Creme), damit der Feed nicht komplett dunkelgrün wird. Zweimal hintereinander dieselbe Farbe ist okay, nur nicht alles gleich.
-- Fokus-Tipps von der Website (Chat „Google Sichtbarkeit“ meldet sie jeden 1. des Monats) werden als Karussell vorbereitet, liegen zuerst in `posts/_bereit/` und werden erst nach Laras Freigabe eingeplant. Steuerthemen immer mit „Dieser Tipp gibt einen allgemeinen Überblick und ersetzt keine Steuerberatung.“
+- Fokus-Tipps von der Website (Chat „Google Sichtbarkeit“ meldet sie jeden 1. des Monats) werden als Karussell vorbereitet, werden ohne extra Freigabe direkt eingeplant (Lara 1.11.: „Ich muss nicht freigeben“), passend zur Website um den 1. des Monats, mit Links zur jeweiligen Tipp-Seite. Steuerthemen immer mit „Dieser Tipp gibt einen allgemeinen Überblick und ersetzt keine Steuerberatung.“
 - Caption-Zeilen `FB-LINK: Text | URL` erscheinen nur auf Facebook (als anklickbare Links statt „Link in Bio“), auf Instagram werden sie entfernt.
+- Einmal täglich beim Chat „Programmieren“ (FokusOffice) nach Neuigkeiten fragen und sie in `wissen/fokusoffice_neuerungen.md` übernehmen.
