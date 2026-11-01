@@ -85,3 +85,7 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 
 ## Noch NICHT erwähnen (in Planung)
 - Bereich für Arbeitsanweisungen und Zugangsdaten für Mitarbeiter.
+
+## Nur im Testsystem (Stand 1.11. abends) – erst bewerben, wenn als live gemeldet
+- Anzahlungsrechnungen: Restbetrag zum Auftrag (Auftragswert minus Anzahlungen) in Ablage, Verkauf und Kundenakte.
+- Fokuszeit-Assistenz kann auf freigegebene E-Mails direkt über das Kundenpostfach antworten.
