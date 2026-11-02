@@ -93,3 +93,8 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 ## 2.11. außerdem live
 - Registrierung: Schalter „Anzeigen/Verbergen“ am Passwortfeld plus Tipp, Mindestlänge 12 Zeichen bleibt.
 - Meta-Pixel: Website (PageView, ViewContent, Lead beim Klick auf „Testen“) und FokusOffice (CompleteRegistration nach neuer Registrierung), jeweils nur mit Einwilligung fz_consent=marketing. Pixel-ID 29087912327488232.
+
+## Preise Büroassistenz (Lara, 2.11.)
+- 59 € pro Stunde bei direkter Buchung (Einzelstunde), Pakete/Fokus-Tarife laut fokuszeit-business.de/pakete.html.
+- 55 € pro Stunde, wenn über die FokusOffice-App gebucht (Aufgabenkorb/E-Mail abgeben). Gutes Werbeargument für FokusOffice.
+- Büroassistenz geht auch ohne FokusOffice.
