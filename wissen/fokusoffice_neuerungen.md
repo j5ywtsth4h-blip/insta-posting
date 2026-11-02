@@ -96,5 +96,5 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 
 ## Preise Büroassistenz (Lara, 2.11.)
 - 59 € pro Stunde bei direkter Buchung (Einzelstunde), Pakete/Fokus-Tarife laut fokuszeit-business.de/pakete.html.
-- 55 € pro Stunde, wenn über die FokusOffice-App gebucht (Aufgabenkorb/E-Mail abgeben). Gutes Werbeargument für FokusOffice.
+- App-Preise: laut Programmier-Chat (2.11.) im Programm aktuell IDENTISCH mit Website; ein Rabatt für FokusOffice-Kunden ist erst in Planung. Bis zur Meldung NICHT mit „in der App günstiger“ werben. 55 € = Zusatzstunde zu aktiven Monatspaketen. Einziger App-Vorteil heute: Premium enthält 15 Assistenz-Minuten/Monat.
 - Büroassistenz geht auch ohne FokusOffice.
