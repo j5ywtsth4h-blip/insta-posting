@@ -12,6 +12,7 @@ on:
         options:
           - verbindung-testen
           - profil-anzeigen
+          - reichweiten-bericht
           - geplante-pruefen
           - faellige-jetzt-posten
           - facebook-beitrag-loeschen
@@ -67,6 +68,12 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
         run: python scripts/post.py profil
+
+      - name: Reichweiten-Bericht (postet nichts)
+        if: github.event_name == 'workflow_dispatch' && inputs.aktion == 'reichweiten-bericht'
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python scripts/insights.py 30
 
       - name: Geplante Beiträge prüfen (postet nichts)
         if: github.event_name == 'workflow_dispatch' && inputs.aktion == 'geplante-pruefen'
