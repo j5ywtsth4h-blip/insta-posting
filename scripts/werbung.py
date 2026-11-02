@@ -178,7 +178,8 @@ def vorbereiten(name: str):
                       daily_budget=g["tagesbudget_cent"], billing_event="IMPRESSIONS",
                       optimization_goal=g["optimierung"], bid_strategy="LOWEST_COST_WITHOUT_CAP",
                       destination_type="WEBSITE", targeting=g["zielgruppe"], status="ACTIVE",
-                      dsa_beneficiary=plan["dsa_beguenstigter"], dsa_payor=plan["dsa_zahler"])
+                      dsa_beneficiary=plan["dsa_beguenstigter"], dsa_payor=plan["dsa_zahler"],
+                      **({"promoted_object": g["ereignis"]} if g.get("ereignis") else {}))
         status["anzeigengruppe_id"] = gruppe["id"]
         print(f"Anzeigengruppe angelegt: {gruppe['id']} ({euro(g['tagesbudget_cent'])} pro Tag)")
         speichern(ordner, status, f"Werbung {name}: Anzeigengruppe angelegt")
