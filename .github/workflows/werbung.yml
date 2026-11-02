@@ -9,6 +9,7 @@ on:
         default: konten
         options:
           - konten
+          - pixel
           - vorbereiten
           - erneuern
           - zielgruppe

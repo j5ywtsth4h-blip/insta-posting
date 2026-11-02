@@ -299,12 +299,31 @@ def bericht(name: str):
             print(f"  Hinweis von Meta: {json.dumps(d['ad_review_feedback'], ensure_ascii=False)}")
 
 
+def pixel():
+    """Meta-Pixel des Werbekontos anzeigen oder anlegen (die Pixel-ID ist öffentlich, sie steht im Website-Code)."""
+    konto = werbekonto()["id"]
+    vorhanden = meta("GET", f"{konto}/adspixels", fields="id,name,last_fired_time,is_unavailable").get("data", [])
+    if not vorhanden:
+        neu = meta("POST", f"{konto}/adspixels", name="Fokuszeit Pixel")
+        print(f"Pixel angelegt: {neu.get('id')}")
+        vorhanden = meta("GET", f"{konto}/adspixels", fields="id,name,last_fired_time,is_unavailable").get("data", [])
+    for p in vorhanden:
+        print(f"PIXEL {p['id']} „{p.get('name')}“ zuletzt ausgelöst: {p.get('last_fired_time') or 'noch nie'}")
+        try:
+            st = meta("GET", f"{p['id']}/stats", aggregation="event")
+            print("  Ereignisse:", json.dumps(st.get("data", [])[:5], ensure_ascii=False)[:800])
+        except Exception as e:
+            print("  (Statistik nicht verfügbar)", e)
+
+
 def main():
     if len(sys.argv) < 2:
         sys.exit(__doc__)
     aktion, name = sys.argv[1], (sys.argv[2] if len(sys.argv) > 2 else "")
     if aktion == "konten":
         return konten()
+    if aktion == "pixel":
+        return pixel()
     if not name:
         sys.exit("Bitte den Namen der Kampagne angeben (Ordner unter werbung/).")
     {"vorbereiten": vorbereiten, "erneuern": erneuern, "zielgruppe": zielgruppe, "starten": starten, "pausieren": pausieren, "bericht": bericht}[aktion](name)
