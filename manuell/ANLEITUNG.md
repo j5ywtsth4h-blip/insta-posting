@@ -13,5 +13,8 @@ So kommst du an die Datei: Datei hier auf GitHub antippen → **„…“ → Do
 | Do 5.11., 08:00 | `2026-11-05_08-00_story.jpg` | Sticker **„Link“** unten in die freie Fläche: `https://office.fokuszeit-business.de/?registrieren=1`, Text „Kostenlos testen“. |
 | Fr 6.11., 12:00 | **Reel** `2026-11-06_12-00.mp4` | Musik: ruhig, instrumental. Caption aus `2026-11-06_12-00.txt` kopieren. Am Ende des Reels zeigt das Bild die Website-Adresse. |
 | So 8.11., 19:00 | **Reel** `2026-11-08_19-00.mp4` | Musik: locker, gern etwas Handwerkliches/Upbeat, leise. Caption aus `2026-11-08_19-00.txt` kopieren. Titelbild: erstes Bild „Baustellenfotos im Handy-Chaos?“. Optional Standort „Nordhessen“. |
+| Di 10.11., 19:00 | **Reel** `2026-11-10_19-00.mp4` | Musik: ruhig, motivierend, leise. Caption aus `2026-11-10_19-00.txt`. Titelbild: erstes Bild „3 Dinge, die du nach jedem Kundentermin …“. Standort „Kassel“. |
+| Fr 13.11., 12:00 | **Reel** `2026-11-13_12-00.mp4` | Musik: locker, leise. Caption aus `2026-11-13_12-00.txt`. Titelbild: „Kunde zahlt nicht?“. Standort „Kassel“. |
+| Fr 27.11., 19:00 | **Reel** `2026-11-27_19-00.mp4` | Musik: ruhig. Caption aus `2026-11-27_19-00.txt`. Danach auf jeden Kommentar „CHECKLISTE“ antworten, siehe `akquise/checkliste_antwort.md`. |
 
 Tipp: Reels kannst du in der Instagram-App beim Teilen meist unter „Mehr Optionen“ auch für später planen.
