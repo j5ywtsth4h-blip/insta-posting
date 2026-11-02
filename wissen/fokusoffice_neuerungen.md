@@ -102,5 +102,11 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 ## App-Preise Büroassistenz (live seit 2.11. mittags, von Lara freigegeben)
 - In der FokusOffice-App 4 € je Stunde günstiger: 1 Std. 55 € (59), 2 Std. 106 € (114), 4 Std. 204 € (220), 6 Std. 288 € (312), 10 Std. 460 € (490); andere Stundenzahlen 55 €/Std.
 - Gilt auch im kostenlosen Testzeitraum.
-- Unverändert: Monatspakete Mini 109 / Plus 199 / Flex 270, Partner 8/10 1.400/1.690, Zusatzstunden 55 €, Premium 15 Inklusiv-Minuten.
+- Unverändert: Monatspakete Plus 199 / Flex 270, Partner 8/10 1.400/1.690, Zusatzstunden 55 €, Premium 15 Inklusiv-Minuten.
 - Website hat den App-Preis noch nicht (erst nach „Ja, Website hochladen“).
+
+## Stand 2.11. ca. 11:30 UTC (Chat Programmieren, live in App und Website)
+- Fokus Mini jetzt 104 € statt 109 € (2 Std./Monat). Plus 199 €, Flex 270 €, Partner 1.400/1.690 € unverändert.
+- „Ab 104 € im Monat“ = neuer Einstiegspreis Monatstarife.
+- Neu bei Mini, Plus, Flex: nicht genutzte Stunden einen Monat mitnehmen, vorrangige Bearbeitung (Beginn in der Regel innerhalb eines Werktags).
+- Mitnahme in allen Tarifen max. 8 Stunden (auch Premium). Nie mit „alle Stunden mitnehmen“ werben.
