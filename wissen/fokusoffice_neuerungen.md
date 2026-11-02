@@ -98,3 +98,9 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - 59 € pro Stunde bei direkter Buchung (Einzelstunde), Pakete/Fokus-Tarife laut fokuszeit-business.de/pakete.html.
 - App-Preise: laut Programmier-Chat (2.11.) im Programm aktuell IDENTISCH mit Website; ein Rabatt für FokusOffice-Kunden ist erst in Planung. Bis zur Meldung NICHT mit „in der App günstiger“ werben. 55 € = Zusatzstunde zu aktiven Monatspaketen. Einziger App-Vorteil heute: Premium enthält 15 Assistenz-Minuten/Monat.
 - Büroassistenz geht auch ohne FokusOffice.
+
+## App-Preise Büroassistenz (live seit 2.11. mittags, von Lara freigegeben)
+- In der FokusOffice-App 4 € je Stunde günstiger: 1 Std. 55 € (59), 2 Std. 106 € (114), 4 Std. 204 € (220), 6 Std. 288 € (312), 10 Std. 460 € (490); andere Stundenzahlen 55 €/Std.
+- Gilt auch im kostenlosen Testzeitraum.
+- Unverändert: Monatspakete Mini 109 / Plus 199 / Flex 270, Partner 8/10 1.400/1.690, Zusatzstunden 55 €, Premium 15 Inklusiv-Minuten.
+- Website hat den App-Preis noch nicht (erst nach „Ja, Website hochladen“).
