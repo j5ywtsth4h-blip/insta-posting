@@ -86,6 +86,10 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 ## Noch NICHT erwähnen (in Planung)
 - Bereich für Arbeitsanweisungen und Zugangsdaten für Mitarbeiter.
 
-## Nur im Testsystem (Stand 1.11. abends) – erst bewerben, wenn als live gemeldet
+## Seit 2.11. live (darf beworben werden)
 - Anzahlungsrechnungen: Restbetrag zum Auftrag (Auftragswert minus Anzahlungen) in Ablage, Verkauf und Kundenakte.
 - Fokuszeit-Assistenz kann auf freigegebene E-Mails direkt über das Kundenpostfach antworten.
+
+## 2.11. außerdem live
+- Registrierung: Schalter „Anzeigen/Verbergen“ am Passwortfeld plus Tipp, Mindestlänge 12 Zeichen bleibt.
+- Meta-Pixel: Website (PageView, ViewContent, Lead beim Klick auf „Testen“) und FokusOffice (CompleteRegistration nach neuer Registrierung), jeweils nur mit Einwilligung fz_consent=marketing. Pixel-ID 29087912327488232.
