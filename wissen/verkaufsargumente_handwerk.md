@@ -49,3 +49,7 @@ Business kostet 16,99 € im Monat für bis zu 3 Benutzer (Jahresabo 169,90 €,
 - FAQ sagt „Mitarbeiter stempeln in der App“, an anderer Stelle „läuft im Browser“ → klarstellen: Browser-App, auf dem Handy als Home-Bildschirm-App.
 - Einrichtungsgespräch laut Website nur Premium-Jahresabo; der Werbebrief bietet bis 31.12.2026 Einrichtung für 29 € bzw. mit Jahresabo Business/Premium kostenlos (Laras Angebot A).
 - Handwerk wird auf der Hauptseite nur mit einer Zeile erwähnt → eigene Handwerks-Unterseite mit Top 5 wäre sinnvoll (nur nach „Ja, Website hochladen“).
+
+## Idee „Handwerker-Paket“ (3.11., nur Planung – NICHT bewerben, bis live)
+- Handwerks-Funktionen (Arbeitsbericht mit Kundenunterschrift, Material am Auftrag, Wartungstermine, Nachkalkulation, Offline-Modus, Abschläge/Schlussrechnung, Abnahmeprotokoll) als zuschaltbares Paket, damit andere Branchen nicht gestört werden.
+- Bereits vorhandene Funktionen (Auftragsfotos, Planer, Team-Chat) bleiben in Business/Premium.
