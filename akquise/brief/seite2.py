@@ -74,16 +74,16 @@ def seite2():
              ("mail", "E-Mails überall verteilt"), ("ordner", "Ordner für Verträge")]
     hw = [
         ("kamera", "Baustellenfotos direkt zum Auftrag",
-         "Foto mit dem Handy machen, Notiz dazu – fertig. Alles liegt beim Auftrag und beim Kunden, statt im Fotoalbum zu verschwinden.", ""),
+         "Foto mit dem Handy machen, Notiz dazu – fertig. Alles liegt beim Auftrag und beim Kunden, statt im Fotoalbum zu verschwinden.", "Business und Premium"),
         ("chat", "Eigener Chat für jeden Auftrag",
          "Absprachen, Fragen und Fotos bleiben beim Auftrag. Kein Suchen mehr in privaten Gruppen-Chats.", "Business und Premium"),
         ("kalender", "Aufträge verteilen – direkt im Kalender",
          "Sie ordnen den Auftrag einem Mitarbeiter zu. Er sieht ihn sofort in seinem Planer, mit Adresse, Route, Beschreibung und Fotos.", "Business und Premium"),
     ]
     raster = [("angebot", "Angebote und Rechnungen", "¹"), ("erechnung", "E-Rechnung (XRechnung)", ""),
-              ("beleg", "Belege und Bankumsätze", ""), ("uhr", "Zeiterfassung und Stundenzettel", "²"),
+              ("beleg", "Belege per Handy fotografieren", ""), ("uhr", "Zeiterfassung und Stundenzettel", "²"),
               ("auto", "Fahrten und Verpflegung", ""), ("stift", "Kundenverträge mit Unterschrift am Handy", "²"),
-              ("mail", "E-Mail-Postfach", ""), ("hand", "Büroaufgaben an Fokuszeit abgeben", "")]
+              ("tabelle", "Bankimport und DATEV-Export", "²"), ("hand", "Büroaufgaben an Fokuszeit abgeben", "")]
     return f"""
 <section class="seite">
   <div class="abs s2">
@@ -117,7 +117,7 @@ def seite2():
       <div><div class="n">Premium</div><div class="p">29,99 € <small>/ Monat</small></div><div class="d">Unbegrenzt viele Benutzer, inkl. 15 Min. Büroassistenz im Monat</div></div>
     </div>
     <div class="fussnote">Alle Preise: keine USt. gem. § 19 UStG. Im Jahresabo 2 Monate geschenkt. 14 Tage kostenlos testen, alle Funktionen inklusive – der Test endet automatisch.<br>
-    ¹ Angebote ab Business &nbsp;·&nbsp; ² Business und Premium</div>
+    ¹ Angebote ab Business &nbsp;·&nbsp; ² Business und Premium &nbsp;·&nbsp; Für Handwerksbetriebe mit Team empfehle ich Business.</div>
 
     <div class="cta"><b>Lassen Sie uns einen Termin ausmachen.</b><span>Lara Kohls · 0176 20558600<br>kontakt@fokuszeit-business.de</span></div>
   </div>

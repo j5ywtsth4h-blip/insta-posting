@@ -151,7 +151,7 @@ def brief(b):
       <div><b>Ohne Abo-Falle</b>14 Tage kostenlos testen, endet automatisch.</div>
     </div>
 
-    <p>Ab 9,99 € im Monat, Angebote ab Tarif Business für 16,99 € (keine USt. gem. § 19 UStG). Rufen Sie mich gern an – ich zeige Ihnen FokusOffice in Ruhe.</p>
+    <p>Ab 9,99 € im Monat; Angebote, Auftragsfotos und Team-Funktionen ab Tarif Business für 16,99 € (keine USt. gem. § 19 UStG). Rufen Sie mich gern an – ich zeige Ihnen FokusOffice in Ruhe.</p>
 
     <p class="gruss">Mit freundlichen Grüßen</p>
     <div class="unterschrift"></div>
