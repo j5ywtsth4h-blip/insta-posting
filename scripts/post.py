@@ -16,6 +16,10 @@ Aufruf:
 
 Facebook (optional): Sind die Secrets FB_PAGE_ID und FB_PAGE_TOKEN hinterlegt, erscheinen
 Feed-Beiträge (Bilder) zusätzlich auf der Facebook-Seite. Storys und Reels nur auf Instagram.
+
+Videos nur für Facebook (Instagram-Reels postet Lara selbst, siehe manuell/):
+    facebook/geplant/2026-11-05_12-00.mp4   -> Video auf der Facebook-Seite
+    facebook/geplant/2026-11-05_12-00.txt   -> Beschreibung (FB-LINK-Zeilen wie bei Beiträgen)
 """
 
 import json
@@ -40,6 +44,9 @@ POSTS = ROOT / "posts"
 BEREIT = ROOT / "posts" / "_bereit"
 GEPOSTET = ROOT / "gepostet"
 FEHLER = ROOT / "fehler"
+FB_GEPLANT = ROOT / "facebook" / "geplant"
+FB_GEPOSTET = ROOT / "facebook" / "gepostet"
+FB_FEHLER = ROOT / "facebook" / "fehler"
 
 BILD = {".jpg", ".jpeg", ".png", ".heic", ".heif", ".webp"}
 VIDEO = {".mp4", ".mov"}
@@ -347,8 +354,38 @@ def auf_facebook(medien: Path):
     print(f"Auf Facebook veröffentlicht: {medien.name} (Facebook-ID {ergebnis.get('post_id') or ergebnis.get('id')})")
 
 
+def facebook_videos() -> list[str]:
+    """Fällige Videos aus facebook/geplant auf der Facebook-Seite veröffentlichen."""
+    if not FB_GEPLANT.exists() or not os.environ.get("FB_PAGE_TOKEN", "").strip():
+        return []
+    jetzt = datetime.now(TZ)
+    fehler = []
+    for video in sorted(FB_GEPLANT.glob("*")):
+        if video.suffix.lower() not in VIDEO:
+            continue
+        m = NAME.match(video.stem)
+        if not m or datetime.strptime(f"{m[1]} {m[2]}:{m[3]}", "%Y-%m-%d %H:%M").replace(tzinfo=TZ) > jetzt:
+            continue
+        caption = video.with_suffix(".txt")
+        try:
+            text, fb_link = caption_lesen(video)
+            params = {"file_url": raw_url(video)}
+            if text:
+                params["description"] = facebook_text(text, fb_link)
+            ergebnis = fb_api("POST", "{seite}/videos", **params)
+            print(f"Auf Facebook veröffentlicht: Video {video.name} (Facebook-ID {ergebnis.get('id')})")
+            verschieben(video, caption, FB_GEPOSTET)
+            push(f"Facebook-Video gepostet: {video.stem}")
+        except Exception as e:
+            print(f"❌ Facebook-Video {video.name}: {e}")
+            verschieben(video, caption, FB_FEHLER, log=str(e))
+            push(f"Fehler bei Facebook-Video {video.stem}")
+            fehler.append(video.name)
+    return fehler
+
+
 def verschieben(medien: Path, caption: Path, ziel: Path, log: str = ""):
-    ziel.mkdir(exist_ok=True)
+    ziel.mkdir(parents=True, exist_ok=True)
     shutil.move(str(medien), ziel / medien.name)
     if caption.exists():
         shutil.move(str(caption), ziel / caption.name)
@@ -413,9 +450,12 @@ def main():
         print("Alles geprüft, nichts wurde gepostet.")
         return
 
+    fb_video_fehler = facebook_videos()
     posts = faellige_posts()
     if not posts:
         print("Keine fälligen Beiträge.")
+        if fb_video_fehler:
+            sys.exit(f"Facebook-Video fehlgeschlagen: {', '.join(fb_video_fehler)} – Details in facebook/fehler.")
         return
 
     fehlgeschlagen = []
@@ -440,6 +480,7 @@ def main():
 
     if fehlgeschlagen:
         sys.exit(f"Fehlgeschlagen: {', '.join(fehlgeschlagen)} – Details im Ordner 'fehler'.")
+    fb_fehler += fb_video_fehler
     if fb_fehler:
         sys.exit("Auf Instagram gepostet, aber nicht auf Facebook:\n" + "\n".join(fb_fehler))
 

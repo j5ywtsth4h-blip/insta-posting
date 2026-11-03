@@ -4,6 +4,7 @@ Dateinamen-Schema (deutsche Zeit, Europe/Berlin):
     linkedin/geplant/2026-11-03_08-00.md    -> Beitragstext (Pflicht)
     linkedin/geplant/2026-11-03_08-00.jpg   -> Bild (jpg/png, optional)
     linkedin/geplant/2026-11-03_08-00.pdf   -> oder Dokument/Karussell (optional)
+    linkedin/geplant/2026-11-03_08-00.mp4   -> oder Video (optional, max. 10 Minuten)
 
 Aufbau der .md-Datei:
     TITEL: Titel des Dokuments        (nur bei PDF, erste Zeile, optional)
@@ -26,6 +27,7 @@ import os
 import re
 import shutil
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -41,7 +43,7 @@ GEPLANT = LI / "geplant"
 GEPOSTET = LI / "gepostet"
 FEHLER = LI / "fehler"
 NAME = re.compile(r"^(\d{4}-\d{2}-\d{2})_(\d{2})-(\d{2})$")
-MEDIEN = {".jpg": "images", ".jpeg": "images", ".png": "images", ".pdf": "documents"}
+MEDIEN = {".jpg": "images", ".jpeg": "images", ".png": "images", ".pdf": "documents", ".mp4": "videos"}
 
 _version = {}
 
@@ -141,8 +143,36 @@ def lesen(md: Path) -> tuple[str, str, str]:
 
 # ---------------------------------------------------------------- Posten
 
+def video_hochladen(person: str, datei: Path) -> str:
+    """Video in Teilen hochladen, abschließen und warten, bis LinkedIn es verarbeitet hat."""
+    roh = datei.read_bytes()
+    antwort, _ = rest("POST", "/rest/videos?action=initializeUpload",
+                      {"initializeUploadRequest": {"owner": person, "fileSizeBytes": len(roh),
+                                                   "uploadCaptions": False, "uploadThumbnail": False}})
+    wert = antwort["value"]
+    teile = []
+    for teil in wert["uploadInstructions"]:
+        _, kopf = anfrage("PUT", teil["uploadUrl"], roh=roh[teil["firstByte"]:teil["lastByte"] + 1], rest=False)
+        etag = next((v for k, v in kopf.items() if k.lower() == "etag"), "")
+        teile.append(etag.strip('"') if etag else etag)
+    rest("POST", "/rest/videos?action=finalizeUpload",
+         {"finalizeUploadRequest": {"video": wert["video"], "uploadToken": wert.get("uploadToken", ""),
+                                    "uploadedPartIds": teile}})
+    for _ in range(60):
+        info, _ = rest("GET", f"/rest/videos/{urllib.parse.quote(wert['video'], safe='')}")
+        status = info.get("status", "")
+        if status == "AVAILABLE":
+            break
+        if status == "PROCESSING_FAILED":
+            raise RuntimeError(f"LinkedIn konnte das Video nicht verarbeiten: {info}")
+        time.sleep(5)
+    return wert["video"]
+
+
 def hochladen(person: str, datei: Path) -> str:
     art = MEDIEN[datei.suffix.lower()]
+    if art == "videos":
+        return video_hochladen(person, datei)
     antwort, _ = rest("POST", f"/rest/{art}?action=initializeUpload",
                       {"initializeUploadRequest": {"owner": person}})
     wert = antwort["value"]
@@ -198,7 +228,7 @@ def veroeffentlichen(person: str, md: Path) -> str:
     if medien:
         print(f"Lade hoch: {medien.name}")
         media = {"id": hochladen(person, medien)}
-        if medien.suffix.lower() == ".pdf":
+        if medien.suffix.lower() in (".pdf", ".mp4"):
             media["title"] = titel or text.splitlines()[0][:100]
         beitrag["content"] = {"media": media}
     _, kopf = rest("POST", "/rest/posts", beitrag)

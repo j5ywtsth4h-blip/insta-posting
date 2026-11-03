@@ -28,3 +28,9 @@
 - Fokus-Tipps von der Website (Chat „Google Sichtbarkeit“ meldet sie jeden 1. des Monats) werden als Karussell vorbereitet, werden ohne extra Freigabe direkt eingeplant (Lara 1.11.: „Ich muss nicht freigeben“), passend zur Website um den 1. des Monats, mit Links zur jeweiligen Tipp-Seite. Steuerthemen immer mit „Dieser Tipp gibt einen allgemeinen Überblick und ersetzt keine Steuerberatung.“
 - Caption-Zeilen `FB-LINK: Text | URL` erscheinen nur auf Facebook (als anklickbare Links statt „Link in Bio“), auf Instagram werden sie entfernt.
 - Einmal täglich beim Chat „Programmieren“ (FokusOffice) nach Neuigkeiten fragen und sie in `wissen/fokusoffice_neuerungen.md` übernehmen.
+
+## Funktions-Videos (Laras Auftrag vom 3.11.2026)
+- 2 kurze Videos pro Woche (15–30 s) mit echten FokusOffice-Funktionen, keine langen Werbetexte. Beispiel: „So erstellst du ein Angebot in wenigen Schritten“, „Keine Zeit für Büroarbeit? Übergib mir die Aufgabe direkt im Programm.“
+- Bildschirmaufnahmen kommen vom Chat „Programmieren“ (Testsystem, erfundene Beispieldaten), Ablage rohvideos/.
+- Verteilung: Instagram-Reel -> manuell/ (Lara postet selbst mit Musik, Erinnerung 10 Min. vorher); Facebook -> facebook/geplant/ (automatisch); LinkedIn -> linkedin/geplant/ als .mp4 + .md (automatisch).
+- Tarifgrenzen beachten (Team-Funktionen nur Business/Premium), keine echten Kundendaten im Bild.
