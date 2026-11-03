@@ -20,18 +20,22 @@ I = {
     "zettel": ico('<path d="M5 4h10l4 4v12H5z"/><path d="M8 9h5M8 12h8M8 15h6"/>'),
     "tabelle": ico('<rect x="4" y="5" width="16" height="14" rx="1"/><path d="M4 10h16M4 14.5h16M10 5v14"/>'),
     "handy": ico('<rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/>'),
+    "bericht": ico('<rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M9 4V3h6v1M8.5 10h7M8.5 13.5h7"/><path d="M8.5 17.5c1-1 1.8 0 2.6-.6s1.4-.8 2.4.2"/>'),
+    "material": ico('<path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/>'),
+    "offline": ico('<path d="M7 18h10a4 4 0 00.6-7.95A6 6 0 006.3 9.2 4.5 4.5 0 007 18z"/><path d="M3 3l18 18"/>'),
+    "werkzeug": ico('<path d="M14.5 6.5a4 4 0 015 5L9 22l-3-3L16.5 8.5"/><path d="M14.5 6.5L12 4l-2 2 2.5 2.5"/>'),
     "ordner": ico('<path d="M3.5 7V18.5h17V8.5H11L9 6H3.5z"/>'),
 }
 
 CSS2 = """
 .s2 { left: 20mm; top: 16mm; width: 170mm; }
 .s2 .eyebrow { font-size: 7.5pt; font-weight: 700; letter-spacing: 2pt; text-transform: uppercase; color: var(--muted); }
-.s2 h2 { font-family: Playfair; font-weight: 600; font-size: 20pt; line-height: 1.15; color: var(--forest); margin: 1.5mm 0 5mm; }
-.vergleich { display: flex; align-items: center; gap: 4mm; margin-bottom: 7mm; }
-.vorher { flex: 1; background: #f3f1ec; padding: 4mm; }
+.s2 h2 { font-family: Playfair; font-weight: 600; font-size: 19pt; line-height: 1.15; color: var(--forest); margin: 1.2mm 0 4mm; }
+.vergleich { display: flex; align-items: center; gap: 4mm; margin-bottom: 5mm; }
+.vorher { flex: 1; background: #f3f1ec; padding: 3mm 4mm; }
 .vorher .k, .nachher .k { font-size: 7.5pt; font-weight: 700; letter-spacing: 1.5pt; text-transform: uppercase; margin-bottom: 2.5mm; }
 .vorher .k { color: #8a8f8c; }
-.chaos { display: grid; grid-template-columns: 1fr 1fr; gap: 1.8mm 3mm; font-size: 8.3pt; color: #6e7571; }
+.chaos { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2mm 3mm; font-size: 8.3pt; color: #6e7571; }
 .chaos div { display: flex; align-items: center; gap: 1.8mm; }
 .chaos svg { width: 4.6mm; height: 4.6mm; color: #9aa09d; flex: none; }
 .pfeil { color: var(--forest); font-size: 18pt; font-weight: 300; }
@@ -40,28 +44,28 @@ CSS2 = """
 .nachher .gross { font-family: Playfair; font-size: 15pt; font-weight: 600; line-height: 1.2; }
 .nachher .klein { font-size: 8.3pt; margin-top: 2mm; color: #dfe6d8; }
 .hw-titel { font-family: Playfair; font-weight: 600; font-size: 13.5pt; color: var(--forest); margin-bottom: 3mm; }
-.hw { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin-bottom: 7mm; }
-.hw > div { background: var(--cream); padding: 4mm 3.6mm; border-top: 1.4mm solid var(--peach); }
-.hw .ic { width: 11mm; height: 11mm; border-radius: 50%; background: var(--forest); color: var(--cream); display:flex; align-items:center; justify-content:center; margin-bottom: 2.5mm; }
-.hw .ic svg { width: 6.2mm; height: 6.2mm; }
-.hw b { display:block; font-size: 10pt; color: var(--forest); margin-bottom: 1.2mm; line-height: 1.25; }
-.hw p { font-size: 8.5pt; line-height: 1.4; margin: 0; }
-.hw .tarif { display:inline-block; margin-top: 2mm; font-size: 7pt; font-weight: 700; color: var(--muted); letter-spacing: .6pt; text-transform: uppercase; }
+.hw { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; margin-bottom: 5mm; }
+.hw > div { background: var(--cream); padding: 3mm 3.4mm; border-top: 1.2mm solid var(--peach); }
+.hw .ic { width: 9mm; height: 9mm; border-radius: 50%; background: var(--forest); color: var(--cream); display:flex; align-items:center; justify-content:center; margin-bottom: 1.8mm; }
+.hw .ic svg { width: 5.2mm; height: 5.2mm; }
+.hw b { display:block; font-size: 9.5pt; color: var(--forest); margin-bottom: 1.2mm; line-height: 1.25; }
+.hw p { font-size: 8pt; line-height: 1.35; margin: 0; }
+.hw .tarif { display:inline-block; margin-top: 1.5mm; font-size: 7pt; font-weight: 700; color: var(--muted); letter-spacing: .6pt; text-transform: uppercase; }
 .raster-titel { font-family: Playfair; font-weight: 600; font-size: 13.5pt; color: var(--forest); margin-bottom: 3mm; }
-.raster { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm 3mm; margin-bottom: 7mm; }
+.raster { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5mm 3mm; margin-bottom: 5mm; }
 .raster div { display: flex; align-items: center; gap: 2.2mm; font-size: 8.5pt; line-height: 1.25; }
 .raster .ic { width: 8.5mm; height: 8.5mm; border-radius: 2mm; background: var(--sage-l); color: var(--forest); display:flex; align-items:center; justify-content:center; flex: none; }
 .raster .ic svg { width: 5.2mm; height: 5.2mm; }
 .raster sup { font-size: 6.5pt; color: var(--muted); }
-.tarife { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; margin-bottom: 4mm; }
+.tarife { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5mm; margin-bottom: 3mm; }
 .tarife > div { border: 0.6pt solid var(--sage); padding: 3mm 3.5mm; }
-.tarife .n { font-size: 7.5pt; font-weight: 700; letter-spacing: 1.5pt; text-transform: uppercase; color: var(--muted); }
-.tarife .p { font-family: Playfair; font-size: 15pt; font-weight: 600; color: var(--forest); margin: .5mm 0 1mm; }
+.tarife .n { font-size: 7pt; font-weight: 700; letter-spacing: 1pt; text-transform: uppercase; color: var(--muted); }
+.tarife .p { font-family: Playfair; font-size: 13.5pt; font-weight: 600; color: var(--forest); margin: .5mm 0 1mm; }
 .tarife .p small { font-family: DMSans; font-size: 8pt; font-weight: 500; color: var(--muted); }
 .tarife .d { font-size: 8pt; line-height: 1.35; }
 .tarife .hl { background: var(--cream); border-color: var(--forest); }
 .s2 .fussnote { font-size: 7.5pt; color: var(--muted); line-height: 1.45; }
-.s2 .cta { margin-top: 5mm; display:flex; justify-content: space-between; align-items:center; background: var(--peach); padding: 3.5mm 5mm; }
+.s2 .cta { margin-top: 4mm; display:flex; justify-content: space-between; align-items:center; background: var(--peach); padding: 3.5mm 5mm; }
 .s2 .cta b { font-family: Playfair; font-size: 12.5pt; color: var(--forest); font-weight: 600; }
 .s2 .cta span { font-size: 9pt; color: var(--forest); font-weight: 600; text-align: right; line-height: 1.4; }
 """
@@ -73,17 +77,21 @@ def seite2():
              ("beleg", "Schuhkarton für Belege"), ("auto", "Zettel für Fahrten"),
              ("mail", "E-Mails überall verteilt"), ("ordner", "Ordner für Verträge")]
     hw = [
-        ("kamera", "Baustellenfotos direkt zum Auftrag",
-         "Foto mit dem Handy machen, Notiz dazu – fertig. Alles liegt beim Auftrag und beim Kunden, statt im Fotoalbum zu verschwinden.", "Business und Premium"),
-        ("chat", "Eigener Chat für jeden Auftrag",
-         "Absprachen, Fragen und Fotos bleiben beim Auftrag. Kein Suchen mehr in privaten Gruppen-Chats.", "Business und Premium"),
-        ("kalender", "Aufträge verteilen – direkt im Kalender",
-         "Sie ordnen den Auftrag einem Mitarbeiter zu. Er sieht ihn sofort in seinem Planer, mit Adresse, Route, Beschreibung und Fotos.", "Business und Premium"),
+        ("bericht", "Arbeitsbericht vor Ort",
+         "Zeit, Material und Fotos erfassen, der Kunde unterschreibt direkt auf dem Handy. Daraus bereiten Sie die Rechnung vor.", "Premium Handwerk"),
+        ("material", "Material mit Ein- und Verkaufspreis",
+         "Eigene Artikel anlegen oder Listen aus Excel, CSV oder PDF übernehmen – und am Auftrag verwenden.", "Premium Handwerk"),
+        ("werkzeug", "Wartungen, Fahrzeuge, Werkzeug",
+         "Erinnerung an Wartungstermine mit Anschreiben-Entwurf, an TÜV und Prüffristen. Fahrzeuge Mitarbeitern zuordnen.", "Premium Handwerk"),
+        ("kalender", "Aufträge verteilen",
+         "Sie ordnen den Auftrag einem Mitarbeiter zu. Er sieht ihn sofort in seinem Planer, mit Adresse, Route und Beschreibung.", "ab Business"),
+        ("kamera", "Fotos und Chat am Auftrag",
+         "Baustellenfotos und Absprachen bleiben beim Auftrag – statt in privaten Gruppen-Chats.", "ab Business"),
+        ("offline", "Auch ohne Empfang",
+         "Im Keller oder Neubau Zeiten, Fotos und Arbeitsberichte erfassen. Übertragen wird automatisch, sobald wieder Netz da ist.", "alle Tarife"),
     ]
     raster = [("angebot", "Angebote und Rechnungen", "¹"), ("erechnung", "E-Rechnung (XRechnung)", ""),
-              ("beleg", "Belege per Handy fotografieren", ""), ("uhr", "Zeiterfassung und Stundenzettel", "²"),
-              ("auto", "Fahrten und Verpflegung", ""), ("stift", "Kundenverträge mit Unterschrift am Handy", "²"),
-              ("tabelle", "Bankimport und DATEV-Export", "²"), ("hand", "Büroaufgaben an Fokuszeit abgeben", "")]
+              ("uhr", "Stundenzettel und Fahrten", "²"), ("hand", "Büroaufgaben an Fokuszeit abgeben", "")]
     return f"""
 <section class="seite">
   <div class="abs s2">
@@ -112,12 +120,14 @@ def seite2():
     </div>
 
     <div class="tarife">
-      <div><div class="n">Basis</div><div class="p">9,99 € <small>/ Monat</small></div><div class="d">1 Zugang für den Inhaber</div></div>
-      <div class="hl"><div class="n">Business</div><div class="p">16,99 € <small>/ Monat</small></div><div class="d">Bis 3 Benutzer, mit Angeboten und Team-Funktionen</div></div>
-      <div><div class="n">Premium</div><div class="p">29,99 € <small>/ Monat</small></div><div class="d">Unbegrenzt viele Benutzer, inkl. 15 Min. Büroassistenz im Monat</div></div>
+      <div><div class="n">Basis</div><div class="p">9,99 € <small>/ Monat</small></div><div class="d">1 Benutzer</div></div>
+      <div><div class="n">Business</div><div class="p">16,99 € <small>/ Monat</small></div><div class="d">Bis 3 Benutzer, mit Angeboten und Team-Funktionen</div></div>
+      <div><div class="n">Premium</div><div class="p">29,99 € <small>/ Monat</small></div><div class="d">Bis 5 Benutzer, inkl. 15 Min. Büroassistenz im Monat</div></div>
+      <div class="hl"><div class="n">Premium Handwerk</div><div class="p">49,99 € <small>/ Monat</small></div><div class="d">Bis 10 Benutzer, mit Arbeitsbericht, Material, Wartungen und Fahrzeugen</div></div>
     </div>
-    <div class="fussnote">Alle Preise: keine USt. gem. § 19 UStG. Im Jahresabo 2 Monate geschenkt. 14 Tage kostenlos testen, alle Funktionen inklusive – der Test endet automatisch.<br>
-    ¹ Angebote ab Business &nbsp;·&nbsp; ² Business und Premium &nbsp;·&nbsp; Für Handwerksbetriebe mit Team empfehle ich Business.</div>
+    <div class="fussnote">Alle Preise: keine USt. gem. § 19 UStG. Monatlich kündbar, im Jahresabo 2 Monate geschenkt. Premium und Premium Handwerk: je 5 weitere Benutzer 9,99 € im Monat.
+    14 Tage kostenlos testen, alles inklusive – auch der Handwerksbereich. Der Test endet automatisch.<br>
+    ¹ Angebote ab Business &nbsp;·&nbsp; ² ab Business</div>
 
     <div class="cta"><b>Lassen Sie uns einen Termin ausmachen.</b><span>Lara Kohls · 0176 20558600<br>kontakt@fokuszeit-business.de</span></div>
   </div>

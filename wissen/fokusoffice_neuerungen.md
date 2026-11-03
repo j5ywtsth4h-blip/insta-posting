@@ -121,3 +121,21 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - NUR Testsystem, NOCH NICHT bewerben: Tarif „Premium Handwerk“ (Arbeitsberichte mit Unterschrift vor Ort, Material, Wartungen, Fahrzeuge/TÜV, Import aus CSV/Excel/PDF), Arbeitsanweisungen/Zugangsdaten für Mitarbeiter, Outlook-Verbindung, Gmail-Anleitung. Preis/Buchbarkeit offen.
 - Nie erwähnen: direkte Bankanbindung (nur CSV/PDF-Import), Anzahlungs-/Schlussrechnung und Rabatte als E-Rechnung, ZUGFeRD (nicht vorhanden).
 - Lara plant Werbebriefe an Handwerksbetriebe am Samstag (7.11.); Handwerk soll vorher live gehen, Entscheidung bei Lara.
+
+## Stand 3.11. ca. 18:40 UTC – ALLES LIVE (Programm + Website)
+### Premium Handwerk (live, buchbar)
+- 49,99 €/Monat oder 499,90 €/Jahr (2 Monate geschenkt), monatlich kündbar, keine USt. gem. § 19 UStG.
+- Alles aus Premium plus: Arbeitsberichte mit Kundenunterschrift auf dem Handy vor Ort (PDF, im Auftragschat teilen, daraus Rechnung vorbereiten); Material mit Einkaufs-/Verkaufspreis, Import aus Excel/CSV/PDF, freie Positionen; Wartungen mit Erinnerung und Anschreiben-Entwurf; Fahrzeuge und Werkzeug mit TÜV-/Prüf-Erinnerung (Fahrzeug einem Mitarbeiter zuordenbar); Erinnerungen auf der Startseite; Arbeitsanweisungen für Mitarbeiter (mit Chat-Hinweis); Schnellaktion „Arbeitsbericht schreiben“.
+- Bis zu 10 Benutzer inklusive, je 5 weitere 9,99 €/Monat (Buchung bis Samstag über Lara, danach im Programm).
+- 15 Min. Büroassistenz/Monat inklusive; Jahresabo: kostenloser Einrichtungstermin 60 Min.
+### Offline-Modus (ALLE Tarife)
+- Ohne Empfang Zeiten, Fahrten, Verpflegung, Kalender, Arbeitsberichte mit Unterschrift und Fotos erfassen; automatische Übertragung bei Netz; Anzeige, was noch nicht übertragen ist. Rechnungen offline bewusst nicht.
+### Geändert
+- **Premium 29,99 €: jetzt bis zu 5 Benutzer** (vorher unbegrenzt), je 5 weitere 9,99 €/Monat.
+- Basis 9,99 € (1), Business 16,99 € (bis 3) unverändert. Jahresabo Business/Premium: Einrichtungstermin 30 Min.
+- Testphase 14 Tage, ohne Zahlungsdaten; Handwerksbereich im Test sichtbar und testbar.
+### Regeln
+- **Nie mehr „unbegrenzt viele Benutzer“** schreiben.
+- Nicht bewerben: Anzahlungs-/Schlussrechnung und Rabatte als E-Rechnung, ZUGFeRD, direkte Bankanbindung, Push-Nachrichten, Passkeys/Face-ID, Zugangsdaten-Tresor, KI-Hilfebot.
+- Keine Konkurrenznamen/-preise in Werbung.
+- „Arbeitsanweisungen für Mitarbeiter“ ist jetzt live (Premium Handwerk) und darf beworben werden; Zugangsdaten-Tresor NICHT.

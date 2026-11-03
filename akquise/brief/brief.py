@@ -29,7 +29,7 @@ ANGEBOT_TEXT = (
     "Firmendaten, Ihre Preisliste als Leistungskatalog und die erste E-Rechnung gemeinsam."
 )
 ANGEBOT_PREIS = "60 Minuten für 29 € statt 59 €"
-ANGEBOT_ZUSATZ = "Mit Jahresabo Business oder Premium kostenlos."
+ANGEBOT_ZUSATZ = "Mit Jahresabo ab Business kostenlos."
 
 
 def qr_svg(url):
@@ -127,7 +127,7 @@ def brief(b):
     <ul>
       <li>Angebot, Auftrag und Rechnung in wenigen Schritten – auch als E-Rechnung (XRechnung),
           mit dem offiziellen Prüfwerkzeug (KoSIT) geprüft</li>
-      <li>Baustellenfotos, Fahrten und Arbeitszeiten direkt beim Auftrag – am PC, Tablet und Handy</li>
+      <li>Arbeitsbericht mit Material und Fotos – der Kunde unterschreibt vor Ort auf dem Handy</li>
       <li>Keine Zeit fürs Büro? Aufgaben direkt im Programm an mich übergeben</li>
     </ul>
 
@@ -151,7 +151,7 @@ def brief(b):
       <div><b>Ohne Abo-Falle</b>14 Tage kostenlos testen, endet automatisch.</div>
     </div>
 
-    <p>Ab 9,99 € im Monat; Angebote, Auftragsfotos und Team-Funktionen ab Tarif Business für 16,99 € (keine USt. gem. § 19 UStG). Rufen Sie mich gern an – ich zeige Ihnen FokusOffice in Ruhe.</p>
+    <p><b>Premium Handwerk</b> mit bis zu 10 Benutzern: 49,99 € im Monat (keine USt. gem. § 19 UStG). Rufen Sie mich gern an!</p>
 
     <p class="gruss">Mit freundlichen Grüßen</p>
     <div class="unterschrift"></div>

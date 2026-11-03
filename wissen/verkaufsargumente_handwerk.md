@@ -2,7 +2,7 @@
 
 Stand 3.11.2026. Quellen: wissen/fokusoffice_neuerungen.md, fokuszeit-business.de/fokusoffice.html,
 Bildschirmaufnahmen aus dem Programm. Werbeaussagen immer mit REGELN.md abgleichen.
-Empfehlung für Handwerksbetriebe mit Mitarbeitern: **Business (16,99 €, bis 3 Benutzer)**, ab 4 Benutzern **Premium (29,99 €, unbegrenzt)** – keine USt. gem. § 19 UStG.
+Empfehlung für Handwerksbetriebe (seit 3.11. live): **Premium Handwerk (49,99 €, bis 10 Benutzer)** mit Arbeitsbericht, Material, Wartungen, Fahrzeugen; Einstieg ohne diese Funktionen: Business (16,99 €, bis 3) oder Premium (29,99 €, bis 5) – keine USt. gem. § 19 UStG.
 
 ## Die Top 5 (in dieser Reihenfolge verwenden)
 
@@ -42,7 +42,7 @@ Business kostet 16,99 € im Monat für bis zu 3 Benutzer (Jahresabo 169,90 €,
 ## Ehrlich bleiben – mögliche Einwände
 - **Keine automatische Bankverbindung**, nur Import per CSV/PDF-Kontoauszug → als Vorteil formulierbar: keine Bankzugangsdaten im Programm.
 - **Kein Spezial-Branchenprogramm:** Aufmaß, Materialkalkulation, Wartungsverträge oder GAEB werden nirgends genannt → FokusOffice als schlankes, bezahlbares Büro für kleine Betriebe positionieren, nicht als Komplett-Branchensoftware. Bei Bedarf beim Programmieren-Chat nachfragen.
-- **Business nur bis 3 Benutzer** → ab 4 Personen Premium (29,99 €, unbegrenzt).
+- **Benutzer:** Business bis 3, Premium bis 5, Premium Handwerk bis 10, je 5 weitere 9,99 €/Monat.
 - **Kein E-Mail-Import aus Outlook** (laut Website „Outlook folgt“).
 
 ## Auffälligkeiten auf der Website (Lara informiert, 3.11.)
