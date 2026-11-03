@@ -126,10 +126,10 @@ def seite2():
     <div class="tarife">
       <div><div class="n">Basis</div><div class="p">9,99 € <small>/ Monat</small></div><div class="d">1 Benutzer</div></div>
       <div><div class="n">Business</div><div class="p">16,99 € <small>/ Monat</small></div><div class="d">Bis 3 Benutzer, mit Angeboten und Team-Funktionen</div></div>
-      <div><div class="n">Premium</div><div class="p">29,99 € <small>/ Monat</small></div><div class="d">Bis 5 Benutzer, inkl. 15 Min. Büroassistenz im Monat</div></div>
-      <div class="hl"><div class="n">Premium Handwerk</div><div class="p">49,99 € <small>/ Monat</small></div><div class="d">Bis 10 Benutzer, mit Arbeitsbericht, Material, Wartungen und Fahrzeugen</div></div>
+      <div><div class="n">Premium</div><div class="p">29,99 € <small>/ Monat</small></div><div class="d">5 Benutzer inklusive, weitere je 2,99 €, 15 Min. Büroassistenz im Monat</div></div>
+      <div class="hl"><div class="n">Premium Handwerk</div><div class="p">49,99 € <small>/ Monat</small></div><div class="d">10 Benutzer inklusive, weitere je 2,99 €, mit Arbeitsbericht, Material, Wartungen und Fahrzeugen</div></div>
     </div>
-    <div class="fussnote">Alle Preise: keine USt. gem. § 19 UStG. Monatlich kündbar, im Jahresabo 2 Monate geschenkt. Premium und Premium Handwerk: jeder weitere Benutzer 2,99 € im Monat.
+    <div class="fussnote">Alle Preise: keine USt. gem. § 19 UStG. Monatlich kündbar, im Jahresabo 2 Monate geschenkt.
     14 Tage kostenlos testen, alles inklusive – auch der Handwerksbereich. Der Test endet automatisch.<br>
     ¹ Angebote ab Business &nbsp;·&nbsp; ² ab Business</div>
 
