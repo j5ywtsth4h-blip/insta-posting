@@ -52,8 +52,8 @@ CSS2 = """
 .hw p { font-size: 8pt; line-height: 1.35; margin: 0; }
 .hw .tarif { display:inline-block; margin-top: 1.5mm; font-size: 7pt; font-weight: 700; color: var(--muted); letter-spacing: .6pt; text-transform: uppercase; }
 .raster-titel { font-family: Playfair; font-weight: 600; font-size: 13.5pt; color: var(--forest); margin-bottom: 3mm; }
-.raster { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5mm 3mm; margin-bottom: 5mm; }
-.raster div { display: flex; align-items: center; gap: 2.2mm; font-size: 8.5pt; line-height: 1.25; }
+.raster { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2.5mm 3mm; margin-bottom: 5mm; }
+.raster div { display: flex; align-items: center; gap: 2mm; font-size: 8pt; line-height: 1.25; }
 .raster .ic { width: 8.5mm; height: 8.5mm; border-radius: 2mm; background: var(--sage-l); color: var(--forest); display:flex; align-items:center; justify-content:center; flex: none; }
 .raster .ic svg { width: 5.2mm; height: 5.2mm; }
 .raster sup { font-size: 6.5pt; color: var(--muted); }
@@ -90,8 +90,9 @@ def seite2():
         ("offline", "Auch ohne Empfang",
          "Im Keller oder Neubau Zeiten, Fotos und Arbeitsberichte erfassen. Übertragen wird automatisch, sobald wieder Netz da ist.", "alle Tarife"),
     ]
-    raster = [("angebot", "Angebote und Rechnungen", "¹"), ("erechnung", "E-Rechnung (XRechnung)", ""),
-              ("uhr", "Stundenzettel und Fahrten", "²"), ("hand", "Büroaufgaben an Fokuszeit abgeben", "")]
+    raster = [("angebot", "Angebote und Rechnungen", "¹"), ("erechnung", "E-Rechnung", ""),
+              ("mail", "E-Mail-Postfach", ""), ("uhr", "Stundenzettel", "²"),
+              ("hand", "Büroassistenz", "")]
     return f"""
 <section class="seite">
   <div class="abs s2">

@@ -65,13 +65,13 @@ body { font-family: DMSans, sans-serif; color: var(--text); font-size: 10pt; lin
 .info b { color: var(--text); font-weight: 600; }
 .inhalt { left: 25mm; top: 99mm; width: 165mm; }
 h1 { font-family: Playfair; font-weight: 600; font-size: 15.5pt; color: var(--forest); line-height: 1.2; margin-bottom: 1.2mm; }
-.unter { font-weight: 600; font-size: 10pt; color: var(--muted); margin-bottom: 5mm; }
-p { margin-bottom: 2.6mm; }
-ul { list-style: none; margin: 1mm 0 4mm; }
-li { position: relative; padding-left: 6mm; margin-bottom: 1.4mm; }
+.unter { font-weight: 600; font-size: 10pt; color: var(--muted); margin-bottom: 4mm; }
+p { margin-bottom: 2.2mm; }
+ul { list-style: none; margin: 1mm 0 3mm; }
+li { position: relative; padding-left: 6mm; margin-bottom: 1mm; }
 li::before { content:""; position:absolute; left: 0.8mm; top: 0.35mm; width: 1.9mm; height: 3.3mm;
              border-right: 1.6pt solid var(--forest); border-bottom: 1.6pt solid var(--forest); transform: rotate(40deg); }
-.reihe { display: flex; gap: 5mm; margin: 1mm 0 4mm; align-items: stretch; }
+.reihe { display: flex; gap: 5mm; margin: 1mm 0 3mm; align-items: stretch; }
 .angebot { flex: 1; background: var(--cream); border-left: 2.2mm solid var(--forest); padding: 3.6mm 4.5mm; }
 .angebot .t { font-size: 7.5pt; font-weight: 700; letter-spacing: 1.6pt; text-transform: uppercase; color: var(--muted); }
 .angebot .p { font-family: Playfair; font-size: 13.5pt; font-weight: 600; color: var(--forest); margin: 1mm 0 1.2mm; }
@@ -81,11 +81,11 @@ li::before { content:""; position:absolute; left: 0.8mm; top: 0.35mm; width: 1.9
 .qr img { width: 27mm; height: 27mm; background:#fff; padding: 1.6mm; }
 .qr span { font-size: 8pt; font-weight: 600; color: var(--forest); margin-top: 1.8mm; line-height: 1.25; }
 .sicher { display: flex; gap: 3.5mm; font-size: 8pt; color: var(--muted); border-top: 0.6pt solid var(--sage);
-          border-bottom: 0.6pt solid var(--sage); padding: 2.2mm 0; margin-bottom: 4mm; }
+          border-bottom: 0.6pt solid var(--sage); padding: 2mm 0; margin-bottom: 3mm; }
 .sicher div { flex: 1; }
 .sicher b { display:block; color: var(--forest); font-size: 8.3pt; font-weight: 700; }
 .gruss { margin-top: 1mm; }
-.unterschrift { height: 13mm; }
+.unterschrift { height: 11mm; }
 .fuss { left: 25mm; right: 20mm; top: 280mm; font-size: 7pt; color: var(--muted); display:flex; justify-content: space-between;
         border-top: 0.6pt solid var(--sage); padding-top: 2mm; line-height: 1.45; }
 .fuss .note { margin-top: 0; }
@@ -127,8 +127,9 @@ def brief(b):
     <ul>
       <li>Angebot, Auftrag und Rechnung in wenigen Schritten – auch als E-Rechnung (XRechnung),
           mit dem offiziellen Prüfwerkzeug (KoSIT) geprüft</li>
+      <li>Sie verteilen Aufträge, Ihre Mitarbeiter sehen sie sofort auf dem Handy – mit Adresse und Route</li>
       <li>Arbeitsbericht mit Material und Fotos – der Kunde unterschreibt vor Ort auf dem Handy</li>
-      <li>Keine Zeit fürs Büro? Aufgaben direkt im Programm an mich übergeben</li>
+      <li>E-Mails, Kunden und Termine an einem Ort – Büroaufgaben direkt an mich übergeben</li>
     </ul>
 
     <div class="reihe">
