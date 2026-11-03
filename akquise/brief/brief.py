@@ -14,6 +14,7 @@ import qrcode.image.svg
 from playwright.sync_api import sync_playwright
 
 from betriebe import BETRIEBE
+from seite2 import CSS2, seite2
 
 HIER = Path(__file__).resolve().parent
 CHROME = "/opt/pw-browsers/chromium"
@@ -168,7 +169,7 @@ def brief(b):
 
 def pdf(seiten, ziel):
     global QR
-    doc = f"<!doctype html><html lang='de'><head><meta charset='utf-8'><style>{CSS}</style></head><body>{''.join(seiten)}</body></html>"
+    doc = f"<!doctype html><html lang='de'><head><meta charset='utf-8'><style>{CSS}{CSS2}</style></head><body>{''.join(seiten)}</body></html>"
     quelle = HIER / "_brief.html"
     quelle.write_text(doc, encoding="utf-8")
     with sync_playwright() as p:
@@ -186,5 +187,6 @@ def pdf(seiten, ziel):
 QR = qr_svg(VIDEO_URL)
 
 if __name__ == "__main__":
-    pdf([brief(b) for b in BETRIEBE], HIER / "FokusOffice_Brief_alle.pdf")
-    pdf([brief(None)], HIER / "FokusOffice_Brief_leer.pdf")
+    # Je Betrieb Vorder- und Rückseite (beidseitig drucken)
+    pdf([s for b in BETRIEBE for s in (brief(b), seite2())], HIER / "FokusOffice_Brief_alle.pdf")
+    pdf([brief(None), seite2()], HIER / "FokusOffice_Brief_leer.pdf")
