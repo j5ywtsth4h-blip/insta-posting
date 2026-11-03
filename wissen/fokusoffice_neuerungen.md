@@ -148,3 +148,4 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - Formulierung: „Kunden, Material und offene Rechnungen übernehmen Sie Schritt für Schritt mit dem Wechsel-Assistenten.“
 - NIE: „Buchhaltung/alle Rechnungen/Buchungen werden automatisch übernommen“ (alte Buchungen bleiben im Export des alten Programms).
 - „Kostenloser Wechsel-Check“ (Laras Idee) noch NICHT entschieden → nicht bewerben.
+- **Kostenloser Wechsel-Check (Lara entschieden, 3.11.):** max. 15 Min. Telefon/Video, nur Betriebe/Selbstständige, klärt Umstieg (bisheriges Programm, Daten, Tarif); begleitet die 14-Tage-Testphase. Optional: „Auf Wunsch übernehmen wir den Umzug Ihrer Daten (Büroassistenz, nach Aufwand).“ Anfrage bis Samstag nur über kontakt.html bzw. Telefon/E-Mail; keine neue URL drucken. Termine nach Laras Zeitfenstern.

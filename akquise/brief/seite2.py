@@ -28,7 +28,7 @@ I = {
 }
 
 CSS2 = """
-.s2 { left: 20mm; top: 16mm; width: 170mm; }
+.s2 { left: 20mm; top: 11mm; width: 170mm; }
 .s2 .eyebrow { font-size: 7.5pt; font-weight: 700; letter-spacing: 2pt; text-transform: uppercase; color: var(--muted); }
 .s2 h2 { font-family: Playfair; font-weight: 600; font-size: 17pt; line-height: 1.15; color: var(--forest); margin: 1.2mm 0 4mm; }
 .vergleich { display: flex; align-items: center; gap: 4mm; margin-bottom: 5mm; }
@@ -43,7 +43,7 @@ CSS2 = """
 .nachher .k { color: var(--sage); }
 .nachher .gross { font-family: Playfair; font-size: 15pt; font-weight: 600; line-height: 1.2; }
 .nachher .klein { font-size: 8.3pt; margin-top: 2mm; color: #dfe6d8; }
-.hw-titel { font-family: Playfair; font-weight: 600; font-size: 13.5pt; color: var(--forest); margin-bottom: 3mm; }
+.hw-titel { font-family: Playfair; font-weight: 600; font-size: 12.5pt; color: var(--forest); margin-bottom: 2.5mm; }
 .hw { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; margin-bottom: 5mm; }
 .hw > div { background: var(--cream); padding: 3mm 3.4mm; border-top: 1.2mm solid var(--peach); }
 .hw .ic { width: 9mm; height: 9mm; border-radius: 50%; background: var(--forest); color: var(--cream); display:flex; align-items:center; justify-content:center; margin-bottom: 1.8mm; }
@@ -51,7 +51,7 @@ CSS2 = """
 .hw b { display:block; font-size: 9.5pt; color: var(--forest); margin-bottom: 1.2mm; line-height: 1.25; }
 .hw p { font-size: 8pt; line-height: 1.35; margin: 0; }
 .hw .tarif { display:inline-block; margin-top: 1.5mm; font-size: 7pt; font-weight: 700; color: var(--muted); letter-spacing: .6pt; text-transform: uppercase; }
-.raster-titel { font-family: Playfair; font-weight: 600; font-size: 13.5pt; color: var(--forest); margin-bottom: 3mm; }
+.raster-titel { font-family: Playfair; font-weight: 600; font-size: 12.5pt; color: var(--forest); margin-bottom: 2mm; }
 .raster { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2.5mm 3mm; margin-bottom: 5mm; }
 .raster div { display: flex; align-items: center; gap: 2mm; font-size: 8pt; line-height: 1.25; }
 .raster .ic { width: 8.5mm; height: 8.5mm; border-radius: 2mm; background: var(--sage-l); color: var(--forest); display:flex; align-items:center; justify-content:center; flex: none; }
@@ -65,9 +65,11 @@ CSS2 = """
 .tarife .d { font-size: 8pt; line-height: 1.35; }
 .tarife .hl { background: var(--cream); border-color: var(--forest); }
 .s2 .fussnote { font-size: 7.5pt; color: var(--muted); line-height: 1.45; }
-.s2 .cta { margin-top: 4mm; display:flex; justify-content: space-between; align-items:center; background: var(--peach); padding: 3.5mm 5mm; }
+.s2 .cta { margin-top: 3mm; display:flex; justify-content: space-between; align-items:center; background: var(--peach); padding: 3.5mm 5mm; }
 .s2 .cta b { font-family: Playfair; font-size: 12.5pt; color: var(--forest); font-weight: 600; }
-.s2 .cta span { font-size: 9pt; color: var(--forest); font-weight: 600; text-align: right; line-height: 1.4; }
+.s2 .cta .cs { font-size: 8pt; color: var(--forest); margin-top: 1mm; line-height: 1.35; max-width: 112mm; }
+.s2 .cta { gap: 5mm; }
+.s2 .cta span { white-space: nowrap;  font-size: 9pt; color: var(--forest); font-weight: 600; text-align: right; line-height: 1.4; }
 """
 
 
@@ -131,6 +133,6 @@ def seite2():
     14 Tage kostenlos testen, alles inklusive – auch der Handwerksbereich. Der Test endet automatisch.<br>
     ¹ Angebote ab Business &nbsp;·&nbsp; ² ab Business</div>
 
-    <div class="cta"><b>Lassen Sie uns einen Termin ausmachen.</b><span>Lara Kohls · 0176 20558600<br>kontakt@fokuszeit-business.de</span></div>
+    <div class="cta"><div><b>Kostenloser Wechsel-Check</b><div class="cs">In 15 Minuten per Telefon oder Video klären wir, wie Ihr Umstieg gelingt. Auf Wunsch übernehme ich den Umzug Ihrer Daten (Büroassistenz, nach Aufwand).</div></div><span>Lara Kohls · 0176 20558600<br>kontakt@fokuszeit-business.de</span></div>
   </div>
 </section>"""
