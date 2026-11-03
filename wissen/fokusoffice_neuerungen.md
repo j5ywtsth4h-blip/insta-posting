@@ -110,3 +110,7 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - „Ab 104 € im Monat“ = neuer Einstiegspreis Monatstarife.
 - Neu bei Mini, Plus, Flex: nicht genutzte Stunden einen Monat mitnehmen, vorrangige Bearbeitung (Beginn in der Regel innerhalb eines Werktags).
 - Mitnahme in allen Tarifen max. 8 Stunden (auch Premium). Nie mit „alle Stunden mitnehmen“ werben.
+
+## Tarif-Hinweis (Programmieren-Chat, 3.11.)
+- **Angebote gibt es erst ab Business** (16,99 €), im 14-Tage-Test ist alles enthalten. „In Rechnung umwandeln“ (angenommenes Angebot → Rechnung) ist live.
+- „An Fokuszeit abgeben“ (Aufgaben-Korb) gibt es in allen Tarifen; Büroassistenz nach Aufwand, in der App ab 55 €/Std.
