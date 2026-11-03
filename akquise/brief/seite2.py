@@ -30,7 +30,7 @@ I = {
 CSS2 = """
 .s2 { left: 20mm; top: 16mm; width: 170mm; }
 .s2 .eyebrow { font-size: 7.5pt; font-weight: 700; letter-spacing: 2pt; text-transform: uppercase; color: var(--muted); }
-.s2 h2 { font-family: Playfair; font-weight: 600; font-size: 19pt; line-height: 1.15; color: var(--forest); margin: 1.2mm 0 4mm; }
+.s2 h2 { font-family: Playfair; font-weight: 600; font-size: 17pt; line-height: 1.15; color: var(--forest); margin: 1.2mm 0 4mm; }
 .vergleich { display: flex; align-items: center; gap: 4mm; margin-bottom: 5mm; }
 .vorher { flex: 1; background: #f3f1ec; padding: 3mm 4mm; }
 .vorher .k, .nachher .k { font-size: 7.5pt; font-weight: 700; letter-spacing: 1.5pt; text-transform: uppercase; margin-bottom: 2.5mm; }
@@ -75,7 +75,7 @@ def seite2():
     chaos = [("zettel", "Textprogramm für Angebote"), ("tabelle", "Tabelle für Stunden"),
              ("handy", "Messenger für Baustellenfotos"), ("kalender", "Wandkalender für Termine"),
              ("beleg", "Schuhkarton für Belege"), ("auto", "Zettel für Fahrten"),
-             ("mail", "E-Mails überall verteilt"), ("ordner", "Ordner für Verträge")]
+             ("mail", "E-Mails überall verteilt")]
     hw = [
         ("bericht", "Arbeitsbericht vor Ort",
          "Zeit, Material und Fotos erfassen, der Kunde unterschreibt direkt auf dem Handy. Daraus bereiten Sie die Rechnung vor.", "Premium Handwerk"),
@@ -97,7 +97,7 @@ def seite2():
 <section class="seite">
   <div class="abs s2">
     <div class="eyebrow">FokusOffice für Handwerksbetriebe</div>
-    <h2>Alles in einem Programm –<br>statt vieler verschiedener</h2>
+    <h2>Alles in einem Programm – statt vieler verschiedener</h2>
 
     <div class="vergleich">
       <div class="vorher"><div class="k">Bisher</div><div class="chaos">
@@ -107,6 +107,7 @@ def seite2():
       <div class="nachher"><div class="k">Mit FokusOffice</div>
         <div class="gross">Ein Programm. Ein Login.<br>Alles am Auftrag.</div>
         <div class="klein">Am PC im Büro, auf dem Tablet und auf dem Handy auf der Baustelle.</div>
+        <div class="klein"><b>Umstieg leicht gemacht:</b> Kunden, Material und offene Rechnungen übernehmen Sie Schritt für Schritt mit dem Wechsel-Assistenten.</div>
       </div>
     </div>
 

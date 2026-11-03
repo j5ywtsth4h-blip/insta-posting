@@ -142,3 +142,9 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - **Änderung (Lara, 3.11. abends): zusätzliche Benutzer kosten 2,99 € je Benutzer und Monat** (statt je 5 für 9,99 €). Gilt für Premium und Premium Handwerk.
 - Bestätigt vom Programmier-Chat (3.11. abends, live in Programm, AGB, Website): jeder weitere Benutzer 2,99 €/Monat einzeln – bei Premium ab dem 6., bei Premium Handwerk ab dem 11. Benutzer. Werbesatz: „Jeder weitere Mitarbeiter unter 3 € im Monat“. Business: keine Zusatzbenutzer genannt.
 - AGB neu: bis zu 20 GB Speicher je Kundenkonto inklusive (muss nicht beworben werden).
+
+## Neu live 3.11. abends: Wechsel-Assistent (darf beworben werden)
+- Kunden aus dem bisherigen Programm per CSV übernehmen (Spalten zuordnen, Vorschau, Dubletten erkannt), Materialliste für den Materialstamm vorbereiten, offene Rechnungen mit Original-PDF übernehmen (derzeit einzeln), Zahlungen dazu per CSV, Eingangsrechnungen mit Originalbeleg nacherfassen.
+- Formulierung: „Kunden, Material und offene Rechnungen übernehmen Sie Schritt für Schritt mit dem Wechsel-Assistenten.“
+- NIE: „Buchhaltung/alle Rechnungen/Buchungen werden automatisch übernommen“ (alte Buchungen bleiben im Export des alten Programms).
+- „Kostenloser Wechsel-Check“ (Laras Idee) noch NICHT entschieden → nicht bewerben.
