@@ -97,6 +97,6 @@ Pensum: 10 bis 15 neue Kontakte am Tag, ca. 15 Minuten. Nie mehr als 20 Erstnach
 
 - Keine Steuerberatung versprechen (bei Steuerfragen an Steuerbüro verweisen).
 - Nicht schlecht über andere Programme reden und nicht „das einzige“ sagen.
-- Nicht „GoBD-zertifiziert“ schreiben. Bei E-Rechnung: „XRechnung mit dem offiziellen Prüfwerkzeug (KoSIT) geprüft“.
+- Nicht „GoBD-zertifiziert“ schreiben. Bei E-Rechnung: „das XRechnungs-Format ist mit dem offiziellen Prüfwerkzeug (KoSIT) getestet“ (einzelne Rechnungen werden nicht automatisch geprüft).
 - Wer nicht antwortet oder ablehnt, wird nicht weiter angeschrieben.
 - Antworten, bei denen du unsicher bist: Screenshot an Claude, du bekommst einen Antwortvorschlag.

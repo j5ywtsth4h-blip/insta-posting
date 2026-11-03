@@ -90,7 +90,7 @@ def seite2():
         ("kamera", "Fotos und Chat am Auftrag",
          "Baustellenfotos und Absprachen bleiben beim Auftrag – statt in privaten Gruppen-Chats.", "ab Business"),
         ("offline", "Auch ohne Empfang",
-         "Im Keller oder Neubau Zeiten, Fotos und Arbeitsberichte erfassen. Übertragen wird automatisch, sobald wieder Netz da ist.", "alle Tarife"),
+         "Im Keller oder Neubau Zeiten, Fotos und Arbeitsberichte erfassen. Übertragen wird automatisch, sobald wieder Netz da ist.", "in jedem Tarif"),
     ]
     raster = [("angebot", "Angebote und Rechnungen", "¹"), ("erechnung", "E-Rechnung", ""),
               ("mail", "E-Mail-Postfach", ""), ("uhr", "Stundenzettel", "²"),

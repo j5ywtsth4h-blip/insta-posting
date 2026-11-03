@@ -20,7 +20,7 @@ HIER = Path(__file__).resolve().parent
 CHROME = "/opt/pw-browsers/chromium"
 
 # Ziel des QR-Codes. Sobald die Video-Seite steht, hier die genaue Adresse eintragen und neu erzeugen.
-VIDEO_URL = "https://fokuszeit-business.de/fokusoffice.html?utm_source=brief"
+VIDEO_URL = "https://www.fokuszeit-business.de/fokusoffice.html?utm_source=brief"
 
 DATUM = "November 2026"
 ANGEBOT_TITEL = "Ihr Vorteil bis 31.12.2026"
@@ -29,7 +29,7 @@ ANGEBOT_TEXT = (
     "Firmendaten, Ihre Preisliste als Leistungskatalog und die erste E-Rechnung gemeinsam."
 )
 ANGEBOT_PREIS = "60 Minuten für 29 € statt 59 €"
-ANGEBOT_ZUSATZ = "Mit Jahresabo ab Business kostenlos."
+ANGEBOT_ZUSATZ = "Mit Premium Handwerk im Jahresabo kostenlos."
 
 
 def qr_svg(url):
@@ -85,10 +85,11 @@ li::before { content:""; position:absolute; left: 0.8mm; top: 0.35mm; width: 1.9
 .sicher div { flex: 1; }
 .sicher b { display:block; color: var(--forest); font-size: 8.3pt; font-weight: 700; }
 .gruss { margin-top: 1mm; }
-.unterschrift { height: 11mm; }
-.fuss { left: 25mm; right: 20mm; top: 280mm; font-size: 7pt; color: var(--muted); display:flex; justify-content: space-between;
+.unterschrift { height: 9mm; }
+.fuss { flex-wrap: wrap; left: 25mm; right: 20mm; top: 277mm; font-size: 7pt; color: var(--muted); display:flex; justify-content: space-between;
         border-top: 0.6pt solid var(--sage); padding-top: 2mm; line-height: 1.45; }
 .fuss .note { margin-top: 0; }
+.fuss .dsgvo { width: 100%; margin-top: 1mm; font-size: 6.5pt; }
 """
 
 
@@ -125,8 +126,7 @@ def brief(b):
     selbst verschicken.¹ Genau dafür habe ich FokusOffice entwickelt – damit Büroarbeit nicht den Feierabend kostet.</p>
 
     <ul>
-      <li>Angebot, Auftrag und Rechnung in wenigen Schritten – auch als E-Rechnung (XRechnung),
-          mit dem offiziellen Prüfwerkzeug (KoSIT) geprüft</li>
+      <li>Angebot, Auftrag und Rechnung in wenigen Schritten – auch als E-Rechnung (XRechnung); das Format ist mit dem offiziellen Prüfwerkzeug (KoSIT) getestet</li>
       <li>Sie verteilen Aufträge, Ihre Mitarbeiter sehen sie sofort auf dem Handy – mit Adresse und Route</li>
       <li>Arbeitsbericht mit Material und Fotos – der Kunde unterschreibt vor Ort auf dem Handy</li>
       <li>E-Mails, Kunden und Termine an einem Ort – Büroaufgaben direkt an mich übergeben</li>
@@ -164,6 +164,7 @@ def brief(b):
     Telefon 0176 20558600 · kontakt@fokuszeit-business.de · fokuszeit-business.de</div>
     <div style="text-align:right">¹ Allgemeiner Überblick, ersetzt keine Steuerberatung.<br>
     Alle Preise: keine USt. gem. § 19 UStG.</div>
+    <div class="dsgvo">Ihre Anschrift stammt aus öffentlich zugänglichen Quellen. Keine Post mehr gewünscht? Eine kurze Nachricht genügt. Datenschutz: fokuszeit-business.de/datenschutz.html</div>
   </div>
 </section>"""
 

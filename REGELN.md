@@ -38,3 +38,7 @@
 ### Video-Stil (Lara, 3.11.2026)
 - Nur die reine Bildschirmaufnahme, **keine Titel, Einblendungen oder Endkarten**. Auf 9:16 bringen, ca. 1,2-fach beschleunigen.
 - Vor dem Einplanen jeden Abschnitt auf echte Daten prüfen (echte E-Mails, echte Kunden, Kontrollzentrum) und herausschneiden oder unscharf machen.
+
+### Präzisierung XRechnung (Programmier-Chat, 3.11.2026)
+- Formulierung ab jetzt: „das XRechnungs-Format ist mit dem offiziellen Prüfwerkzeug (KoSIT) getestet“. Nicht schreiben, dass einzelne Rechnungen geprüft werden.
+- Werbebriefe: Fußzeile mit Herkunft der Anschrift, Widerspruchsmöglichkeit und Link zur Datenschutzerklärung.
