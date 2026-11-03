@@ -152,7 +152,7 @@ def brief(b):
       <div><b>Ohne Abo-Falle</b>14 Tage kostenlos testen, endet automatisch.</div>
     </div>
 
-    <p><b>Premium Handwerk</b> mit bis zu 10 Benutzern: 49,99 € im Monat (keine USt. gem. § 19 UStG). Rufen Sie mich gern an!</p>
+    <p><b>Premium Handwerk</b> für Ihren Betrieb: 49,99 € im Monat (keine USt. gem. § 19 UStG). Rufen Sie mich gern an!</p>
 
     <p class="gruss">Mit freundlichen Grüßen</p>
     <div class="unterschrift"></div>
