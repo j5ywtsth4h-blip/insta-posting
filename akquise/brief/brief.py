@@ -190,5 +190,9 @@ QR = qr_svg(VIDEO_URL)
 
 if __name__ == "__main__":
     # Je Betrieb Vorder- und Rückseite (beidseitig drucken)
-    pdf([s for b in BETRIEBE for s in (brief(b), seite2())], HIER / "FokusOffice_Brief_alle.pdf")
+    ok = [b for b in BETRIEBE if b.get("status", "ok") == "ok"]
+    pr = [b for b in BETRIEBE if b.get("status") == "pruefen"]
+    pdf([s for b in ok for s in (brief(b), seite2())], HIER / "FokusOffice_Brief_alle.pdf")
+    if pr:
+        pdf([s for b in pr for s in (brief(b), seite2())], HIER / "FokusOffice_Brief_pruefen.pdf")
     pdf([brief(None), seite2()], HIER / "FokusOffice_Brief_leer.pdf")
