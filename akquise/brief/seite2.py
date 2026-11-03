@@ -126,7 +126,7 @@ def seite2():
       <div><div class="n">Premium</div><div class="p">29,99 € <small>/ Monat</small></div><div class="d">Bis 5 Benutzer, inkl. 15 Min. Büroassistenz im Monat</div></div>
       <div class="hl"><div class="n">Premium Handwerk</div><div class="p">49,99 € <small>/ Monat</small></div><div class="d">Bis 10 Benutzer, mit Arbeitsbericht, Material, Wartungen und Fahrzeugen</div></div>
     </div>
-    <div class="fussnote">Alle Preise: keine USt. gem. § 19 UStG. Monatlich kündbar, im Jahresabo 2 Monate geschenkt. Premium und Premium Handwerk: je 5 weitere Benutzer 9,99 € im Monat.
+    <div class="fussnote">Alle Preise: keine USt. gem. § 19 UStG. Monatlich kündbar, im Jahresabo 2 Monate geschenkt. Premium und Premium Handwerk: jeder weitere Benutzer 2,99 € im Monat.
     14 Tage kostenlos testen, alles inklusive – auch der Handwerksbereich. Der Test endet automatisch.<br>
     ¹ Angebote ab Business &nbsp;·&nbsp; ² ab Business</div>
 

@@ -139,3 +139,4 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - Nicht bewerben: Anzahlungs-/Schlussrechnung und Rabatte als E-Rechnung, ZUGFeRD, direkte Bankanbindung, Push-Nachrichten, Passkeys/Face-ID, Zugangsdaten-Tresor, KI-Hilfebot.
 - Keine Konkurrenznamen/-preise in Werbung.
 - „Arbeitsanweisungen für Mitarbeiter“ ist jetzt live (Premium Handwerk) und darf beworben werden; Zugangsdaten-Tresor NICHT.
+- **Änderung (Lara, 3.11. abends): zusätzliche Benutzer kosten 2,99 € je Benutzer und Monat** (statt je 5 für 9,99 €). Gilt für Premium und Premium Handwerk.

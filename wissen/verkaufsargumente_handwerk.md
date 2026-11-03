@@ -42,7 +42,7 @@ Business kostet 16,99 € im Monat für bis zu 3 Benutzer (Jahresabo 169,90 €,
 ## Ehrlich bleiben – mögliche Einwände
 - **Keine automatische Bankverbindung**, nur Import per CSV/PDF-Kontoauszug → als Vorteil formulierbar: keine Bankzugangsdaten im Programm.
 - **Kein Spezial-Branchenprogramm:** Aufmaß, Materialkalkulation, Wartungsverträge oder GAEB werden nirgends genannt → FokusOffice als schlankes, bezahlbares Büro für kleine Betriebe positionieren, nicht als Komplett-Branchensoftware. Bei Bedarf beim Programmieren-Chat nachfragen.
-- **Benutzer:** Business bis 3, Premium bis 5, Premium Handwerk bis 10, je 5 weitere 9,99 €/Monat.
+- **Benutzer:** Business bis 3, Premium bis 5, Premium Handwerk bis 10, jeder weitere Benutzer 2,99 €/Monat (Laras Änderung 3.11. abends).
 - **Kein E-Mail-Import aus Outlook** (laut Website „Outlook folgt“).
 
 ## Auffälligkeiten auf der Website (Lara informiert, 3.11.)
