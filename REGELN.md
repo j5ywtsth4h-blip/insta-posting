@@ -34,3 +34,7 @@
 - Bildschirmaufnahmen kommen vom Chat „Programmieren“ (Testsystem, erfundene Beispieldaten), Ablage rohvideos/.
 - Verteilung: Instagram-Reel -> manuell/ (Lara postet selbst mit Musik, Erinnerung 10 Min. vorher); Facebook -> facebook/geplant/ (automatisch); LinkedIn -> linkedin/geplant/ als .mp4 + .md (automatisch).
 - Tarifgrenzen beachten (Team-Funktionen nur Business/Premium), keine echten Kundendaten im Bild.
+
+### Video-Stil (Lara, 3.11.2026)
+- Nur die reine Bildschirmaufnahme, **keine Titel, Einblendungen oder Endkarten**. Auf 9:16 bringen, ca. 1,2-fach beschleunigen.
+- Vor dem Einplanen jeden Abschnitt auf echte Daten prüfen (echte E-Mails, echte Kunden, Kontrollzentrum) und herausschneiden oder unscharf machen.
