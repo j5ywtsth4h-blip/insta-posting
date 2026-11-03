@@ -121,7 +121,7 @@ def brief(b):
 
     <p>{anrede}</p>
     <p>ich bin Lara Kohls aus Calden und unterstütze Betriebe hier in der Region bei der Büroarbeit.
-    Seit 2025 müssen Betriebe E-Rechnungen empfangen können, je nach Umsatz ab 2027 oder 2028 auch
+    Seit 2025 müssen Betriebe E-Rechnungen empfangen können, je nach Umsatz schon ab Januar 2027, spätestens ab 2028 auch
     selbst verschicken.¹ Genau dafür habe ich FokusOffice entwickelt – damit Büroarbeit nicht den Feierabend kostet.</p>
 
     <ul>
@@ -140,7 +140,7 @@ def brief(b):
       </div>
       <div class="qr">
         <img src="{QR}" alt="">
-        <span>Video ansehen:<br>FokusOffice in Aktion</span>
+        <span>Scannen und mehr<br>erfahren</span>
       </div>
     </div>
 
