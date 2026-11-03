@@ -114,3 +114,10 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 ## Tarif-Hinweis (Programmieren-Chat, 3.11.)
 - **Angebote gibt es erst ab Business** (16,99 €), im 14-Tage-Test ist alles enthalten. „In Rechnung umwandeln“ (angenommenes Angebot → Rechnung) ist live.
 - „An Fokuszeit abgeben“ (Aufgaben-Korb) gibt es in allen Tarifen; Büroassistenz nach Aufwand, in der App ab 55 €/Std.
+
+## Stand 3.11. abends (Chat Programmieren)
+- Live: keine neuen Preise, Tarife, Links; Testphase 14 Tage.
+- Live: E-Rechnung (XRechnung) übernimmt Daten der gewählten Rechnung automatisch (Kontaktdaten, Kunde, Fälligkeit), bei allen Layouts.
+- NUR Testsystem, NOCH NICHT bewerben: Tarif „Premium Handwerk“ (Arbeitsberichte mit Unterschrift vor Ort, Material, Wartungen, Fahrzeuge/TÜV, Import aus CSV/Excel/PDF), Arbeitsanweisungen/Zugangsdaten für Mitarbeiter, Outlook-Verbindung, Gmail-Anleitung. Preis/Buchbarkeit offen.
+- Nie erwähnen: direkte Bankanbindung (nur CSV/PDF-Import), Anzahlungs-/Schlussrechnung und Rabatte als E-Rechnung, ZUGFeRD (nicht vorhanden).
+- Lara plant Werbebriefe an Handwerksbetriebe am Samstag (7.11.); Handwerk soll vorher live gehen, Entscheidung bei Lara.
