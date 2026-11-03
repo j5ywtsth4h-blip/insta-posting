@@ -140,3 +140,5 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - Keine Konkurrenznamen/-preise in Werbung.
 - „Arbeitsanweisungen für Mitarbeiter“ ist jetzt live (Premium Handwerk) und darf beworben werden; Zugangsdaten-Tresor NICHT.
 - **Änderung (Lara, 3.11. abends): zusätzliche Benutzer kosten 2,99 € je Benutzer und Monat** (statt je 5 für 9,99 €). Gilt für Premium und Premium Handwerk.
+- Bestätigt vom Programmier-Chat (3.11. abends, live in Programm, AGB, Website): jeder weitere Benutzer 2,99 €/Monat einzeln – bei Premium ab dem 6., bei Premium Handwerk ab dem 11. Benutzer. Werbesatz: „Jeder weitere Mitarbeiter unter 3 € im Monat“. Business: keine Zusatzbenutzer genannt.
+- AGB neu: bis zu 20 GB Speicher je Kundenkonto inklusive (muss nicht beworben werden).
