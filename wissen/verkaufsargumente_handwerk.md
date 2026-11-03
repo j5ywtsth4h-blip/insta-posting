@@ -53,3 +53,4 @@ Business kostet 16,99 € im Monat für bis zu 3 Benutzer (Jahresabo 169,90 €,
 ## Idee „Handwerker-Paket“ (3.11., nur Planung – NICHT bewerben, bis live)
 - Handwerks-Funktionen (Arbeitsbericht mit Kundenunterschrift, Material am Auftrag, Wartungstermine, Nachkalkulation, Offline-Modus, Abschläge/Schlussrechnung, Abnahmeprotokoll) als zuschaltbares Paket, damit andere Branchen nicht gestört werden.
 - Bereits vorhandene Funktionen (Auftragsfotos, Planer, Team-Chat) bleiben in Business/Premium.
+- Lara (3.11.): Handwerker-Paket baut auf **Premium (29,99 €)** auf. Vorschlag: Tarif „Premium Handwerk“ = alles aus Premium + Handwerks-Funktionen, 49,99 €/Monat (Jahr 499,90 €), Einführungspreis für Pilotkunden 39,99 €; evtl. 30 statt 15 Assistenz-Minuten und Einrichtung vor Ort beim Jahresabo. Noch nicht entschieden, nicht bewerben.
