@@ -42,3 +42,6 @@
 ### Präzisierung XRechnung (Programmier-Chat, 3.11.2026)
 - Formulierung ab jetzt: „das XRechnungs-Format ist mit dem offiziellen Prüfwerkzeug (KoSIT) getestet“. Nicht schreiben, dass einzelne Rechnungen geprüft werden.
 - Werbebriefe: Fußzeile mit Herkunft der Anschrift, Widerspruchsmöglichkeit und Link zur Datenschutzerklärung.
+
+### Benachrichtigungen (Lara, 4.11.2026)
+- Lara bekommt Nachrichten im Chat sonst nicht mit: Jede Erinnerung und jede Nachricht, auf die sie reagieren muss, zusätzlich per PushNotification (kurz, eine Zeile) schicken. Bei Routine ohne Handlungsbedarf keine Push-Nachricht.
