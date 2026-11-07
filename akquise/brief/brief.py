@@ -20,7 +20,7 @@ HIER = Path(__file__).resolve().parent
 CHROME = "/opt/pw-browsers/chromium"
 
 # Ziel des QR-Codes. Sobald die Video-Seite steht, hier die genaue Adresse eintragen und neu erzeugen.
-VIDEO_URL = "https://www.fokuszeit-business.de/fokusoffice.html?utm_source=brief"
+VIDEO_URL = "https://www.fokuszeit-business.de/fokusoffice-handwerk.html?utm_source=brief"
 
 DATUM = "November 2026"
 ANGEBOT_TITEL = "Ihr Vorteil bis 31.12.2026"

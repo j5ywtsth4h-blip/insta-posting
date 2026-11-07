@@ -156,3 +156,4 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - Zusatzbenutzer noch nicht selbst buchbar (Stripe kommt nächste Woche) → bis dahin nur „10 Benutzer inklusive“ / „5 Benutzer inklusive“, keine 2,99 € bewerben.
 - 50 GB Speicher Premium Handwerk nur im Test → noch nicht nennen.
 - Wechsel-Check-Anfrage live: https://www.fokuszeit-business.de/#wechsel-check
+- 7.11. live: Handwerker-Seite https://www.fokuszeit-business.de/fokusoffice-handwerk.html; Premium Handwerk mit 50 GB Speicher; Anmeldung per Passkey (Face ID/Fingerabdruck); befristeter, widerrufbarer Assistenz-Zugang; neue Startseite „Was ist heute zu tun?“. Website nennt „jeder weitere Benutzer 2,99 €“.
