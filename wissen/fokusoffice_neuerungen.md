@@ -151,3 +151,8 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - **Kostenloser Wechsel-Check (Lara entschieden, 3.11.):** max. 15 Min. Telefon/Video, nur Betriebe/Selbstständige, klärt Umstieg (bisheriges Programm, Daten, Tarif); begleitet die 14-Tage-Testphase. Optional: „Auf Wunsch übernehmen wir den Umzug Ihrer Daten (Büroassistenz, nach Aufwand).“ Anfrage bis Samstag nur über kontakt.html bzw. Telefon/E-Mail; keine neue URL drucken. Termine nach Laras Zeitfenstern.
 - Einrichtungstermin: Business/Premium im Jahresabo 30 Min., Premium Handwerk im Jahresabo 60 Min. kostenlos.
 - Zusatzbenutzer werden bis Samstag manuell über Lara gebucht.
+
+## 7.11. (Programmier-Chat)
+- Zusatzbenutzer noch nicht selbst buchbar (Stripe kommt nächste Woche) → bis dahin nur „10 Benutzer inklusive“ / „5 Benutzer inklusive“, keine 2,99 € bewerben.
+- 50 GB Speicher Premium Handwerk nur im Test → noch nicht nennen.
+- Wechsel-Check-Anfrage live: https://www.fokuszeit-business.de/#wechsel-check
