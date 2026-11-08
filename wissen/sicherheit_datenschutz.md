@@ -25,6 +25,7 @@ Nur diese Punkte verwenden; alles andere vorher bestätigen lassen.
 - Team-Chat ohne Lesebestätigung und Online-Status, Löschung nach 12 Monaten.
 
 ## AVV
+- Seit 8.11. (Lara bestätigt): AVV (Software-Nutzung und Büroassistenz) und Datenschutzhinweise direkt bei der Anmeldung. Werbesatz: „AVV und Datenschutz direkt bei der Anmeldung – ohne Extra-Papierkram.“
 - FokusOffice-AVV mit technischen und organisatorischen Maßnahmen (TOM): bei der Registrierung und jederzeit in FokusOffice einsehbar; sonst per E-Mail an kontakt@fokuszeit-business.de. Lara bestätigt (8.11.).
 
 ## Export und Löschung
