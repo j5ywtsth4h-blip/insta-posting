@@ -45,3 +45,6 @@
 
 ### Benachrichtigungen (Lara, 4.11.2026)
 - Lara bekommt Nachrichten im Chat sonst nicht mit: Jede Erinnerung und jede Nachricht, auf die sie reagieren muss, zusätzlich per PushNotification (kurz, eine Zeile) schicken. Bei Routine ohne Handlungsbedarf keine Push-Nachricht.
+
+### WhatsApp-Gruppe (Lara, 8.11.2026)
+- Jeden Sonntag 19 Uhr stellt Lara FokusOffice live in ihrer WhatsApp-Gruppe vor (Link im Instagram-Profil). In Captions den Hinweis ohne „Link in der Bio“ formulieren („Link zur Gruppe in meinem Instagram-Profil“), damit Facebook ihn nicht durch den FokusOffice-Link ersetzt. Sonntags keine eigenen Termine für Lara um 19 Uhr planen.
