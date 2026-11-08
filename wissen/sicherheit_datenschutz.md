@@ -21,6 +21,9 @@ Nur diese Punkte verwenden; alles andere vorher beim Programmier-Chat bestätige
 - Fokuszeit arbeitet nur in den Bereichen, die der Kunde ausdrücklich freigibt; keine automatische Weitergabe von Dokumenten oder E-Mails.
 - Assistenz-Zugang befristet und jederzeit widerrufbar (seit 7.11.); Kunde sieht, wann, wie lange und in welchem Bereich zugegriffen wurde – keine Bildschirmüberwachung.
 
+## Auftragsverarbeitung
+- Lara bietet einen Auftragsverarbeitungsvertrag (AVV) an (bestätigt von Lara, 8.11.). Formulierung: „Auftragsverarbeitungsvertrag (AVV) nach DSGVO auf Anfrage“ – Details/Abschlussweg (im Programm oder per E-Mail) vor Nennung eines Links beim Programmier-Chat klären.
+
 ## Kleine Schutzfunktionen
 - E-Mail-Postfach: Bilder erst nach Freigabe (Schutz vor Lesebestätigungen), Links öffnen erst nach Rückfrage.
 - Standortdaten werden aus Auftragsfotos automatisch entfernt.
@@ -28,4 +31,4 @@ Nur diese Punkte verwenden; alles andere vorher beim Programmier-Chat bestätige
 - Testphase endet automatisch, keine Zahlungsdaten nötig.
 
 ## NICHT sagen (nicht belegt)
-- „DSGVO-zertifiziert“, „GoBD-zertifiziert“, „rechtssicher“, „100 % sicher“, konkrete Verschlüsselungsangaben, „AVV inklusive“ (erst nach Bestätigung durch den Programmier-Chat).
+- „DSGVO-zertifiziert“, „GoBD-zertifiziert“, „rechtssicher“, „100 % sicher“, konkrete Verschlüsselungsangaben.
