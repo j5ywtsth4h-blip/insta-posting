@@ -294,6 +294,7 @@ def veroeffentlichen(user_id: str, medien: Path):
 
 KONTAKT = "https://www.fokuszeit-business.de/kontakt.html"
 FOKUSOFFICE = "https://www.fokuszeit-business.de/fokusoffice.html"
+WHATSAPP = "https://chat.whatsapp.com/B89MetAqhkYIbu9QmRlPNK"
 BIO = re.compile(r"Link in (?:meiner|der) Bio", re.IGNORECASE)
 
 
@@ -329,7 +330,8 @@ def facebook_text(caption: str, fb_link=()) -> str:
             else:
                 zeile = BIO.sub(" · ".join(links), zeile)
         zeilen.append(zeile)
-    return "\n".join(zeilen)
+    # WhatsApp-Gruppe: auf Facebook direkt verlinken statt „in meinem Instagram-Profil“
+    return "\n".join(zeilen).replace("findest du in meinem Instagram-Profil", "findest du hier: " + WHATSAPP)
 
 
 def auf_facebook(medien: Path):
