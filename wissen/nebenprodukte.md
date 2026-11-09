@@ -16,7 +16,8 @@ Hauptfokus bleibt FokusOffice. Nebenprodukte nur gelegentlich bewerben (je ca. 1
 - NICHT bewerben: Preis, Push-Nachrichten, Live-Synchronisierung, Anmeldung/Cloud (fehlen noch)
 
 ## Preise und Status (Lara 9.11.: fertig, bewerben)
-- FokusFristen: 24,99 € jährlich, endet zum Ende Kalenderjahr 2027, kein Abo. Eigenes Produkt, KEIN Teil von FokusOffice. https://fristen.fokuszeit-business.de/  DM-Stichwort FRISTEN
-- FokusHeim: 19,99 € jährlich (endet automatisch nach 1 Jahr) oder 2,99 € monatlich (läuft weiter). https://heim.fokuszeit-business.de/  DM-Stichwort HEIM
+- FokusFristen: 24,90 € einmalig für Kalenderjahr 2027 (Website-Stand 9.11., vorher 24,99 genannt), kein Abo. Eigenes Produkt, KEIN Teil von FokusOffice. https://www.fokuszeit-business.de/fokusfristen.html (App: fristen.fokuszeit-business.de)  DM-Stichwort FRISTEN
+- FokusHeim: 19,90 € jährlich (endet automatisch nach 1 Jahr) oder 2,49 € monatlich, monatlich kündbar (Website-Stand 9.11.). https://www.fokuszeit-business.de/fokusheim.html (App: heim.fokuszeit-business.de)  DM-Stichwort HEIM
 - Immer "keine USt. gem. § 19 UStG"
 - Geplant: FokusFristen IG/FB 14.11. 11:00, LinkedIn 16.11.; FokusHeim IG/FB 28.11. 11:00 (persönlich, mit Laras Foto)
+- Übersicht Produkte: https://www.fokuszeit-business.de/produkte.html (FokusOffice NICHT im Produkte-Menü)
