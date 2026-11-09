@@ -22,6 +22,17 @@
       "publisher_platforms": [
         "facebook",
         "instagram"
+      ],
+      "facebook_positions": [
+        "feed",
+        "story",
+        "facebook_reels",
+        "instream_video"
+      ],
+      "instagram_positions": [
+        "stream",
+        "story",
+        "reels"
       ]
     }
   },
@@ -40,7 +51,8 @@
       "ueberschrift": "E-Mails abgeben statt abarbeiten",
       "beschreibung": "14 Tage kostenlos testen",
       "text": "Dein Postfach frisst deinen Tag? In FokusOffice gibst du einzelne E-Mails mit einem Klick an Fokuszeit ab oder gibst dein Postfach zeitweise frei. Rechnungen aus E-Mails werden mit einem Klick zum Beleg.\n\nDie Büroassistenz arbeitet nur in den Bereichen, die du ausdrücklich freigibst, und jeder Zugriff wird protokolliert.",
-      "button": "LEARN_MORE"
+      "button": "LEARN_MORE",
+      "pausiert": true
     },
     {
       "name": "Video: Abgeben per Klick",

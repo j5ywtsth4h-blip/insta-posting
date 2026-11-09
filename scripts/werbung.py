@@ -240,6 +240,12 @@ def zielgruppe(name: str):
     meta("POST", status["anzeigengruppe_id"], targeting=plan["anzeigengruppe"]["zielgruppe"])
     plattformen = ", ".join(plan["anzeigengruppe"]["zielgruppe"].get("publisher_platforms", ["automatisch"]))
     print(f"✅ Zielgruppe und Platzierungen übernommen. Plattformen: {plattformen}")
+    ids = {a["name"]: a["id"] for a in status.get("anzeigen", [])}
+    for a in plan.get("anzeigen", []):
+        if a["name"] in ids:
+            zustand = "PAUSED" if a.get("pausiert") else "ACTIVE"
+            meta("POST", ids[a["name"]], status=zustand)
+            print(f"- {a['name']}: {'pausiert' if a.get('pausiert') else 'aktiv'}")
 
 
 def starten(name: str):
