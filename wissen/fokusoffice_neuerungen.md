@@ -159,3 +159,9 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - 7.11. live: Handwerker-Seite https://www.fokuszeit-business.de/fokusoffice-handwerk.html; Premium Handwerk mit 50 GB Speicher; Anmeldung per Passkey (Face ID/Fingerabdruck); befristeter, widerrufbarer Assistenz-Zugang; neue Startseite „Was ist heute zu tun?“. Website nennt „jeder weitere Benutzer 2,99 €“.
 - 7.11. abends live: Knopf „Mit Face ID anmelden“ oben, Passkey-Vorschlag im E-Mail-Feld; Kundenverträge: hochgeladenes PDF als wiederverwendbare Vorlage, Firmenlogo automatisch im Formular und PDF; Logo-Upload entfernt hellen Hintergrund/Ränder automatisch. Outlook NICHT bewerben.
 - 8.11. live: Zeiten mit Von–Bis-Uhrzeit bei Kundenaufträgen, Timer einem Kunden/Auftrag zuordnen, Arbeitszeit nachträglich Kunden zuordnen, neue Auftragsübersicht mit Status und nächsten Schritten. NUR TEST (nicht bewerben): Zeiten mehrerer Mitarbeiter direkt in die Rechnung, Kundensuche in Auswahllisten, anpassbare Schnellaktionen.
+
+## 9.11.2026 (Programmieren-Chat)
+- Keine Änderung an Preisen, Tarifen, Testphase (14 Tage), Links, Anmeldeformular
+- Moderneres Aussehen: hellere Startseite, „Mehr“ öffnet Übersicht aller Bereiche mit Symbolen, iPhone ohne seitliches Wischen, „Erste Schritte“-Karte für neue Konten
+- Website-Seite FokusOffice bekommt Bildschirmfotos (wartet auf Laras Upload-Freigabe)
+- Nebenprodukte: FokusHeim gleicht alle Geräte eines Haushalts automatisch ab; Kaufbestätigungen per E-Mail

@@ -13,7 +13,7 @@ Hauptfokus bleibt FokusOffice. Nebenprodukte nur gelegentlich bewerben (je ca. 1
 ## FokusHeim (heim.fokuszeit-business.de)
 - Haushalt: Putzplan, Einkaufsliste (Einkaufsmodus, Vorrat), Essensplan mit Wochenvorschlag, Vorräte, Rezepte, Wochenkalender, Wochenplaner, Smart-Plan (Aufgaben nach verfügbarer Zeit fair verteilen), Termine (+ Abfallkalender-Import .ics), Haushalt (Mitglieder), Familie (Kinderaufgaben mit Sternen)
 - Seite selbst: "Lokaler Funktionsprototyp · Noch nicht für den Verkauf freigegeben · Preismodell 14,99 € für 4 Zugänge + 3,99 € (nur Demo)"
-- NICHT bewerben: Preis, Push-Nachrichten, Live-Synchronisierung, Anmeldung/Cloud (fehlen noch)
+- Seit 9.11.: alle Geräte eines Haushalts werden automatisch abgeglichen. NICHT bewerben: Push-Nachrichten
 
 ## Preise und Status (Lara 9.11.: fertig, bewerben)
 - FokusFristen: 24,90 € einmalig für Kalenderjahr 2027 (Website-Stand 9.11., vorher 24,99 genannt), kein Abo. Eigenes Produkt, KEIN Teil von FokusOffice. https://www.fokuszeit-business.de/fokusfristen.html (App: fristen.fokuszeit-business.de)  DM-Stichwort FRISTEN
