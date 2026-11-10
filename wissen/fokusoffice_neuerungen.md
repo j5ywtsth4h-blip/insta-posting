@@ -165,3 +165,7 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - Moderneres Aussehen: hellere Startseite, „Mehr“ öffnet Übersicht aller Bereiche mit Symbolen, iPhone ohne seitliches Wischen, „Erste Schritte“-Karte für neue Konten
 - Website-Seite FokusOffice bekommt Bildschirmfotos (wartet auf Laras Upload-Freigabe)
 - Nebenprodukte: FokusHeim gleicht alle Geräte eines Haushalts automatisch ab; Kaufbestätigungen per E-Mail
+
+## 10.11.2026 (Programmieren-Chat)
+- Preise, Tarife, Testphase, Links unverändert
+- Neu: Kundenfeld im Rechnungsformular; Nachfrage, wenn eine Zeiterfassung über 10 Stunden läuft

@@ -6,6 +6,7 @@ Umsatzsteuer-Voranmeldung, Lohnsteuer, Gewerbesteuer, Vorauszahlungen … Wer se
 👀 Dein nächster Termin immer im Blick, mit Monatsvorschau und Kalender
 ✅ Fristenliste zum Abhaken, zum Drucken mit Abhakkästchen oder als CSV
 🔔 Erinnerungen 14, 7 und 3 Tage vorher, direkt in deiner Kalender-App
+📝 Eigene Termine ergänzen, auch als Serie, mit Farben und Notizen
 
 💶 24,90 € einmalig für das ganze Kalenderjahr 2027 (keine USt. gem. § 19 UStG). Endet automatisch, kein Abo. FokusFristen ist ein eigenes Produkt und unabhängig von FokusOffice.
 

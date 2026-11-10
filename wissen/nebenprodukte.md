@@ -21,3 +21,7 @@ Hauptfokus bleibt FokusOffice. Nebenprodukte nur gelegentlich bewerben (je ca. 1
 - Immer "keine USt. gem. § 19 UStG"
 - Geplant: FokusFristen IG/FB 14.11. 11:00, LinkedIn 16.11.; FokusHeim IG/FB 28.11. 11:00 (persönlich, mit Laras Foto)
 - Übersicht Produkte: https://www.fokuszeit-business.de/produkte.html (FokusOffice NICHT im Produkte-Menü)
+
+## 10.11. (Programmieren-Chat)
+- FokusFristen neu: eigene Termine ändern/löschen, Serien (monatlich, vierteljährlich, Quartalsende), eigene Kategorien mit Farben, Notizen je Frist (auch für Serien), vorgegebene Steuerfristen verschieben oder ausblenden
+- NICHT erwähnen: FokusFristen-Abgleich zwischen Geräten (Daten nur im Browser des Geräts); Push-Nachrichten bei FokusHeim (Erinnerungen nur bei geöffneter App)
