@@ -169,3 +169,8 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 ## 10.11.2026 (Programmieren-Chat)
 - Preise, Tarife, Testphase, Links unverändert
 - Neu: Kundenfeld im Rechnungsformular; Nachfrage, wenn eine Zeiterfassung über 10 Stunden läuft
+
+## 11.11.2026 (Programmieren-Chat)
+- Preise, Tarife, Testphase, Wechsel-Check, Einrichtungstermine, Links unverändert
+- Neu in der Buchhaltung (ab Business; Belegfreigabe nur mit Team): mehrere Belege auf einmal hochladen; bessere Belegerkennung (Brutto, Lieferant, Status „offen“); Belege zur Freigabe an Kollegen senden, Freigabe in der Liste sichtbar; Belegseiten verschieben/drehen, Dateien anhängen, Notiz; Mappen mit Mehrfachauswahl und automatischen Monatsmappen; kompakte Listenansicht in der Ablage; Übersicht in der Belegbearbeitung; bessere Kontosuche; DATEV-Export mit Belegbildern als Buchungshilfe plus Originale
+- NICHT erwähnen: Buchungskopie als „E-Rechnung erzeugen“ (nur Buchungshilfe; ZUGFeRD weiter nicht bewerben); kostenlose Zugänge (intern)
