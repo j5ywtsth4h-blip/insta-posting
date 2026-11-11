@@ -37,6 +37,7 @@
 
 ### Video-Stil (Lara, 3.11.2026)
 - Nur die reine Bildschirmaufnahme, **keine Titel, Einblendungen oder Endkarten**. Auf 9:16 bringen, ca. 1,2-fach beschleunigen.
+- Erste Sekunde zählt (Insights 11.11.: die Hälfte wischt in der 1. Sekunde weg, Start war ein ruhiges Titelbild): Reel direkt mit Bewegung/Ergebnis oder Laras Gesicht beginnen, nie mit einem stehenden Titelbild. Hook-Text setzt Lara groß in der Instagram-App (zählt nicht als eingebrannter Titel). Möglichst 7–12 Sekunden.
 - Vor dem Einplanen jeden Abschnitt auf echte Daten prüfen (echte E-Mails, echte Kunden, Kontrollzentrum) und herausschneiden oder unscharf machen.
 
 ### Präzisierung XRechnung (Programmier-Chat, 3.11.2026)
