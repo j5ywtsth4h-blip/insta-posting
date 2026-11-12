@@ -47,3 +47,4 @@ Nur diese Punkte verwenden; alles andere vorher bestätigen lassen.
 
 ## NICHT sagen
 - „zertifiziert“ jeder Art (die Seite sagt ausdrücklich: nicht zertifiziert), „DSGVO-konform garantiert“, „100 % sicher“, „rechtssicher“, Verschlüsselung der gespeicherten Daten (nur HTTPS und E-Mail-Zugangsdaten belegt), Zwei-Faktor-Code (nicht vorhanden; Passkey ist belegt), Team-Tresor für Zugangsdaten (laut Programmier-Chat noch in Sicherheitsprüfung).
+- 12.11. Präzisierung: Storno von Rechnungen nur über Stornobeleg. Eingangsbelege (Ausgaben) kann das Hauptkonto seit 11.11. löschen, nur mit Grund, protokolliert, Originaldatei bleibt erhalten -> nie „Belege nicht löschbar“ schreiben, nur „Rechnungen“. Keine externe Sicherheitsprüfung behaupten.

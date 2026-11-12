@@ -5,7 +5,7 @@ Wenn du deine Rechnungen, Belege und E-Mails einem Programm anvertraust, willst 
 🇩🇪 Hosting und Datenbank bei IONOS in Rechenzentren in Deutschland, Verbindung immer verschlüsselt
 📄 Auftragsverarbeitungsvertrag und Datenschutzhinweise direkt bei der Anmeldung, ohne Extra-Papierkram
 🔑 Anmeldung per Passkey mit Face ID oder Fingerabdruck, Sperre nach mehreren falschen Passwörtern
-🧾 Rechnungen werden nicht gelöscht oder umnummeriert, Änderungen werden protokolliert
+🧾 Rechnungen werden nicht gelöscht oder umnummeriert, Storno nur per Stornobeleg, Änderungen werden protokolliert
 👥 Mitarbeiter sehen nur die Bereiche, die du freigibst (ab Tarif Business)
 💾 Jede Nacht eine automatische Datensicherung, jederzeit Export als ZIP
 
