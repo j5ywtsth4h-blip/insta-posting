@@ -38,5 +38,12 @@ Nur diese Punkte verwenden; alles andere vorher bestätigen lassen.
 - Keine Bankzugangsdaten im Programm (Kontoauszüge nur als CSV/PDF-Import).
 - Zahlungen über Stripe. Testphase ohne Zahlungsdaten, endet automatisch.
 
+## Ergänzt 12.11. (FokusOffice-Entwicklungssitzung)
+- Belege liegen außerhalb des öffentlichen Webbereichs, nur das eigene Konto kann sie abrufen; jede Datei hat eine Prüfsumme, Veränderungen fallen auf.
+- Nach einer Passwortänderung werden alle anderen Geräte abgemeldet.
+- Rechnungen werden nicht gelöscht oder umnummeriert, Änderungen werden protokolliert (als Tatsache beschreiben, NICHT „GoBD-zertifiziert“ oder „GoBD-konform garantiert“).
+- Fremde E-Mails werden abgeschottet angezeigt, Tracking-Bilder zurückgehalten.
+- Zusätzlich NICHT sagen: „unknackbar“, „TÜV/BSI-geprüft“, „Penetrationstest bestanden“, „Sicherung an zwei Standorten“.
+
 ## NICHT sagen
 - „zertifiziert“ jeder Art (die Seite sagt ausdrücklich: nicht zertifiziert), „DSGVO-konform garantiert“, „100 % sicher“, „rechtssicher“, Verschlüsselung der gespeicherten Daten (nur HTTPS und E-Mail-Zugangsdaten belegt), Zwei-Faktor-Code (nicht vorhanden; Passkey ist belegt), Team-Tresor für Zugangsdaten (laut Programmier-Chat noch in Sicherheitsprüfung).
