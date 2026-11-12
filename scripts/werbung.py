@@ -237,7 +237,22 @@ def erneuern(name: str):
 
 def zielgruppe(name: str):
     ordner, plan, status = laden(name)
-    meta("POST", status["anzeigengruppe_id"], targeting=plan["anzeigengruppe"]["zielgruppe"])
+    ziel = dict(plan["anzeigengruppe"]["zielgruppe"])
+    namen = ziel.pop("interessen", [])
+    if namen:
+        gefunden = []
+        for q in namen:
+            treffer = meta("GET", "search", type="adinterest", q=q, limit=1, locale="de_DE").get("data", [])
+            if treffer:
+                gefunden.append({"id": treffer[0]["id"], "name": treffer[0]["name"]})
+                print(f"Interesse „{q}“ -> {treffer[0]['name']} (ca. {treffer[0].get('audience_size_upper_bound', '?')} Personen)")
+            else:
+                print(f"⚠️ Interesse „{q}“ nicht gefunden")
+        if gefunden:
+            ziel["flexible_spec"] = [{"interests": gefunden}]
+    meta("POST", status["anzeigengruppe_id"], targeting=ziel,
+         daily_budget=plan["anzeigengruppe"]["tagesbudget_cent"])
+    print(f"Tagesbudget: {euro(plan['anzeigengruppe']['tagesbudget_cent'])}")
     plattformen = ", ".join(plan["anzeigengruppe"]["zielgruppe"].get("publisher_platforms", ["automatisch"]))
     print(f"✅ Zielgruppe und Platzierungen übernommen. Plattformen: {plattformen}")
     ids = {a["name"]: a["id"] for a in status.get("anzeigen", [])}

@@ -6,7 +6,7 @@
   "dsa_zahler": "Lara Kohls",
   "anzeigengruppe": {
     "name": "Selbstständige Deutschland",
-    "tagesbudget_cent": 500,
+    "tagesbudget_cent": 300,
     "laufzeit_tage": 14,
     "optimierung": "LINK_CLICKS",
     "zielgruppe": {
@@ -26,13 +26,20 @@
       "facebook_positions": [
         "feed",
         "story",
-        "facebook_reels",
-        "instream_video"
+        "facebook_reels"
       ],
       "instagram_positions": [
         "stream",
         "story",
         "reels"
+      ],
+      "interessen": [
+        "Virtual assistant",
+        "Bookkeeping",
+        "Accounting software",
+        "Office management",
+        "Small business",
+        "Self-employment"
       ]
     }
   },
