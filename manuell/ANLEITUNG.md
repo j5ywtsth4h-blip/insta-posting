@@ -19,6 +19,7 @@ So kommst du an die Datei: Datei hier auf GitHub antippen → **„…“ → Do
 | Fr 13.11., 12:00 | **Reel** `2026-11-13_12-00.mp4` | Musik: locker, leise. Caption aus `2026-11-13_12-00.txt`. Gekürzt auf 11 Sek., startet ohne Titelbild. In der Instagram-App in den ersten 2 Sek. oben groß als Text setzen: „Kunde zahlt nicht?“. Standort „Kassel“. |
 | **Di 17.11., 19:00** | **Reel** `2026-11-17_19-00.mp4` (Belege hochladen) | Musik: ruhig, leise. Caption aus `2026-11-17_19-00.txt`. In den ersten 2 Sek. oben groß als Text: „3 Belege, 1 Klick“. Facebook läuft automatisch, LinkedIn am Mi 18.11. |
 | **Do 19.11., 19:00** | **Reel** `2026-11-19_19-00.mp4` (Arbeitsbericht mit Unterschrift) | Musik: locker, leise. Caption aus `2026-11-19_19-00.txt`. In den ersten 2 Sek. oben groß als Text: „Unterschrift direkt vor Ort“. Standort „Kassel“. Facebook läuft automatisch, LinkedIn am Fr 20.11. |
+| Mo 23.11., 12:00 | `2026-11-23_12-00_story.jpg` (Handbuch) | Sticker **„Link“** unter den Pfeil in die freie Fläche: `https://office.fokuszeit-business.de/handbuch.php`, Text „Handbuch ansehen“. |
 | Fr 27.11., 19:00 | **Reel** `2026-11-27_19-00.mp4` | Musik: ruhig. Caption aus `2026-11-27_19-00.txt`. Gekürzt auf 14 Sek., startet ohne Titelbild. In der Instagram-App in den ersten 2 Sek. oben groß als Text setzen: „Monatsende? 5 Dinge abhaken“. Danach auf jeden Kommentar „CHECKLISTE“ antworten, siehe `akquise/checkliste_antwort.md`. |
 
 Tipp: Reels kannst du in der Instagram-App beim Teilen meist unter „Mehr Optionen“ auch für später planen.
