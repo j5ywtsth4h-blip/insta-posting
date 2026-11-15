@@ -174,3 +174,13 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - Preise, Tarife, Testphase, Wechsel-Check, Einrichtungstermine, Links unverändert
 - Neu in der Buchhaltung (ab Business; Belegfreigabe nur mit Team): mehrere Belege auf einmal hochladen; bessere Belegerkennung (Brutto, Lieferant, Status „offen“); Belege zur Freigabe an Kollegen senden, Freigabe in der Liste sichtbar; Belegseiten verschieben/drehen, Dateien anhängen, Notiz; Mappen mit Mehrfachauswahl und automatischen Monatsmappen; kompakte Listenansicht in der Ablage; Übersicht in der Belegbearbeitung; bessere Kontosuche; DATEV-Export mit Belegbildern als Buchungshilfe plus Originale
 - NICHT erwähnen: Buchungskopie als „E-Rechnung erzeugen“ (nur Buchungshilfe; ZUGFeRD weiter nicht bewerben); kostenlose Zugänge (intern)
+
+## 14.11.2026 live (Auskunft „Nächste Sitzung“ vom 15.11., ab jetzt zuständig für FokusOffice)
+- Preise, Tarife, Testphase (14 Tage, ohne Zahlungsdaten), Anmeldeformular unverändert. In der Testphase ist alles freigeschaltet.
+- Benutzerhandbuch mit Bildern, öffentlich ohne Anmeldung: https://office.fokuszeit-business.de/handbuch.php (16 Kapitel, Handy-Bilder, erfundene Demo-Firma). In der App über das Fragezeichen. Auf fokusoffice.html verlinkt.
+- Zwei-Faktor-Anmeldung, alle Tarife, freiwillig: oben „Sicherheit“ → Zwei-Faktor-Anmeldung „Einrichten“. Mit Authenticator-App (iPhone „Passwörter“, Google oder Microsoft Authenticator) und 10 Notfallcodes. Passkey gab es schon.
+- Belegpaket (ZIP + Liste), ab Business: Belege → „Erfasste Ausgaben“ → „Belegpaket (ZIP + Liste)“. Original-Belege plus CSV-Liste für die Steuerkanzlei oder zur Übernahme in Lexware Office, sevdesk, Addison, Agenda. Das „DATEV-Belegpaket“ ist ein eigener Punkt, auch ab Business.
+- Teilzahlungen, alle Tarife: Ausgaben → „⋯ Mehr“ → „Teilzahlung erfassen“. Im Bankabgleich (ab Business, Finanzen → Bankkonto → „Zuordnen“) wird ein kleinerer Betrag automatisch als Teilzahlung erfasst.
+- Gemischte Umsatzsteuer, alle Tarife: „Ausgabe erfassen“ → Steuer „Gemischt (19 % und 7 %)“, beide Anteile getrennt.
+- NICHT behaupten: automatischer Bankabruf oder Bankverbindung (Import per CSV-Datei, kein Bankpasswort gespeichert); direkte Schnittstelle zu DATEV, Lexware, sevdesk usw. (es ist ein Datei-Export); „GoBD-zertifiziert“, „vom Steuerberater geprüft“, „rechtssicher“; Handbuch ersetzt Steuerberatung; Zwei-Faktor-Anmeldung sei Pflicht; echte Kundenzahlen (die Bilder zeigen eine Demo-Firma).
+- FokusFristen und FokusHeim: weiter beim Chat „Programmieren“ erfragen.

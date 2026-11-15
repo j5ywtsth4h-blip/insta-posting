@@ -46,5 +46,5 @@ Nur diese Punkte verwenden; alles andere vorher bestätigen lassen.
 - Zusätzlich NICHT sagen: „unknackbar“, „TÜV/BSI-geprüft“, „Penetrationstest bestanden“, „Sicherung an zwei Standorten“.
 
 ## NICHT sagen
-- „zertifiziert“ jeder Art (die Seite sagt ausdrücklich: nicht zertifiziert), „DSGVO-konform garantiert“, „100 % sicher“, „rechtssicher“, Verschlüsselung der gespeicherten Daten (nur HTTPS und E-Mail-Zugangsdaten belegt), Zwei-Faktor-Code (nicht vorhanden; Passkey ist belegt), Team-Tresor für Zugangsdaten (laut Programmier-Chat noch in Sicherheitsprüfung).
+- „zertifiziert“ jeder Art (die Seite sagt ausdrücklich: nicht zertifiziert), „DSGVO-konform garantiert“, „100 % sicher“, „rechtssicher“, Verschlüsselung der gespeicherten Daten (nur HTTPS und E-Mail-Zugangsdaten belegt), Zwei-Faktor-Anmeldung als Pflicht (seit 14.11. vorhanden, aber freiwillig: Authenticator-App plus 10 Notfallcodes, alle Tarife; Passkey zusätzlich), Team-Tresor für Zugangsdaten (laut Programmier-Chat noch in Sicherheitsprüfung).
 - 12.11. Präzisierung: Storno von Rechnungen nur über Stornobeleg. Eingangsbelege (Ausgaben) kann das Hauptkonto seit 11.11. löschen, nur mit Grund, protokolliert, Originaldatei bleibt erhalten -> nie „Belege nicht löschbar“ schreiben, nur „Rechnungen“. Keine externe Sicherheitsprüfung behaupten.
