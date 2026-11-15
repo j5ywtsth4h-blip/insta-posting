@@ -9,7 +9,7 @@ Heute geht es vor allem um ein Thema, das mir besonders wichtig ist: *Was passie
 ✅ Benutzerhandbuch mit Bildern, ohne Anmeldung lesbar
 ✅ Zwei-Faktor-Anmeldung, freiwillig, in allen Tarifen
 ✅ Mehrere Belege auf einmal hochladen, automatische Monatsmappen (ab Business)
-✅ Belegpaket für die Steuerkanzlei (ab Business)
+✅ Belegpaket für die Steuerkanzlei, in allen Tarifen
 ✅ Teilzahlungen und gemischte Umsatzsteuer 19 % und 7 % auf einem Beleg
 ✅ Frischeres Aussehen und eine aufgeräumte Startseite, siehe Video
 
@@ -37,9 +37,9 @@ Es gibt jede Nacht eine automatische Datensicherung. Du kannst jederzeit alles k
 Alle Details stehen auf meiner Website: https://www.fokuszeit-business.de/fokusoffice-sicherheit.html
 
 8) [V_belege_hochladen.mp4 + V_belegpaket.mp4]
-*Belege sammeln und ans Steuerbüro geben* (ab Tarif Business):
-Im ersten Video lädst du mehrere Belege auf einmal hoch, FokusOffice erkennt Lieferant, Datum und Betrag und legt sie in die Monatsmappe.
-Im zweiten Video siehst du das neue *Belegpaket*: Zeitraum wählen, „Paket erstellen“, und du hast eine ZIP mit allen Original-Belegen plus Liste. Die schickst du an deine Steuerkanzlei oder lädst sie in Lexware Office, sevdesk & Co. hoch. Für DATEV gibt es ein eigenes Belegpaket.
+*Belege sammeln und ans Steuerbüro geben:*
+Im ersten Video lädst du mehrere Belege auf einmal hoch (ab Tarif Business), FokusOffice erkennt Lieferant, Datum und Betrag und legt sie in die Monatsmappe.
+Im zweiten Video siehst du das neue *Belegpaket*, das gibt es in allen Tarifen: Zeitraum wählen, „Paket erstellen“, und du hast eine ZIP mit allen Original-Belegen plus Liste. Die schickst du an deine Steuerkanzlei oder lädst sie in Lexware Office, sevdesk & Co. hoch. Für DATEV gibt es ein eigenes Belegpaket (ab Tarif Business).
 
 9) [kein Bild]
 *Erst mal reinschauen, ohne Anmeldung?* 📖

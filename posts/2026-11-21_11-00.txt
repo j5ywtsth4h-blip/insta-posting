@@ -4,7 +4,7 @@
 🔐 Zwei-Faktor-Anmeldung: freiwilliger Extra-Schutz mit Authenticator-App und Notfallcodes
 💶 Teilzahlungen: Rechnung in Raten bezahlt? Jede Zahlung einzeln erfassen
 🧾 19 % und 7 % auf einem Beleg: einfach „Gemischt“ auswählen
-📦 Belegpaket für die Steuerkanzlei: ZIP mit allen Belegen plus Liste (ab Tarif Business)
+📦 Belegpaket für die Steuerkanzlei: ZIP mit allen Belegen plus Liste, in allen Tarifen
 
 Du willst erst mal reinschauen, bevor du dich anmeldest? Im Handbuch siehst du jeden Bereich Schritt für Schritt.
 
