@@ -49,3 +49,8 @@
 
 ### WhatsApp-Gruppe (Lara, 8.11.2026)
 - Jeden Sonntag 19 Uhr stellt Lara FokusOffice live in ihrer WhatsApp-Gruppe vor (Link im Instagram-Profil). In Captions den Hinweis ohne „Link in der Bio“ formulieren („Link zur Gruppe in meinem Instagram-Profil“), damit Facebook ihn nicht durch den FokusOffice-Link ersetzt. Sonntags keine eigenen Termine für Lara um 19 Uhr planen.
+
+## Vor jedem Beitrag prüfen (Laras Auftrag vom 17.11.)
+- Jeder geplante Beitrag (posts/, manuell/, facebook/geplant/, linkedin/geplant/, whatsapp/) wird vor der Veröffentlichung noch einmal gegen den aktuellen Stand in wissen/ geprüft: Text UND Bild/PDF (jede Folie ansehen), Preise, Tarife, Benutzerzahlen, „ab Business“, Links, NICHT-Listen.
+- Besonders bei Beiträgen, die länger als ein paar Tage vorher gebaut wurden.
+- Täglich automatisch für die nächsten 48 Stunden; Fehler sofort korrigieren und Lara kurz informieren.
