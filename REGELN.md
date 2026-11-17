@@ -54,3 +54,7 @@
 - Jeder geplante Beitrag (posts/, manuell/, facebook/geplant/, linkedin/geplant/, whatsapp/) wird vor der Veröffentlichung noch einmal gegen den aktuellen Stand in wissen/ geprüft: Text UND Bild/PDF (jede Folie ansehen), Preise, Tarife, Benutzerzahlen, „ab Business“, Links, NICHT-Listen.
 - Besonders bei Beiträgen, die länger als ein paar Tage vorher gebaut wurden.
 - Täglich automatisch für die nächsten 48 Stunden; Fehler sofort korrigieren und Lara kurz informieren.
+
+## Symbole in Listen (Laras Regel vom 17.11.)
+- Negative Punkte (Probleme, „so nicht“, Nachteile, Vorher-Situation) bekommen IMMER ein rotes X, nie einen Haken ✔️. Haken nur für Positives/Lösungen.
+- Generator: kreuz() in scratchpad/make_launch_karussell.py, folie(..., negativ=True). Gilt auch für Text: ❌ statt ✅ bei negativen Aufzählungen.
