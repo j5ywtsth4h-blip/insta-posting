@@ -14,6 +14,12 @@ Jede E-Mail nur einmal anfassen und sofort entscheiden:
 ✅ *Entsorgen:* Nur zur Info? Ablegen oder löschen.
 So bleibt dein Postfach leer, und nichts geht unter. Probier es diese Woche mal aus und erzähl mir nächsten Sonntag, wie es geklappt hat!
 
+1c) [04_wusstest_du.jpg]
+*Wusstest du? Belege nur noch 8 statt 10 Jahre aufbewahren* 💡
+Seit dem 1. Januar 2025 gilt für Buchungsbelege eine kürzere Aufbewahrungsfrist: *8 Jahre* statt 10. Dazu gehören zum Beispiel Eingangs- und Ausgangsrechnungen, Kontoauszüge und Quittungen. Das gilt auch für ältere Belege, deren Frist Anfang 2025 noch nicht abgelaufen war.
+Bücher, Jahresabschlüsse und Inventare musst du weiterhin *10 Jahre* aufbewahren. Für Banken und Versicherungen gilt die Verkürzung nicht.
+Im Einzelfall frag am besten deine Steuerberatung, bevor du etwas vernichtest.
+
 2) [02_neu_diese_woche.jpg + V_neues_aussehen.mp4]
 *Das ist neu in FokusOffice:*
 ✅ Benutzerhandbuch mit Bildern, ohne Anmeldung lesbar
