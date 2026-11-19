@@ -184,3 +184,10 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - Gemischte Umsatzsteuer, alle Tarife: „Ausgabe erfassen“ → Steuer „Gemischt (19 % und 7 %)“, beide Anteile getrennt.
 - NICHT behaupten: automatischer Bankabruf oder Bankverbindung (Import per CSV-Datei, kein Bankpasswort gespeichert); direkte Schnittstelle zu DATEV, Lexware, sevdesk usw. (es ist ein Datei-Export); „GoBD-zertifiziert“, „vom Steuerberater geprüft“, „rechtssicher“; Handbuch ersetzt Steuerberatung; Zwei-Faktor-Anmeldung sei Pflicht; echte Kundenzahlen (die Bilder zeigen eine Demo-Firma).
 - FokusFristen und FokusHeim: weiter beim Chat „Programmieren“ erfragen.
+
+## VORSCHAU (noch NICHT live, NICHT posten) – Partnerprogramm, geplant Sa 21.11., 10 Uhr (Auskunft „Nächste Sitzung“ neu, 19.11.)
+- Für virtuelle Assistenzen: 30 % Provision vom bezahlten Netto-Abo, solange der Kunde zahlt; ab 3 zahlenden geworbenen Kunden eigenes FokusOffice kostenlos (Tarif Business); persönlicher Empfehlungslink und Code; öffentliche Partnerliste; Bewerbung office.fokuszeit-business.de/partner.php, Freischaltung durch Lara.
+- Neukunden über Partner bekommen KEINEN Preisvorteil. Partner müssen ihre Beiträge als Werbung kennzeichnen.
+- Dazu Mehrmandanten-Zugang: Assistenzen arbeiten mit einem Login in mehreren Kundenkonten (Kunde gibt frei, AVV wird hinterlegt).
+- Erst bewerben, wenn die Sitzung bestätigt hat, dass es live ist, und Lara freigibt.
+- Sonst Stand 19.11.: nichts Neues live, Preise/Tarife/Testphase/Links unverändert; FokusFristen/FokusHeim keine Neuigkeiten.
