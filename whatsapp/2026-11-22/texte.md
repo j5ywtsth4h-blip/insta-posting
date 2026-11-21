@@ -55,7 +55,7 @@ Alle Details stehen auf meiner Website: https://www.fokuszeit-business.de/fokuso
 8) [V_belege_hochladen.mp4 + V_belegpaket.mp4]
 *Belege sammeln und ans Steuerbüro geben:*
 Im ersten Video lädst du mehrere Belege auf einmal hoch (ab Tarif Business), FokusOffice erkennt Lieferant, Datum und Betrag und legt sie in die Monatsmappe.
-Im zweiten Video siehst du das neue *Belegpaket*, das gibt es in allen Tarifen: Zeitraum wählen, „Paket erstellen“, und du hast eine ZIP mit allen Original-Belegen plus Liste. Die schickst du an deine Steuerkanzlei oder lädst sie in Lexware Office, sevdesk & Co. hoch. Für DATEV gibt es ein eigenes Belegpaket (ab Tarif Business).
+Im zweiten Video siehst du das neue *Belegpaket*, das gibt es in allen Tarifen: Zeitraum wählen, „Paket erstellen“, und du hast eine ZIP mit allen Original-Belegen plus Liste. Die schickst du an deine Steuerkanzlei oder lädst sie in Lexware Office, sevdesk & Co. hoch.
 
 9) [kein Bild]
 *Erst mal reinschauen, ohne Anmeldung?* 📖
@@ -83,5 +83,5 @@ Die Verbindung zwischen deinem Gerät und FokusOffice ist immer verschlüsselt (
 **„Muss ich die Zwei-Faktor-Anmeldung einrichten?“**
 Nein, sie ist freiwillig. Ich empfehle sie aber. Das dauert zwei Minuten: oben auf „Sicherheit“ tippen, dann „Einrichten“, den Code mit einer Authenticator-App scannen und die Notfallcodes gut aufheben.
 
-**„Kann ich das Belegpaket direkt an DATEV oder Lexware schicken?“**
-Es ist ein Export: Du bekommst eine Datei, die du an deine Steuerkanzlei schickst oder dort hochlädst. Eine direkte Verbindung gibt es nicht. Für DATEV gibt es ein eigenes DATEV-Belegpaket.
+**„Kann ich das Belegpaket direkt an meine Steuerkanzlei oder Lexware schicken?“**
+Es ist ein Export: Du bekommst eine Datei, die du an deine Steuerkanzlei schickst oder dort hochlädst. Eine direkte Verbindung gibt es nicht.

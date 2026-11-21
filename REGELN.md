@@ -58,3 +58,6 @@
 ## Symbole in Listen (Laras Regel vom 17.11.)
 - Negative Punkte (Probleme, „so nicht“, Nachteile, Vorher-Situation) bekommen IMMER ein rotes X, nie einen Haken ✔️. Haken nur für Positives/Lösungen.
 - Generator: kreuz() in scratchpad/make_launch_karussell.py, folie(..., negativ=True). Gilt auch für Text: ❌ statt ✅ bei negativen Aufzählungen.
+
+## DATEV-Belegpaket (Lara, 21.11.)
+- Vorerst NICHT bewerben (Social Media, WhatsApp, Infoblatt, Werbung). Das normale Belegpaket (ZIP + Liste, alle Tarife) darf erwähnt werden.
