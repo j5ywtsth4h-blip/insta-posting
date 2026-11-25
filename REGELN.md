@@ -30,6 +30,7 @@
 - Einmal täglich beim Chat „Programmieren“ (FokusOffice) nach Neuigkeiten fragen und sie in `wissen/fokusoffice_neuerungen.md` übernehmen.
 
 ## Funktions-Videos (Laras Auftrag vom 3.11.2026)
+- **Seit 25.11.2026 (Lara: „Poste die Reels bitte ab jetzt selber, auch wenn dann keine Musik dabei ist“):** Instagram-Reels automatisch aus posts/<Zeit>.mp4 + .txt, Titelbild posts/_titelbilder/<Zeit>.jpg. Hook (Laras Hook-Text) in den ersten 2,5 s oben im Video eingebrannt (dunkelgrüner Kasten, Playfair). Keine 10-Minuten-Erinnerungen mehr.
 - 2 kurze Videos pro Woche (15–30 s) mit echten FokusOffice-Funktionen, keine langen Werbetexte. Beispiel: „So erstellst du ein Angebot in wenigen Schritten“, „Keine Zeit für Büroarbeit? Übergib mir die Aufgabe direkt im Programm.“
 - Bildschirmaufnahmen kommen vom Chat „Programmieren“ (Testsystem, erfundene Beispieldaten), Ablage rohvideos/.
 - Verteilung: Instagram-Reel -> manuell/ (Lara postet selbst mit Musik, Erinnerung 10 Min. vorher); Facebook -> facebook/geplant/ (automatisch); LinkedIn -> linkedin/geplant/ als .mp4 + .md (automatisch).

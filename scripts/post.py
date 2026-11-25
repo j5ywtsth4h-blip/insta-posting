@@ -17,7 +17,8 @@ Aufruf:
 Facebook (optional): Sind die Secrets FB_PAGE_ID und FB_PAGE_TOKEN hinterlegt, erscheinen
 Feed-Beiträge (Bilder) zusätzlich auf der Facebook-Seite. Storys und Reels nur auf Instagram.
 
-Videos nur für Facebook (Instagram-Reels postet Lara selbst, siehe manuell/):
+Reel-Titelbild: posts/_titelbilder/<gleicher Name>.jpg (optional).
+Videos nur für Facebook (seit 25.11. postet der Bot auch Instagram-Reels aus posts/):
     facebook/geplant/2026-11-05_12-00.mp4   -> Video auf der Facebook-Seite
     facebook/geplant/2026-11-05_12-00.txt   -> Beschreibung (FB-LINK-Zeilen wie bei Beiträgen)
 """
@@ -273,6 +274,9 @@ def container_erstellen(user_id: str, medien: Path) -> str:
         params = {"media_type": "STORIES" if story else "REELS", "video_url": url}
         if not story:
             params["share_to_feed"] = "true"
+            titelbild = POSTS / "_titelbilder" / f"{medien.stem}.jpg"
+            if titelbild.exists():
+                params["cover_url"] = raw_url(titelbild)
     else:
         params = {"image_url": bild_url(medien, story)}
         if story:
