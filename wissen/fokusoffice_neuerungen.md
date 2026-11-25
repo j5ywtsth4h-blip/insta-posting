@@ -189,7 +189,12 @@ Die öffentliche Demo auf der Website wurde entfernt → nicht mehr erwähnen od
 - Für virtuelle Assistenzen: 30 % Provision vom bezahlten Netto-Abo, solange der Kunde zahlt; ab 3 zahlenden geworbenen Kunden eigenes FokusOffice kostenlos (Tarif Business); persönlicher Empfehlungslink und Code; öffentliche Partnerliste; Bewerbung office.fokuszeit-business.de/partner.php, Freischaltung durch Lara.
 - Neukunden über Partner bekommen KEINEN Preisvorteil. Partner müssen ihre Beiträge als Werbung kennzeichnen.
 - NEU LIVE seit 23.11. 18:22: Partnerbedingungen rechtlich geprüft (Entwurfshinweis entfernt). Im Partnerbereich für freigeschaltete Partner „Werbematerial und Infos“: fertige Texte mit persönlichem Link, 3 Bilder, Preisübersicht, Anleitung Werbekennzeichnung, häufige Fragen. Bewerben erlaubt als „Fertige Texte und Bilder für deine Empfehlungen“. Website-Seite https://www.fokuszeit-business.de/partnerprogramm.html LIVE seit 23.11. abends (Infos), Bewerbung direkt partner.php.
-- VORSCHAU (nur Test, NICHT bewerben, Stand 24.11.): „Bewerbung ohne Konto“ (nur Formular, Konto per E-Mail-Link nach Freischaltung). Bis zur Live-Meldung gilt: Für die Bewerbung braucht man ein FokusOffice-Konto.
+- LIVE seit 25.11. ca. 10:24: Bewerbung OHNE Konto, nur kurzes Formular auf partner.php; Konto kommt per E-Mail nach Laras Freischaltung.
 - Dazu Mehrmandanten-Zugang: Assistenzen arbeiten mit einem Login in mehreren Kundenkonten (Kunde gibt frei, AVV wird hinterlegt).
 - Beworben ab 21.11. (Laras Freigabe): IG/FB 21.11. 19 Uhr, Story 19:30, LinkedIn 24.11.
 - Sonst Stand 19.11.: nichts Neues live, Preise/Tarife/Testphase/Links unverändert; FokusFristen/FokusHeim keine Neuigkeiten.
+
+
+## 25.11.2026 LIVE (ca. 10:24)
+- Dokumentenablage: Mappen können Unter-Mappen haben (z. B. Steuer 2026 > Quartal 1), in allen Tarifen.
+- Partner-Bewerbung ohne Konto (siehe Partnerprogramm).
